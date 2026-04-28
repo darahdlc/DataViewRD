@@ -39,9 +39,12 @@ function moveTip(ev) {
 }
 function hideTip() { tipEl().style.display = 'none'; }
 
-// Data lookup helpers
+// Data lookup helpers — accept numeric ISO either zero-padded ("032") or not ("32")
 function getCountryByNum(numStr) {
-  const iso = App.numToIso3[String(numStr).padStart(3, '0')];
+  if (numStr == null) return null;
+  const padded = String(numStr).padStart(3, '0');
+  const unpadded = String(numStr).replace(/^0+/, '') || '0';
+  const iso = App.numToIso3[padded] || App.numToIso3[unpadded];
   if (!iso) return null;
   return { iso, ...App.data.countries[iso] };
 }

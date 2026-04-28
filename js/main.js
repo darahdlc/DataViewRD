@@ -11,7 +11,11 @@
 
   // Build numeric → ISO3 lookup for our 20 countries
   Object.entries(data.countries).forEach(([iso, c]) => {
-    App.numToIso3[c.isoNum] = iso;
+    // Index both padded and un-padded forms so any topojson ID format matches
+    const padded = String(c.isoNum).padStart(3, '0');
+    const unpadded = String(c.isoNum).replace(/^0+/, '') || '0';
+    App.numToIso3[padded] = iso;
+    App.numToIso3[unpadded] = iso;
   });
 
   buildExplorerScales();

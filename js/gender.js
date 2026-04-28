@@ -26,6 +26,7 @@ const Gender = (() => {
     drawStack();
     setupPlay();
     mapInited = true;
+    colorize(); // paint the choropleth as soon as the paths are mounted
   }
 
   function onHover(ev, feat) {
@@ -49,10 +50,11 @@ const Gender = (() => {
     g.selectAll('.country').each(function(feat) {
       const c = getCountryByNum(feat.id);
       const sel = d3.select(this);
-      if (!c) { sel.classed('no-data', true).attr('fill', '#edf2f7'); return; }
+      if (!c) { sel.classed('no-data', true).style('fill', '#edf2f7'); return; }
       const d = c.data[App.currentYear];
+      if (!d.total) { sel.classed('no-data', true).style('fill', '#edf2f7'); return; }
       const fp = d.female / d.total;
-      sel.classed('no-data', false).attr('fill', genderColor(fp));
+      sel.classed('no-data', false).style('fill', genderColor(fp));
     });
   }
 

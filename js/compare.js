@@ -23,8 +23,8 @@ const Compare = (() => {
 
     setupPickers();
     drawLegend();
-    refresh();
     mapInited = true;
+    refresh(); // colorize + bars + context, now that mapInited === true
   }
 
   function setupPickers() {
@@ -70,9 +70,10 @@ const Compare = (() => {
     g.selectAll('.country').each(function(feat) {
       const c = getCountryByNum(feat.id);
       const sel = d3.select(this);
-      if (!c) { sel.classed('no-data', true).attr('fill', '#edf2f7'); return; }
+      if (!c) { sel.classed('no-data', true).style('fill', '#edf2f7'); return; }
       const pc = pctChange(c.iso);
-      sel.classed('no-data', false).attr('fill', compareColor(pc));
+      if (pc == null || !isFinite(pc)) { sel.classed('no-data', true).style('fill', '#edf2f7'); return; }
+      sel.classed('no-data', false).style('fill', compareColor(pc));
     });
   }
 

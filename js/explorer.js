@@ -39,6 +39,7 @@ const Explorer = (() => {
     setupScaleToggle();
     setupPlay();
     mapInited = true;
+    colorize(); // paint the choropleth right away
   }
 
   function onHover(ev, feat) {
@@ -69,9 +70,9 @@ const Explorer = (() => {
     g.selectAll('.country').each(function(feat) {
       const c = getCountryByNum(feat.id);
       const sel = d3.select(this);
-      if (!c) { sel.classed('no-data', true).attr('fill', '#edf2f7'); return; }
+      if (!c) { sel.classed('no-data', true).style('fill', '#edf2f7'); return; }
       const v = c.data[App.currentYear];
-      sel.classed('no-data', false).attr('fill', explorerColorFor(v.total));
+      sel.classed('no-data', false).style('fill', explorerColorFor(v.total));
     });
   }
 
