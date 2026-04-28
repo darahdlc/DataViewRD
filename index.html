@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DR Tourism Arrivals — 1999–2025</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <h1>Dominican Republic — Tourist Arrivals by Origin</h1>
+    <p class="subtitle">1999 – 2025 · sex breakdown · interactive exploration</p>
+  </div>
+  <nav class="modes" role="tablist">
+    <button class="mode-btn active" data-mode="overview" role="tab">Overview</button>
+    <button class="mode-btn"        data-mode="explorer" role="tab">Explorer</button>
+    <button class="mode-btn"        data-mode="gender"   role="tab">Gender Ratio</button>
+    <button class="mode-btn"        data-mode="compare"  role="tab">Compare</button>
+  </nav>
+</header>
+
+<main id="app">
+
+  <!-- ============== MODE 0: OVERVIEW (showcase) ============== -->
+  <section class="view view-overview active" data-view="overview">
+    <div class="overview-stage">
+      <div class="overview-hud">
+        <div class="hud-eyebrow">Where the visitors come from</div>
+        <div class="hud-title">Dominican Republic <span class="hud-flag">·</span> <span id="ov-year">2024</span></div>
+        <div class="hud-bigstat">
+          <div class="bignum" id="ov-bignum">—</div>
+          <div class="bignum-sub">total arrivals</div>
+        </div>
+        <div class="hud-controls">
+          <input type="range" id="ov-slider" min="1999" max="2025" step="1" value="2024">
+          <button id="ov-play" class="play-btn play-ghost" title="Play">▶</button>
+        </div>
+      </div>
+      <svg id="overview-map" class="world-map showcase-map"></svg>
+      <div class="overview-leaderboard" id="ov-board"></div>
+    </div>
+  </section>
+
+  <!-- ============== MODE 1: EXPLORER ============== -->
+  <section class="view view-explorer" data-view="explorer">
+    <div class="map-area">
+      <div class="map-toolbar">
+        <div class="scale-toggle">
+          <span>Scale:</span>
+          <button class="scale-btn active" data-scale="log">Log</button>
+          <button class="scale-btn"        data-scale="linear">Linear</button>
+        </div>
+        <div class="legend" id="explorer-legend"></div>
+      </div>
+      <svg id="explorer-map" class="world-map"></svg>
+      <div class="slider-wrap">
+        <button id="play-btn" class="play-btn" title="Play / pause">▶</button>
+        <div class="slider-track-wrap">
+          <input type="range" id="year-slider" min="1999" max="2025" step="1" value="2024">
+          <div class="slider-markers" id="slider-markers"></div>
+        </div>
+        <div class="year-display" id="year-display">2024</div>
+      </div>
+    </div>
+    <aside class="side-panel" id="country-panel">
+      <div class="panel-empty">
+        <h2>Click a country</h2>
+        <p>Select any highlighted country on the map to see its female / male
+          arrivals trajectory, year-over-year change, and share of total arrivals.</p>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ============== MODE 2: GENDER RATIO ============== -->
+  <section class="view view-gender" data-view="gender">
+    <div class="map-area">
+      <div class="map-toolbar">
+        <div class="legend" id="gender-legend"></div>
+      </div>
+      <svg id="gender-map" class="world-map"></svg>
+      <div class="slider-wrap">
+        <button id="play-btn-2" class="play-btn">▶</button>
+        <div class="slider-track-wrap">
+          <input type="range" id="year-slider-2" min="1999" max="2025" step="1" value="2024">
+          <div class="slider-markers" id="slider-markers-2"></div>
+        </div>
+        <div class="year-display" id="year-display-2">2024</div>
+      </div>
+    </div>
+    <aside class="side-panel">
+      <h2>Global female / male split</h2>
+      <p class="hint">100 % stacked area across all years. Hover the map for country‑level ratios.</p>
+      <svg id="gender-stack" class="aux-chart"></svg>
+      <div id="gender-tooltip-info" class="tooltip-info">
+        <h3>Hover a country</h3>
+        <p>Tooltip shows exact female % and male % for the selected year.</p>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ============== MODE 3: COMPARE ============== -->
+  <section class="view view-compare" data-view="compare">
+    <div class="map-area">
+      <div class="map-toolbar compare-toolbar">
+        <label>Year A
+          <select id="year-a"></select>
+        </label>
+        <label>Year B
+          <select id="year-b"></select>
+        </label>
+        <div class="legend" id="compare-legend"></div>
+      </div>
+      <svg id="compare-map" class="world-map"></svg>
+      <svg id="compare-context" class="aux-chart bottom-chart"></svg>
+    </div>
+    <aside class="side-panel">
+      <h2>Top 10 by % change</h2>
+      <p class="hint" id="compare-hint">B vs A · paired bars show female and male separately.</p>
+      <svg id="compare-bars" class="aux-chart"></svg>
+    </aside>
+  </section>
+
+</main>
+
+<div id="tooltip" class="tooltip" style="display:none"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+<script src="js/utils.js"></script>
+<script src="js/overview.js"></script>
+<script src="js/explorer.js"></script>
+<script src="js/gender.js"></script>
+<script src="js/compare.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,4321 @@
+Llegada de Pasajeros por Nacionalidad,Sexo,Total de Llegada de Pasajero por Nacionalidad,Año
+Dominicanos residentes,Femenino,175236,1999
+Dominicanos residentes,Masculino,168190,1999
+Extranjeros residentes,Femenino,8592,1999
+Extranjeros residentes,Masculino,13643,1999
+Dominicanos no residentes,Femenino,273699,1999
+Dominicanos no residentes,Masculino,227977,1999
+Extranjeros no residentes,Femenino,988333,1999
+Extranjeros no residentes,Masculino,1159409,1999
+América del norte,Femenino,333538,1999
+América del norte,Masculino,383566,1999
+Canadá,Femenino,89847,1999
+Canadá,Masculino,84778,1999
+Estados Unidos,Femenino,239420,1999
+Estados Unidos,Masculino,290932,1999
+México,Femenino,4271,1999
+México,Masculino,7856,1999
+América central y Caribe,Femenino,21710,1999
+América central y Caribe,Masculino,31591,1999
+Aruba,Femenino,72,1999
+Aruba,Masculino,91,1999
+Bahamas,Femenino,0,1999
+Bahamas,Masculino,0,1999
+"Caicos y Turcas, Islas",Femenino,0,1999
+"Caicos y Turcas, Islas",Masculino,0,1999
+Costa Rica,Femenino,1625,1999
+Costa Rica,Masculino,2638,1999
+Cuba,Femenino,4129,1999
+Cuba,Masculino,4999,1999
+Curazao,Femenino,363,1999
+Curazao,Masculino,563,1999
+El Salvador,Femenino,402,1999
+El Salvador,Masculino,511,1999
+Guadalupe,Femenino,0,1999
+Guadalupe,Masculino,0,1999
+Guatemala,Femenino,1016,1999
+Guatemala,Masculino,1667,1999
+Haití,Femenino,469,1999
+Haití,Masculino,757,1999
+Honduras,Femenino,287,1999
+Honduras,Masculino,437,1999
+Jamaica,Femenino,345,1999
+Jamaica,Masculino,364,1999
+Martinica,Femenino,0,1999
+Martinica,Masculino,0,1999
+Nicaragua,Femenino,0,1999
+Nicaragua,Masculino,0,1999
+Panamá,Femenino,1548,1999
+Panamá,Masculino,3112,1999
+Puerto Rico,Femenino,10452,1999
+Puerto Rico,Masculino,14429,1999
+San Martín,Femenino,70,1999
+San Martín,Masculino,184,1999
+Trinidad y Tobago,Femenino,0,1999
+Trinidad y Tobago,Masculino,0,1999
+"Vírgenes Americanas, Islas",Femenino,0,1999
+"Vírgenes Americanas, Islas",Masculino,0,1999
+Otros del Caribe,Femenino,932,1999
+Otros del Caribe,Masculino,1839,1999
+América del sur,Femenino,73420,1999
+América del sur,Masculino,80928,1999
+Argentina,Femenino,33217,1999
+Argentina,Masculino,33629,1999
+Bolivia,Femenino,588,1999
+Bolivia,Masculino,472,1999
+Brasil,Femenino,2365,1999
+Brasil,Masculino,3079,1999
+Colombia,Femenino,9770,1999
+Colombia,Masculino,11014,1999
+Chile,Femenino,6499,1999
+Chile,Masculino,8468,1999
+Ecuador,Femenino,1128,1999
+Ecuador,Masculino,1620,1999
+Perú,Femenino,5116,1999
+Perú,Masculino,4949,1999
+Uruguay,Femenino,0,1999
+Uruguay,Masculino,0,1999
+Venezuela,Femenino,13769,1999
+Venezuela,Masculino,16656,1999
+Otros de Suramérica,Femenino,968,1999
+Otros de Suramérica,Masculino,1041,1999
+Europa,Femenino,553194,1999
+Europa,Masculino,652813,1999
+Alemania,Femenino,207045,1999
+Alemania,Masculino,246130,1999
+Austria,Femenino,10197,1999
+Austria,Masculino,11633,1999
+Bélgica,Femenino,18485,1999
+Bélgica,Masculino,19258,1999
+Bulgaria,Femenino,0,1999
+Bulgaria,Masculino,0,1999
+Checoslovaquia,Femenino,0,1999
+Checoslovaquia,Masculino,0,1999
+Dinamarca,Femenino,0,1999
+Dinamarca,Masculino,0,1999
+Escocia,Femenino,0,1999
+Escocia,Masculino,0,1999
+España,Femenino,58068,1999
+España,Masculino,79596,1999
+Finlandia,Femenino,3877,1999
+Finlandia,Masculino,3876,1999
+Francia,Femenino,64181,1999
+Francia,Masculino,66406,1999
+Grecia,Femenino,0,1999
+Grecia,Masculino,0,1999
+Holanda,Femenino,17853,1999
+Holanda,Masculino,31106,1999
+Hungría,Femenino,0,1999
+Hungría,Masculino,0,1999
+Reino Unido,Femenino,53428,1999
+Reino Unido,Masculino,54617,1999
+Irlanda,Femenino,0,1999
+Irlanda,Masculino,0,1999
+Italia,Femenino,60721,1999
+Italia,Masculino,74818,1999
+Luxemburgo,Femenino,0,1999
+Luxemburgo,Masculino,0,1999
+Noruega,Femenino,0,1999
+Noruega,Masculino,0,1999
+Polonia,Femenino,0,1999
+Polonia,Masculino,0,1999
+Portugal,Femenino,11648,1999
+Portugal,Masculino,11999,1999
+República Checa,Femenino,0,1999
+República Checa,Masculino,0,1999
+Rumania,Femenino,0,1999
+Rumania,Masculino,0,1999
+Rusia,Femenino,0,1999
+Rusia,Masculino,0,1999
+Suecia,Femenino,15859,1999
+Suecia,Masculino,17318,1999
+Suiza,Femenino,24268,1999
+Suiza,Masculino,28240,1999
+Ucrania,Femenino,0,1999
+Ucrania,Masculino,0,1999
+Otros de Europa,Femenino,7564,1999
+Otros de Europa,Masculino,7816,1999
+Asia,Femenino,881,1999
+Asia,Masculino,1682,1999
+Corea del Sur,Femenino,0,1999
+Corea del Sur,Masculino,0,1999
+China,Femenino,0,1999
+China,Masculino,0,1999
+India,Femenino,61,1999
+India,Masculino,252,1999
+Israel,Femenino,0,1999
+Israel,Masculino,0,1999
+Japón,Femenino,632,1999
+Japón,Masculino,1209,1999
+Tailandia,Femenino,0,1999
+Tailandia,Masculino,10,1999
+Taiwán,Femenino,188,1999
+Taiwán,Masculino,211,1999
+Otros de Asia,Femenino,0,1999
+Otros de Asia,Masculino,0,1999
+Resto del mundo,Femenino,5590,1999
+Resto del mundo,Masculino,8829,1999
+Australia,Femenino,0,1999
+Australia,Masculino,0,1999
+Otros resto del mundo,Femenino,5590,1999
+Otros resto del mundo,Masculino,8829,1999
+Dominicanos residentes,Femenino,162371,2000
+Dominicanos residentes,Masculino,155675,2000
+Extranjeros residentes,Femenino,8536,2000
+Extranjeros residentes,Masculino,14929,2000
+Dominicanos no residentes,Femenino,276894,2000
+Dominicanos no residentes,Masculino,236072,2000
+Extranjeros no residentes,Femenino,1157420,2000
+Extranjeros no residentes,Masculino,1302166,2000
+América del norte,Femenino,430751,2000
+América del norte,Masculino,471866,2000
+Canadá,Femenino,126548,2000
+Canadá,Masculino,119184,2000
+Estados Unidos,Femenino,299430,2000
+Estados Unidos,Masculino,344318,2000
+México,Femenino,4773,2000
+México,Masculino,8364,2000
+América central y Caribe,Femenino,24694,2000
+América central y Caribe,Masculino,30992,2000
+Aruba,Femenino,29,2000
+Aruba,Masculino,20,2000
+Bahamas,Femenino,0,2000
+Bahamas,Masculino,0,2000
+"Caicos y Turcas, Islas",Femenino,0,2000
+"Caicos y Turcas, Islas",Masculino,0,2000
+Costa Rica,Femenino,1177,2000
+Costa Rica,Masculino,2038,2000
+Cuba,Femenino,5010,2000
+Cuba,Masculino,6313,2000
+Curazao,Femenino,508,2000
+Curazao,Masculino,686,2000
+El Salvador,Femenino,567,2000
+El Salvador,Masculino,868,2000
+Guadalupe,Femenino,0,2000
+Guadalupe,Masculino,0,2000
+Guatemala,Femenino,873,2000
+Guatemala,Masculino,1545,2000
+Haití,Femenino,488,2000
+Haití,Masculino,631,2000
+Honduras,Femenino,247,2000
+Honduras,Masculino,295,2000
+Jamaica,Femenino,288,2000
+Jamaica,Masculino,414,2000
+Martinica,Femenino,0,2000
+Martinica,Masculino,0,2000
+Nicaragua,Femenino,0,2000
+Nicaragua,Masculino,0,2000
+Panamá,Femenino,1705,2000
+Panamá,Masculino,2909,2000
+Puerto Rico,Femenino,12480,2000
+Puerto Rico,Masculino,13204,2000
+San Martín,Femenino,142,2000
+San Martín,Masculino,230,2000
+Trinidad y Tobago,Femenino,0,2000
+Trinidad y Tobago,Masculino,0,2000
+"Vírgenes Americanas, Islas",Femenino,0,2000
+"Vírgenes Americanas, Islas",Masculino,0,2000
+Otros del Caribe,Femenino,1180,2000
+Otros del Caribe,Masculino,1839,2000
+América del sur,Femenino,84122,2000
+América del sur,Masculino,89054,2000
+Argentina,Femenino,37707,2000
+Argentina,Masculino,36952,2000
+Bolivia,Femenino,539,2000
+Bolivia,Masculino,359,2000
+Brasil,Femenino,1541,2000
+Brasil,Masculino,2142,2000
+Colombia,Femenino,11551,2000
+Colombia,Masculino,12435,2000
+Chile,Femenino,8351,2000
+Chile,Masculino,8448,2000
+Ecuador,Femenino,1401,2000
+Ecuador,Masculino,1836,2000
+Perú,Femenino,4625,2000
+Perú,Masculino,5122,2000
+Uruguay,Femenino,0,2000
+Uruguay,Masculino,0,2000
+Venezuela,Femenino,16426,2000
+Venezuela,Masculino,19496,2000
+Otros de Suramérica,Femenino,1981,2000
+Otros de Suramérica,Masculino,2264,2000
+Europa,Femenino,608301,2000
+Europa,Masculino,693262,2000
+Alemania,Femenino,207630,2000
+Alemania,Masculino,244290,2000
+Austria,Femenino,11256,2000
+Austria,Masculino,12207,2000
+Bélgica,Femenino,17948,2000
+Bélgica,Masculino,19522,2000
+Bulgaria,Femenino,0,2000
+Bulgaria,Masculino,0,2000
+Checoslovaquia,Femenino,0,2000
+Checoslovaquia,Masculino,0,2000
+Dinamarca,Femenino,0,2000
+Dinamarca,Masculino,0,2000
+Escocia,Femenino,0,2000
+Escocia,Masculino,0,2000
+España,Femenino,65144,2000
+España,Masculino,85044,2000
+Finlandia,Femenino,4765,2000
+Finlandia,Masculino,4333,2000
+Francia,Femenino,86020,2000
+Francia,Masculino,88238,2000
+Grecia,Femenino,0,2000
+Grecia,Masculino,0,2000
+Holanda,Femenino,17838,2000
+Holanda,Masculino,21004,2000
+Hungría,Femenino,0,2000
+Hungría,Masculino,0,2000
+Reino Unido,Femenino,57460,2000
+Reino Unido,Masculino,59740,2000
+Irlanda,Femenino,0,2000
+Irlanda,Masculino,0,2000
+Italia,Femenino,61946,2000
+Italia,Masculino,73349,2000
+Luxemburgo,Femenino,0,2000
+Luxemburgo,Masculino,0,2000
+Noruega,Femenino,0,2000
+Noruega,Masculino,0,2000
+Polonia,Femenino,0,2000
+Polonia,Masculino,0,2000
+Portugal,Femenino,12863,2000
+Portugal,Masculino,14354,2000
+República Checa,Femenino,0,2000
+República Checa,Masculino,0,2000
+Rumania,Femenino,0,2000
+Rumania,Masculino,0,2000
+Rusia,Femenino,0,2000
+Rusia,Masculino,0,2000
+Suecia,Femenino,23463,2000
+Suecia,Masculino,24961,2000
+Suiza,Femenino,21738,2000
+Suiza,Masculino,24424,2000
+Ucrania,Femenino,0,2000
+Ucrania,Masculino,0,2000
+Otros de Europa,Femenino,20230,2000
+Otros de Europa,Masculino,21796,2000
+Asia,Femenino,1444,2000
+Asia,Masculino,2766,2000
+Corea del Sur,Femenino,0,2000
+Corea del Sur,Masculino,0,2000
+China,Femenino,0,2000
+China,Masculino,0,2000
+India,Femenino,167,2000
+India,Masculino,265,2000
+Israel,Femenino,0,2000
+Israel,Masculino,0,2000
+Japón,Femenino,1024,2000
+Japón,Masculino,2108,2000
+Tailandia,Femenino,10,2000
+Tailandia,Masculino,19,2000
+Taiwán,Femenino,243,2000
+Taiwán,Masculino,374,2000
+Otros de Asia,Femenino,0,2000
+Otros de Asia,Masculino,0,2000
+Resto del mundo,Femenino,8108,2000
+Resto del mundo,Masculino,14226,2000
+Australia,Femenino,0,2000
+Australia,Masculino,0,2000
+Otros resto del mundo,Femenino,8108,2000
+Otros resto del mundo,Masculino,14226,2000
+Dominicanos residentes,Femenino,148793,2001
+Dominicanos residentes,Masculino,139406,2001
+Extranjeros residentes,Femenino,9118,2001
+Extranjeros residentes,Masculino,13637,2001
+Dominicanos no residentes,Femenino,258116,2001
+Dominicanos no residentes,Masculino,225850,2001
+Extranjeros no residentes,Femenino,1142795,2001
+Extranjeros no residentes,Masculino,1242154,2001
+América del norte,Femenino,484063,2001
+América del norte,Masculino,509231,2001
+Canadá,Femenino,154887,2001
+Canadá,Masculino,139786,2001
+Estados Unidos,Femenino,324421,2001
+Estados Unidos,Masculino,360301,2001
+México,Femenino,4755,2001
+México,Masculino,9144,2001
+América central y Caribe,Femenino,17874,2001
+América central y Caribe,Masculino,25032,2001
+Aruba,Femenino,30,2001
+Aruba,Masculino,56,2001
+Bahamas,Femenino,0,2001
+Bahamas,Masculino,0,2001
+"Caicos y Turcas, Islas",Femenino,0,2001
+"Caicos y Turcas, Islas",Masculino,0,2001
+Costa Rica,Femenino,1088,2001
+Costa Rica,Masculino,2178,2001
+Cuba,Femenino,1724,2001
+Cuba,Masculino,2739,2001
+Curazao,Femenino,234,2001
+Curazao,Masculino,441,2001
+El Salvador,Femenino,785,2001
+El Salvador,Masculino,1146,2001
+Guadalupe,Femenino,0,2001
+Guadalupe,Masculino,0,2001
+Guatemala,Femenino,661,2001
+Guatemala,Masculino,1269,2001
+Haití,Femenino,316,2001
+Haití,Masculino,855,2001
+Honduras,Femenino,213,2001
+Honduras,Masculino,378,2001
+Jamaica,Femenino,464,2001
+Jamaica,Masculino,1069,2001
+Martinica,Femenino,0,2001
+Martinica,Masculino,0,2001
+Nicaragua,Femenino,0,2001
+Nicaragua,Masculino,0,2001
+Panamá,Femenino,1357,2001
+Panamá,Masculino,2503,2001
+Puerto Rico,Femenino,9798,2001
+Puerto Rico,Masculino,10663,2001
+San Martín,Femenino,188,2001
+San Martín,Masculino,217,2001
+Trinidad y Tobago,Femenino,0,2001
+Trinidad y Tobago,Masculino,0,2001
+"Vírgenes Americanas, Islas",Femenino,0,2001
+"Vírgenes Americanas, Islas",Masculino,0,2001
+Otros del Caribe,Femenino,1016,2001
+Otros del Caribe,Masculino,1518,2001
+América del sur,Femenino,90987,2001
+América del sur,Masculino,95173,2001
+Argentina,Femenino,33239,2001
+Argentina,Masculino,30945,2001
+Bolivia,Femenino,274,2001
+Bolivia,Masculino,407,2001
+Brasil,Femenino,1193,2001
+Brasil,Masculino,1915,2001
+Colombia,Femenino,14533,2001
+Colombia,Masculino,15341,2001
+Chile,Femenino,7394,2001
+Chile,Masculino,8924,2001
+Ecuador,Femenino,2241,2001
+Ecuador,Masculino,2579,2001
+Perú,Femenino,5966,2001
+Perú,Masculino,6263,2001
+Uruguay,Femenino,0,2001
+Uruguay,Masculino,0,2001
+Venezuela,Femenino,24676,2001
+Venezuela,Masculino,27414,2001
+Otros de Suramérica,Femenino,1471,2001
+Otros de Suramérica,Masculino,1385,2001
+Europa,Femenino,547636,2001
+Europa,Masculino,608747,2001
+Alemania,Femenino,165883,2001
+Alemania,Masculino,186847,2001
+Austria,Femenino,6767,2001
+Austria,Masculino,6928,2001
+Bélgica,Femenino,13548,2001
+Bélgica,Masculino,14551,2001
+Bulgaria,Femenino,0,2001
+Bulgaria,Masculino,0,2001
+Checoslovaquia,Femenino,0,2001
+Checoslovaquia,Masculino,0,2001
+Dinamarca,Femenino,0,2001
+Dinamarca,Masculino,0,2001
+Escocia,Femenino,0,2001
+Escocia,Masculino,0,2001
+España,Femenino,66864,2001
+España,Masculino,78822,2001
+Finlandia,Femenino,3422,2001
+Finlandia,Masculino,3452,2001
+Francia,Femenino,100222,2001
+Francia,Masculino,103335,2001
+Grecia,Femenino,0,2001
+Grecia,Masculino,0,2001
+Holanda,Femenino,14698,2001
+Holanda,Masculino,18016,2001
+Hungría,Femenino,0,2001
+Hungría,Masculino,0,2001
+Reino Unido,Femenino,65139,2001
+Reino Unido,Masculino,74503,2001
+Irlanda,Femenino,0,2001
+Irlanda,Masculino,0,2001
+Italia,Femenino,54540,2001
+Italia,Masculino,63504,2001
+Luxemburgo,Femenino,0,2001
+Luxemburgo,Masculino,0,2001
+Noruega,Femenino,0,2001
+Noruega,Masculino,0,2001
+Polonia,Femenino,0,2001
+Polonia,Masculino,0,2001
+Portugal,Femenino,12394,2001
+Portugal,Masculino,12336,2001
+República Checa,Femenino,0,2001
+República Checa,Masculino,0,2001
+Rumania,Femenino,0,2001
+Rumania,Masculino,0,2001
+Rusia,Femenino,0,2001
+Rusia,Masculino,0,2001
+Suecia,Femenino,12266,2001
+Suecia,Masculino,13547,2001
+Suiza,Femenino,20614,2001
+Suiza,Masculino,21430,2001
+Ucrania,Femenino,0,2001
+Ucrania,Masculino,0,2001
+Otros de Europa,Femenino,11279,2001
+Otros de Europa,Masculino,11476,2001
+Asia,Femenino,914,2001
+Asia,Masculino,2140,2001
+Corea del Sur,Femenino,0,2001
+Corea del Sur,Masculino,0,2001
+China,Femenino,0,2001
+China,Masculino,0,2001
+India,Femenino,82,2001
+India,Masculino,295,2001
+Israel,Femenino,0,2001
+Israel,Masculino,0,2001
+Japón,Femenino,708,2001
+Japón,Masculino,1445,2001
+Tailandia,Femenino,0,2001
+Tailandia,Masculino,20,2001
+Taiwán,Femenino,124,2001
+Taiwán,Masculino,380,2001
+Otros de Asia,Femenino,0,2001
+Otros de Asia,Masculino,0,2001
+Resto del mundo,Femenino,1321,2001
+Resto del mundo,Masculino,1831,2001
+Australia,Femenino,0,2001
+Australia,Masculino,0,2001
+Otros resto del mundo,Femenino,1321,2001
+Otros resto del mundo,Masculino,1831,2001
+Dominicanos residentes,Femenino,140444,2002
+Dominicanos residentes,Masculino,145825,2002
+Extranjeros residentes,Femenino,9116,2002
+Extranjeros residentes,Masculino,16115,2002
+Dominicanos no residentes,Femenino,260053,2002
+Dominicanos no residentes,Masculino,237526,2002
+Extranjeros no residentes,Femenino,1113604,2002
+Extranjeros no residentes,Masculino,1182026,2002
+América del norte,Femenino,511938,2002
+América del norte,Masculino,532165,2002
+Canadá,Femenino,165654,2002
+Canadá,Masculino,147837,2002
+Estados Unidos,Femenino,338586,2002
+Estados Unidos,Masculino,372289,2002
+México,Femenino,7698,2002
+México,Masculino,12039,2002
+América central y Caribe,Femenino,29163,2002
+América central y Caribe,Masculino,34459,2002
+Aruba,Femenino,40,2002
+Aruba,Masculino,57,2002
+Bahamas,Femenino,0,2002
+Bahamas,Masculino,0,2002
+"Caicos y Turcas, Islas",Femenino,0,2002
+"Caicos y Turcas, Islas",Masculino,0,2002
+Costa Rica,Femenino,1412,2002
+Costa Rica,Masculino,2868,2002
+Cuba,Femenino,2592,2002
+Cuba,Masculino,4370,2002
+Curazao,Femenino,311,2002
+Curazao,Masculino,635,2002
+El Salvador,Femenino,741,2002
+El Salvador,Masculino,1233,2002
+Guadalupe,Femenino,0,2002
+Guadalupe,Masculino,0,2002
+Guatemala,Femenino,954,2002
+Guatemala,Masculino,1782,2002
+Haití,Femenino,438,2002
+Haití,Masculino,882,2002
+Honduras,Femenino,280,2002
+Honduras,Masculino,403,2002
+Jamaica,Femenino,487,2002
+Jamaica,Masculino,1145,2002
+Martinica,Femenino,0,2002
+Martinica,Masculino,0,2002
+Nicaragua,Femenino,0,2002
+Nicaragua,Masculino,0,2002
+Panamá,Femenino,1619,2002
+Panamá,Masculino,2962,2002
+Puerto Rico,Femenino,18609,2002
+Puerto Rico,Masculino,15934,2002
+San Martín,Femenino,104,2002
+San Martín,Masculino,210,2002
+Trinidad y Tobago,Femenino,0,2002
+Trinidad y Tobago,Masculino,0,2002
+"Vírgenes Americanas, Islas",Femenino,0,2002
+"Vírgenes Americanas, Islas",Masculino,0,2002
+Otros del Caribe,Femenino,1576,2002
+Otros del Caribe,Masculino,1978,2002
+América del sur,Femenino,63319,2002
+América del sur,Masculino,72105,2002
+Argentina,Femenino,5406,2002
+Argentina,Masculino,8091,2002
+Bolivia,Femenino,338,2002
+Bolivia,Masculino,394,2002
+Brasil,Femenino,1388,2002
+Brasil,Masculino,2581,2002
+Colombia,Femenino,18517,2002
+Colombia,Masculino,19563,2002
+Chile,Femenino,8862,2002
+Chile,Masculino,9068,2002
+Ecuador,Femenino,2459,2002
+Ecuador,Masculino,2950,2002
+Perú,Femenino,5744,2002
+Perú,Masculino,7260,2002
+Uruguay,Femenino,0,2002
+Uruguay,Masculino,0,2002
+Venezuela,Femenino,19671,2002
+Venezuela,Masculino,21043,2002
+Otros de Suramérica,Femenino,934,2002
+Otros de Suramérica,Masculino,1155,2002
+Europa,Femenino,507003,2002
+Europa,Masculino,539317,2002
+Alemania,Femenino,117192,2002
+Alemania,Masculino,123354,2002
+Austria,Femenino,5057,2002
+Austria,Masculino,4943,2002
+Bélgica,Femenino,17815,2002
+Bélgica,Masculino,17545,2002
+Bulgaria,Femenino,0,2002
+Bulgaria,Masculino,0,2002
+Checoslovaquia,Femenino,0,2002
+Checoslovaquia,Masculino,0,2002
+Dinamarca,Femenino,0,2002
+Dinamarca,Masculino,0,2002
+Escocia,Femenino,0,2002
+Escocia,Masculino,0,2002
+España,Femenino,62446,2002
+España,Masculino,73076,2002
+Finlandia,Femenino,1773,2002
+Finlandia,Masculino,1730,2002
+Francia,Femenino,121382,2002
+Francia,Masculino,120640,2002
+Grecia,Femenino,0,2002
+Grecia,Masculino,0,2002
+Holanda,Femenino,15351,2002
+Holanda,Masculino,17156,2002
+Hungría,Femenino,0,2002
+Hungría,Masculino,0,2002
+Reino Unido,Femenino,68945,2002
+Reino Unido,Masculino,77312,2002
+Irlanda,Femenino,0,2002
+Irlanda,Masculino,0,2002
+Italia,Femenino,53251,2002
+Italia,Masculino,60318,2002
+Luxemburgo,Femenino,0,2002
+Luxemburgo,Masculino,0,2002
+Noruega,Femenino,0,2002
+Noruega,Masculino,0,2002
+Polonia,Femenino,0,2002
+Polonia,Masculino,0,2002
+Portugal,Femenino,12916,2002
+Portugal,Masculino,11066,2002
+República Checa,Femenino,0,2002
+República Checa,Masculino,0,2002
+Rumania,Femenino,0,2002
+Rumania,Masculino,0,2002
+Rusia,Femenino,0,2002
+Rusia,Masculino,0,2002
+Suecia,Femenino,3000,2002
+Suecia,Masculino,3621,2002
+Suiza,Femenino,18016,2002
+Suiza,Masculino,18320,2002
+Ucrania,Femenino,0,2002
+Ucrania,Masculino,0,2002
+Otros de Europa,Femenino,9859,2002
+Otros de Europa,Masculino,10236,2002
+Asia,Femenino,771,2002
+Asia,Masculino,1799,2002
+Corea del Sur,Femenino,0,2002
+Corea del Sur,Masculino,0,2002
+China,Femenino,0,2002
+China,Masculino,0,2002
+India,Femenino,41,2002
+India,Masculino,202,2002
+Israel,Femenino,0,2002
+Israel,Masculino,0,2002
+Japón,Femenino,526,2002
+Japón,Masculino,1108,2002
+Tailandia,Femenino,0,2002
+Tailandia,Masculino,0,2002
+Taiwán,Femenino,204,2002
+Taiwán,Masculino,489,2002
+Otros de Asia,Femenino,0,2002
+Otros de Asia,Masculino,0,2002
+Resto del mundo,Femenino,1410,2002
+Resto del mundo,Masculino,2181,2002
+Australia,Femenino,0,2003
+Australia,Masculino,0,2003
+Otros resto del mundo,Femenino,1410,2003
+Otros resto del mundo,Masculino,2181,2003
+Dominicanos residentes,Femenino,133137,2003
+Dominicanos residentes,Masculino,140220,2003
+Extranjeros residentes,Femenino,11076,2003
+Extranjeros residentes,Masculino,17276,2003
+Dominicanos no residentes,Femenino,267827,2003
+Dominicanos no residentes,Masculino,255761,2003
+Extranjeros no residentes,Femenino,1349495,2003
+Extranjeros no residentes,Masculino,1409055,2003
+América del norte,Femenino,643870,2003
+América del norte,Masculino,654687,2003
+Canadá,Femenino,221637,2003
+Canadá,Masculino,191248,2003
+Estados Unidos,Femenino,416984,2003
+Estados Unidos,Masculino,454276,2003
+México,Femenino,5249,2003
+México,Masculino,9163,2003
+América central y Caribe,Femenino,40667,2003
+América central y Caribe,Masculino,48106,2003
+Aruba,Femenino,71,2003
+Aruba,Masculino,138,2003
+Bahamas,Femenino,0,2003
+Bahamas,Masculino,0,2003
+"Caicos y Turcas, Islas",Femenino,0,2003
+"Caicos y Turcas, Islas",Masculino,0,2003
+Costa Rica,Femenino,1268,2003
+Costa Rica,Masculino,2246,2003
+Cuba,Femenino,2804,2003
+Cuba,Masculino,3982,2003
+Curazao,Femenino,180,2003
+Curazao,Masculino,394,2003
+El Salvador,Femenino,716,2003
+El Salvador,Masculino,957,2003
+Guadalupe,Femenino,0,2003
+Guadalupe,Masculino,0,2003
+Guatemala,Femenino,1157,2003
+Guatemala,Masculino,2466,2003
+Haití,Femenino,1487,2003
+Haití,Masculino,2446,2003
+Honduras,Femenino,462,2003
+Honduras,Masculino,687,2003
+Jamaica,Femenino,573,2003
+Jamaica,Masculino,766,2003
+Martinica,Femenino,0,2003
+Martinica,Masculino,0,2003
+Nicaragua,Femenino,0,2003
+Nicaragua,Masculino,0,2003
+Panamá,Femenino,1201,2003
+Panamá,Masculino,1999,2003
+Puerto Rico,Femenino,29137,2003
+Puerto Rico,Masculino,29412,2003
+San Martín,Femenino,137,2003
+San Martín,Masculino,198,2003
+Trinidad y Tobago,Femenino,0,2003
+Trinidad y Tobago,Masculino,0,2003
+"Vírgenes Americanas, Islas",Femenino,0,2003
+"Vírgenes Americanas, Islas",Masculino,0,2003
+Otros del Caribe,Femenino,1474,2003
+Otros del Caribe,Masculino,2415,2003
+América del sur,Femenino,43221,2003
+América del sur,Masculino,53655,2003
+Argentina,Femenino,4114,2003
+Argentina,Masculino,6147,2003
+Bolivia,Femenino,153,2003
+Bolivia,Masculino,342,2003
+Brasil,Femenino,1980,2003
+Brasil,Masculino,3111,2003
+Colombia,Femenino,11565,2003
+Colombia,Masculino,13101,2003
+Chile,Femenino,8500,2003
+Chile,Masculino,8449,2003
+Ecuador,Femenino,1926,2003
+Ecuador,Masculino,2323,2003
+Perú,Femenino,4394,2003
+Perú,Masculino,4696,2003
+Uruguay,Femenino,0,2003
+Uruguay,Masculino,0,2003
+Venezuela,Femenino,10126,2003
+Venezuela,Masculino,14704,2003
+Otros de Suramérica,Femenino,463,2003
+Otros de Suramérica,Masculino,782,2003
+Europa,Femenino,619061,2003
+Europa,Masculino,647981,2003
+Alemania,Femenino,119568,2003
+Alemania,Masculino,123680,2003
+Austria,Femenino,5095,2003
+Austria,Masculino,4940,2003
+Bélgica,Femenino,25580,2003
+Bélgica,Masculino,24938,2003
+Bulgaria,Femenino,0,2003
+Bulgaria,Masculino,0,2003
+Checoslovaquia,Femenino,0,2003
+Checoslovaquia,Masculino,0,2003
+Dinamarca,Femenino,0,2003
+Dinamarca,Masculino,0,2003
+Escocia,Femenino,0,2003
+Escocia,Masculino,0,2003
+España,Femenino,95323,2003
+España,Masculino,106727,2003
+Finlandia,Femenino,781,2003
+Finlandia,Masculino,559,2003
+Francia,Femenino,160073,2003
+Francia,Masculino,157547,2003
+Grecia,Femenino,0,2003
+Grecia,Masculino,0,2003
+Holanda,Femenino,18162,2003
+Holanda,Masculino,21737,2003
+Hungría,Femenino,0,2003
+Hungría,Masculino,0,2003
+Reino Unido,Femenino,84949,2003
+Reino Unido,Masculino,86808,2003
+Irlanda,Femenino,0,2003
+Irlanda,Masculino,0,2003
+Italia,Femenino,62931,2003
+Italia,Masculino,72539,2003
+Luxemburgo,Femenino,0,2003
+Luxemburgo,Masculino,0,2003
+Noruega,Femenino,0,2003
+Noruega,Masculino,0,2003
+Polonia,Femenino,0,2003
+Polonia,Masculino,0,2003
+Portugal,Femenino,17240,2003
+Portugal,Masculino,17870,2003
+República Checa,Femenino,0,2003
+República Checa,Masculino,0,2003
+Rumania,Femenino,0,2003
+Rumania,Masculino,0,2003
+Rusia,Femenino,0,2003
+Rusia,Masculino,0,2003
+Suecia,Femenino,1824,2003
+Suecia,Masculino,1715,2003
+Suiza,Femenino,19664,2003
+Suiza,Masculino,20563,2003
+Ucrania,Femenino,0,2003
+Ucrania,Masculino,0,2003
+Otros de Europa,Femenino,7871,2003
+Otros de Europa,Masculino,8358,2003
+Asia,Femenino,1009,2003
+Asia,Masculino,2020,2003
+Corea del Sur,Femenino,0,2003
+Corea del Sur,Masculino,0,2003
+China,Femenino,0,2003
+China,Masculino,0,2003
+India,Femenino,201,2003
+India,Masculino,434,2003
+Israel,Femenino,0,2003
+Israel,Masculino,0,2003
+Japón,Femenino,726,2003
+Japón,Masculino,1279,2003
+Tailandia,Femenino,0,2003
+Tailandia,Masculino,0,2003
+Taiwán,Femenino,82,2003
+Taiwán,Masculino,307,2003
+Otros de Asia,Femenino,0,2003
+Otros de Asia,Masculino,0,2003
+Resto del mundo,Femenino,1667,2003
+Resto del mundo,Masculino,2606,2003
+Australia,Femenino,0,2003
+Australia,Masculino,0,2003
+Otros resto del mundo,Femenino,1667,2003
+Otros resto del mundo,Masculino,2606,2003
+Dominicanos residentes,Femenino,141916,2004
+Dominicanos residentes,Masculino,160139,2004
+Extranjeros residentes,Femenino,11267,2004
+Extranjeros residentes,Masculino,19863,2004
+Dominicanos no residentes,Femenino,271555,2004
+Dominicanos no residentes,Masculino,305945,2004
+Extranjeros no residentes,Femenino,1383916,2004
+Extranjeros no residentes,Masculino,1488764,2004
+América del norte,Femenino,670304,2004
+América del norte,Masculino,725778,2004
+Canadá,Femenino,230951,2004
+Canadá,Masculino,217975,2004
+Estados Unidos,Femenino,434528,2004
+Estados Unidos,Masculino,498489,2004
+México,Femenino,4825,2004
+México,Masculino,9314,2004
+América central y Caribe,Femenino,40830,2004
+América central y Caribe,Masculino,45872,2004
+Aruba,Femenino,71,2004
+Aruba,Masculino,50,2004
+Bahamas,Femenino,0,2004
+Bahamas,Masculino,0,2004
+"Caicos y Turcas, Islas",Femenino,0,2004
+"Caicos y Turcas, Islas",Masculino,0,2004
+Costa Rica,Femenino,1016,2004
+Costa Rica,Masculino,1754,2004
+Cuba,Femenino,3253,2004
+Cuba,Masculino,3825,2004
+Curazao,Femenino,150,2004
+Curazao,Masculino,362,2004
+El Salvador,Femenino,704,2004
+El Salvador,Masculino,923,2004
+Guadalupe,Femenino,0,2004
+Guadalupe,Masculino,0,2004
+Guatemala,Femenino,792,2004
+Guatemala,Masculino,1588,2004
+Haití,Femenino,1663,2004
+Haití,Masculino,3440,2004
+Honduras,Femenino,401,2004
+Honduras,Masculino,533,2004
+Jamaica,Femenino,402,2004
+Jamaica,Masculino,593,2004
+Martinica,Femenino,0,2004
+Martinica,Masculino,0,2004
+Nicaragua,Femenino,0,2004
+Nicaragua,Masculino,0,2004
+Panamá,Femenino,1003,2004
+Panamá,Masculino,1801,2004
+Puerto Rico,Femenino,29538,2004
+Puerto Rico,Masculino,28490,2004
+San Martín,Femenino,120,2004
+San Martín,Masculino,230,2004
+Trinidad y Tobago,Femenino,0,2004
+Trinidad y Tobago,Masculino,0,2004
+"Vírgenes Americanas, Islas",Femenino,0,2004
+"Vírgenes Americanas, Islas",Masculino,0,2004
+Otros del Caribe,Femenino,1717,2004
+Otros del Caribe,Masculino,2283,2004
+América del sur,Femenino,41832,2004
+América del sur,Masculino,52441,2004
+Argentina,Femenino,3571,2004
+Argentina,Masculino,5569,2004
+Bolivia,Femenino,231,2004
+Bolivia,Masculino,240,2004
+Brasil,Femenino,1955,2004
+Brasil,Masculino,3296,2004
+Colombia,Femenino,10539,2004
+Colombia,Masculino,11423,2004
+Chile,Femenino,8454,2004
+Chile,Masculino,9021,2004
+Ecuador,Femenino,1911,2004
+Ecuador,Masculino,2325,2004
+Perú,Femenino,3981,2004
+Perú,Masculino,4900,2004
+Uruguay,Femenino,0,2004
+Uruguay,Masculino,0,2004
+Venezuela,Femenino,10709,2004
+Venezuela,Masculino,14715,2004
+Otros de Suramérica,Femenino,481,2004
+Otros de Suramérica,Masculino,952,2004
+Europa,Femenino,628007,2004
+Europa,Masculino,659777,2004
+Alemania,Femenino,112404,2004
+Alemania,Masculino,120742,2004
+Austria,Femenino,5139,2004
+Austria,Masculino,5378,2004
+Bélgica,Femenino,20984,2004
+Bélgica,Masculino,20703,2004
+Bulgaria,Femenino,0,2004
+Bulgaria,Masculino,0,2004
+Checoslovaquia,Femenino,0,2004
+Checoslovaquia,Masculino,0,2004
+Dinamarca,Femenino,0,2004
+Dinamarca,Masculino,0,2004
+Escocia,Femenino,0,2004
+Escocia,Masculino,0,2004
+España,Femenino,109981,2004
+España,Masculino,118304,2004
+Finlandia,Femenino,2341,2004
+Finlandia,Masculino,2077,2004
+Francia,Femenino,148455,2004
+Francia,Masculino,151986,2004
+Grecia,Femenino,0,2004
+Grecia,Masculino,0,2004
+Holanda,Femenino,26224,2004
+Holanda,Masculino,28679,2004
+Hungría,Femenino,0,2004
+Hungría,Masculino,0,2004
+Reino Unido,Femenino,98975,2004
+Reino Unido,Masculino,99039,2004
+Irlanda,Femenino,0,2004
+Irlanda,Masculino,0,2004
+Italia,Femenino,57821,2004
+Italia,Masculino,66183,2004
+Luxemburgo,Femenino,0,2004
+Luxemburgo,Masculino,0,2004
+Noruega,Femenino,0,2004
+Noruega,Masculino,0,2004
+Polonia,Femenino,0,2004
+Polonia,Masculino,0,2004
+Portugal,Femenino,15183,2004
+Portugal,Masculino,14912,2004
+República Checa,Femenino,0,2004
+República Checa,Masculino,0,2004
+Rumania,Femenino,0,2004
+Rumania,Masculino,0,2004
+Rusia,Femenino,0,2004
+Rusia,Masculino,0,2004
+Suecia,Femenino,3827,2004
+Suecia,Masculino,4086,2004
+Suiza,Femenino,18268,2004
+Suiza,Masculino,19498,2004
+Ucrania,Femenino,0,2004
+Ucrania,Masculino,0,2004
+Otros de Europa,Femenino,8405,2004
+Otros de Europa,Masculino,8190,2004
+Asia,Femenino,1081,2004
+Asia,Masculino,2246,2004
+Corea del Sur,Femenino,0,2004
+Corea del Sur,Masculino,0,2004
+China,Femenino,0,2004
+China,Masculino,0,2004
+India,Femenino,160,2004
+India,Masculino,371,2004
+Israel,Femenino,0,2004
+Israel,Masculino,0,2004
+Japón,Femenino,769,2004
+Japón,Masculino,1523,2004
+Tailandia,Femenino,0,2004
+Tailandia,Masculino,0,2004
+Taiwán,Femenino,152,2004
+Taiwán,Masculino,352,2004
+Otros de Asia,Femenino,0,2004
+Otros de Asia,Masculino,0,2004
+Resto del mundo,Femenino,1862,2004
+Resto del mundo,Masculino,2650,2004
+Australia,Femenino,0,2004
+Australia,Masculino,0,2004
+Otros resto del mundo,Femenino,1862,2004
+Otros resto del mundo,Masculino,2650,2004
+Dominicanos residentes,Femenino,168464,2005
+Dominicanos residentes,Masculino,186691,2005
+Extranjeros residentes,Femenino,14023,2005
+Extranjeros residentes,Masculino,21425,2005
+Dominicanos no residentes,Femenino,279152,2005
+Dominicanos no residentes,Masculino,323293,2005
+Extranjeros no residentes,Femenino,1489472,2005
+Extranjeros no residentes,Masculino,1598775,2005
+América del norte,Femenino,697194,2005
+América del norte,Masculino,757862,2005
+Canadá,Femenino,219388,2005
+Canadá,Masculino,207686,2005
+Estados Unidos,Femenino,470957,2005
+Estados Unidos,Masculino,539055,2005
+México,Femenino,6849,2005
+México,Masculino,11121,2005
+América central y Caribe,Femenino,50990,2005
+América central y Caribe,Masculino,58223,2005
+Aruba,Femenino,70,2005
+Aruba,Masculino,60,2005
+Bahamas,Femenino,0,2005
+Bahamas,Masculino,0,2005
+"Caicos y Turcas, Islas",Femenino,0,2005
+"Caicos y Turcas, Islas",Masculino,0,2005
+Costa Rica,Femenino,1297,2005
+Costa Rica,Masculino,2216,2005
+Cuba,Femenino,5325,2005
+Cuba,Masculino,6651,2005
+Curazao,Femenino,221,2005
+Curazao,Masculino,499,2005
+El Salvador,Femenino,829,2005
+El Salvador,Masculino,1458,2005
+Guadalupe,Femenino,0,2005
+Guadalupe,Masculino,0,2005
+Guatemala,Femenino,1188,2005
+Guatemala,Masculino,2243,2005
+Haití,Femenino,2933,2005
+Haití,Masculino,5553,2005
+Honduras,Femenino,637,2005
+Honduras,Masculino,1036,2005
+Jamaica,Femenino,681,2005
+Jamaica,Masculino,965,2005
+Martinica,Femenino,0,2005
+Martinica,Masculino,0,2005
+Nicaragua,Femenino,0,2005
+Nicaragua,Masculino,0,2005
+Panamá,Femenino,948,2005
+Panamá,Masculino,2247,2005
+Puerto Rico,Femenino,33957,2005
+Puerto Rico,Masculino,31386,2005
+San Martín,Femenino,110,2005
+San Martín,Masculino,249,2005
+Trinidad y Tobago,Femenino,0,2005
+Trinidad y Tobago,Masculino,0,2005
+"Vírgenes Americanas, Islas",Femenino,0,2005
+"Vírgenes Americanas, Islas",Masculino,0,2005
+Otros del Caribe,Femenino,2794,2005
+Otros del Caribe,Masculino,3660,2005
+América del sur,Femenino,53156,2005
+América del sur,Masculino,63912,2005
+Argentina,Femenino,5821,2005
+Argentina,Masculino,8093,2005
+Bolivia,Femenino,301,2005
+Bolivia,Masculino,330,2005
+Brasil,Femenino,2737,2005
+Brasil,Masculino,4853,2005
+Colombia,Femenino,11308,2005
+Colombia,Masculino,12793,2005
+Chile,Femenino,9056,2005
+Chile,Masculino,9642,2005
+Ecuador,Femenino,3092,2005
+Ecuador,Masculino,3452,2005
+Perú,Femenino,4629,2005
+Perú,Masculino,5275,2005
+Uruguay,Femenino,0,2005
+Uruguay,Masculino,0,2005
+Venezuela,Femenino,15368,2005
+Venezuela,Masculino,18440,2005
+Otros de Suramérica,Femenino,844,2005
+Otros de Suramérica,Masculino,1034,2005
+Europa,Femenino,683797,2005
+Europa,Masculino,711612,2005
+Alemania,Femenino,114795,2005
+Alemania,Masculino,120005,2005
+Austria,Femenino,6488,2005
+Austria,Masculino,6682,2005
+Bélgica,Femenino,21421,2005
+Bélgica,Masculino,21848,2005
+Bulgaria,Femenino,139,2005
+Bulgaria,Masculino,142,2005
+Checoslovaquia,Femenino,877,2005
+Checoslovaquia,Masculino,931,2005
+Dinamarca,Femenino,351,2005
+Dinamarca,Masculino,591,2005
+Escocia,Femenino,2853,2005
+Escocia,Masculino,2844,2005
+España,Femenino,125312,2005
+España,Masculino,130363,2005
+Finlandia,Femenino,3108,2005
+Finlandia,Masculino,3531,2005
+Francia,Femenino,155859,2005
+Francia,Masculino,153670,2005
+Grecia,Femenino,0,2005
+Grecia,Masculino,0,2005
+Holanda,Femenino,29804,2005
+Holanda,Masculino,32863,2005
+Hungría,Femenino,310,2005
+Hungría,Masculino,280,2005
+Reino Unido,Femenino,104781,2005
+Reino Unido,Masculino,113164,2005
+Irlanda,Femenino,2081,2005
+Irlanda,Masculino,2157,2005
+Italia,Femenino,62746,2005
+Italia,Masculino,71208,2005
+Luxemburgo,Femenino,111,2005
+Luxemburgo,Masculino,160,2005
+Noruega,Femenino,477,2005
+Noruega,Masculino,651,2005
+Polonia,Femenino,3591,2005
+Polonia,Masculino,3015,2005
+Portugal,Femenino,18731,2005
+Portugal,Masculino,17424,2005
+República Checa,Femenino,0,2005
+República Checa,Masculino,0,2005
+Rumania,Femenino,230,2005
+Rumania,Masculino,209,2005
+Rusia,Femenino,7505,2005
+Rusia,Masculino,6728,2005
+Suecia,Femenino,4441,2005
+Suecia,Masculino,4404,2005
+Suiza,Femenino,15989,2005
+Suiza,Masculino,17201,2005
+Ucrania,Femenino,0,2005
+Ucrania,Masculino,0,2005
+Otros de Europa,Femenino,1797,2005
+Otros de Europa,Masculino,1541,2005
+Asia,Femenino,1257,2005
+Asia,Masculino,2305,2005
+Corea del Sur,Femenino,0,2005
+Corea del Sur,Masculino,0,2005
+China,Femenino,0,2005
+China,Masculino,0,2005
+India,Femenino,248,2005
+India,Masculino,541,2005
+Israel,Femenino,0,2005
+Israel,Masculino,0,2005
+Japón,Femenino,700,2005
+Japón,Masculino,1353,2005
+Tailandia,Femenino,0,2005
+Tailandia,Masculino,20,2005
+Taiwán,Femenino,309,2005
+Taiwán,Masculino,391,2005
+Otros de Asia,Femenino,0,2005
+Otros de Asia,Masculino,0,2005
+Resto del mundo,Femenino,3078,2005
+Resto del mundo,Masculino,4861,2005
+Australia,Femenino,0,2005
+Australia,Masculino,0,2005
+Otros resto del mundo,Femenino,3078,2005
+Otros resto del mundo,Masculino,4861,2005
+Dominicanos residentes,Femenino,196674,2006
+Dominicanos residentes,Masculino,183871,2006
+Extranjeros residentes,Femenino,16814,2006
+Extranjeros residentes,Masculino,21351,2006
+Dominicanos no residentes,Femenino,308603,2006
+Dominicanos no residentes,Masculino,314346,2006
+Extranjeros no residentes,Femenino,1621371,2006
+Extranjeros no residentes,Masculino,1720735,2006
+América del norte,Femenino,790674,2006
+América del norte,Masculino,834286,2006
+Canadá,Femenino,266804,2006
+Canadá,Masculino,242519,2006
+Estados Unidos,Femenino,515761,2006
+Estados Unidos,Masculino,576556,2006
+México,Femenino,8109,2006
+México,Masculino,15211,2006
+América central y Caribe,Femenino,66276,2006
+América central y Caribe,Masculino,80899,2006
+Aruba,Femenino,0,2006
+Aruba,Masculino,0,2006
+Bahamas,Femenino,300,2006
+Bahamas,Masculino,973,2006
+"Caicos y Turcas, Islas",Femenino,342,2006
+"Caicos y Turcas, Islas",Masculino,835,2006
+Costa Rica,Femenino,1609,2006
+Costa Rica,Masculino,3218,2006
+Cuba,Femenino,8050,2006
+Cuba,Masculino,12127,2006
+Curazao,Femenino,240,2006
+Curazao,Masculino,563,2006
+El Salvador,Femenino,893,2006
+El Salvador,Masculino,1502,2006
+Guadalupe,Femenino,0,2006
+Guadalupe,Masculino,0,2006
+Guatemala,Femenino,1407,2006
+Guatemala,Masculino,2723,2006
+Haití,Femenino,3675,2006
+Haití,Masculino,6056,2006
+Honduras,Femenino,841,2006
+Honduras,Masculino,1183,2006
+Jamaica,Femenino,1021,2006
+Jamaica,Masculino,1555,2006
+Martinica,Femenino,0,2006
+Martinica,Masculino,0,2006
+Nicaragua,Femenino,503,2006
+Nicaragua,Masculino,835,2006
+Panamá,Femenino,1702,2006
+Panamá,Masculino,3291,2006
+Puerto Rico,Femenino,43679,2006
+Puerto Rico,Masculino,42097,2006
+San Martín,Femenino,0,2006
+San Martín,Masculino,0,2006
+Trinidad y Tobago,Femenino,705,2006
+Trinidad y Tobago,Masculino,1297,2006
+"Vírgenes Americanas, Islas",Femenino,0,2006
+"Vírgenes Americanas, Islas",Masculino,0,2006
+Otros del Caribe,Femenino,1309,2006
+Otros del Caribe,Masculino,2644,2006
+América del sur,Femenino,59493,2006
+América del sur,Masculino,70069,2006
+Argentina,Femenino,6012,2006
+Argentina,Masculino,7709,2006
+Bolivia,Femenino,270,2006
+Bolivia,Masculino,360,2006
+Brasil,Femenino,4146,2006
+Brasil,Masculino,6241,2006
+Colombia,Femenino,11372,2006
+Colombia,Masculino,13110,2006
+Chile,Femenino,9801,2006
+Chile,Masculino,9719,2006
+Ecuador,Femenino,5312,2006
+Ecuador,Masculino,5991,2006
+Perú,Femenino,4552,2006
+Perú,Masculino,5564,2006
+Uruguay,Femenino,270,2006
+Uruguay,Masculino,601,2006
+Venezuela,Femenino,17448,2006
+Venezuela,Masculino,20332,2006
+Otros de Suramérica,Femenino,310,2006
+Otros de Suramérica,Masculino,442,2006
+Europa,Femenino,699810,2006
+Europa,Masculino,726112,2006
+Alemania,Femenino,108617,2006
+Alemania,Masculino,118120,2006
+Austria,Femenino,4361,2006
+Austria,Masculino,4810,2006
+Bélgica,Femenino,23242,2006
+Bélgica,Masculino,22566,2006
+Bulgaria,Femenino,200,2006
+Bulgaria,Masculino,250,2006
+Checoslovaquia,Femenino,0,2006
+Checoslovaquia,Masculino,0,2006
+Dinamarca,Femenino,532,2006
+Dinamarca,Masculino,931,2006
+Escocia,Femenino,751,2006
+Escocia,Masculino,513,2006
+España,Femenino,132495,2006
+España,Masculino,141022,2006
+Finlandia,Femenino,1991,2006
+Finlandia,Masculino,1822,2006
+Francia,Femenino,154703,2006
+Francia,Masculino,151599,2006
+Grecia,Femenino,381,2006
+Grecia,Masculino,813,2006
+Holanda,Femenino,31883,2006
+Holanda,Masculino,33016,2006
+Hungría,Femenino,190,2006
+Hungría,Masculino,311,2006
+Reino Unido,Femenino,122302,2006
+Reino Unido,Masculino,120257,2006
+Irlanda,Femenino,529,2006
+Irlanda,Masculino,701,2006
+Italia,Femenino,67033,2006
+Italia,Masculino,77082,2006
+Luxemburgo,Femenino,50,2006
+Luxemburgo,Masculino,80,2006
+Noruega,Femenino,611,2006
+Noruega,Masculino,644,2006
+Polonia,Femenino,5745,2006
+Polonia,Masculino,5687,2006
+Portugal,Femenino,15256,2006
+Portugal,Masculino,15061,2006
+República Checa,Femenino,0,2006
+República Checa,Masculino,0,2006
+Rumania,Femenino,250,2006
+Rumania,Masculino,300,2006
+Rusia,Femenino,8473,2006
+Rusia,Masculino,7986,2006
+Suecia,Femenino,2272,2006
+Suecia,Masculino,2794,2006
+Suiza,Femenino,14550,2006
+Suiza,Masculino,16473,2006
+Ucrania,Femenino,1173,2006
+Ucrania,Masculino,974,2006
+Otros de Europa,Femenino,2220,2006
+Otros de Europa,Masculino,2300,2006
+Asia,Femenino,4050,2006
+Asia,Masculino,7843,2006
+Corea del Sur,Femenino,491,2006
+Corea del Sur,Masculino,945,2006
+China,Femenino,331,2006
+China,Masculino,564,2006
+India,Femenino,533,2006
+India,Masculino,1177,2006
+Israel,Femenino,452,2006
+Israel,Masculino,1497,2006
+Japón,Femenino,814,2006
+Japón,Masculino,1494,2006
+Tailandia,Femenino,0,2006
+Tailandia,Masculino,0,2006
+Taiwán,Femenino,250,2006
+Taiwán,Masculino,514,2006
+Otros de Asia,Femenino,1179,2006
+Otros de Asia,Masculino,1652,2006
+Resto del mundo,Femenino,1068,2006
+Resto del mundo,Masculino,1526,2006
+Australia,Femenino,381,2006
+Australia,Masculino,742,2006
+Otros resto del mundo,Femenino,687,2006
+Otros resto del mundo,Masculino,784,2006
+Dominicanos residentes,Femenino,196235,2007
+Dominicanos residentes,Masculino,205739,2007
+Extranjeros residentes,Femenino,18080,2007
+Extranjeros residentes,Masculino,28369,2007
+Dominicanos no residentes,Femenino,288895,2007
+Dominicanos no residentes,Masculino,292313,2007
+Extranjeros no residentes,Femenino,1623107,2007
+Extranjeros no residentes,Masculino,1775267,2007
+América del norte,Femenino,832908,2007
+América del norte,Masculino,880713,2007
+Canadá,Femenino,306621,2007
+Canadá,Masculino,285250,2007
+Estados Unidos,Femenino,519555,2007
+Estados Unidos,Masculino,580351,2007
+México,Femenino,6732,2007
+México,Masculino,15112,2007
+América central y Caribe,Femenino,70351,2007
+América central y Caribe,Masculino,101529,2007
+Aruba,Femenino,1174,2007
+Aruba,Masculino,1180,2007
+Bahamas,Femenino,0,2007
+Bahamas,Masculino,0,2007
+"Caicos y Turcas, Islas",Femenino,380,2007
+"Caicos y Turcas, Islas",Masculino,1074,2007
+Costa Rica,Femenino,3615,2007
+Costa Rica,Masculino,5944,2007
+Cuba,Femenino,1763,2007
+Cuba,Masculino,2158,2007
+Curazao,Femenino,1922,2007
+Curazao,Masculino,2775,2007
+El Salvador,Femenino,1181,2007
+El Salvador,Masculino,2092,2007
+Guadalupe,Femenino,2114,2007
+Guadalupe,Masculino,2356,2007
+Guatemala,Femenino,1685,2007
+Guatemala,Masculino,3104,2007
+Haití,Femenino,2862,2007
+Haití,Masculino,4900,2007
+Honduras,Femenino,682,2007
+Honduras,Masculino,1157,2007
+Jamaica,Femenino,527,2007
+Jamaica,Masculino,1305,2007
+Martinica,Femenino,1112,2007
+Martinica,Masculino,1380,2007
+Nicaragua,Femenino,0,2007
+Nicaragua,Masculino,0,2007
+Panamá,Femenino,2193,2007
+Panamá,Masculino,5233,2007
+Puerto Rico,Femenino,45046,2007
+Puerto Rico,Masculino,59231,2007
+San Martín,Femenino,905,2007
+San Martín,Masculino,1794,2007
+Trinidad y Tobago,Femenino,818,2007
+Trinidad y Tobago,Masculino,1039,2007
+"Vírgenes Americanas, Islas",Femenino,510,2007
+"Vírgenes Americanas, Islas",Masculino,1101,2007
+Otros del Caribe,Femenino,1862,2007
+Otros del Caribe,Masculino,3706,2007
+América del sur,Femenino,73868,2007
+América del sur,Masculino,86919,2007
+Argentina,Femenino,12835,2007
+Argentina,Masculino,14797,2007
+Bolivia,Femenino,482,2007
+Bolivia,Masculino,589,2007
+Brasil,Femenino,3864,2007
+Brasil,Masculino,7076,2007
+Colombia,Femenino,12320,2007
+Colombia,Masculino,13749,2007
+Chile,Femenino,10381,2007
+Chile,Masculino,10747,2007
+Ecuador,Femenino,6012,2007
+Ecuador,Masculino,6678,2007
+Perú,Femenino,5182,2007
+Perú,Masculino,5999,2007
+Uruguay,Femenino,941,2007
+Uruguay,Masculino,1157,2007
+Venezuela,Femenino,21366,2007
+Venezuela,Masculino,25512,2007
+Otros de Suramérica,Femenino,485,2007
+Otros de Suramérica,Masculino,615,2007
+Europa,Femenino,642286,2007
+Europa,Masculino,698621,2007
+Alemania,Femenino,101275,2007
+Alemania,Masculino,113667,2007
+Austria,Femenino,5341,2007
+Austria,Masculino,5892,2007
+Bélgica,Femenino,20375,2007
+Bélgica,Masculino,21721,2007
+Bulgaria,Femenino,231,2007
+Bulgaria,Masculino,251,2007
+Checoslovaquia,Femenino,0,2007
+Checoslovaquia,Masculino,0,2007
+Dinamarca,Femenino,1071,2007
+Dinamarca,Masculino,1612,2007
+Escocia,Femenino,1801,2007
+Escocia,Masculino,1572,2007
+España,Femenino,123959,2007
+España,Masculino,143406,2007
+Finlandia,Femenino,1121,2007
+Finlandia,Masculino,1070,2007
+Francia,Femenino,136902,2007
+Francia,Masculino,141245,2007
+Grecia,Femenino,270,2007
+Grecia,Masculino,413,2007
+Holanda,Femenino,26909,2007
+Holanda,Masculino,28948,2007
+Hungría,Femenino,340,2007
+Hungría,Masculino,370,2007
+Reino Unido,Femenino,108139,2007
+Reino Unido,Masculino,109351,2007
+Irlanda,Femenino,552,2007
+Irlanda,Masculino,446,2007
+Italia,Femenino,64690,2007
+Italia,Masculino,75733,2007
+Luxemburgo,Femenino,280,2007
+Luxemburgo,Masculino,150,2007
+Noruega,Femenino,733,2007
+Noruega,Masculino,1127,2007
+Polonia,Femenino,1479,2007
+Polonia,Masculino,1465,2007
+Portugal,Femenino,16871,2007
+Portugal,Masculino,17023,2007
+República Checa,Femenino,1861,2007
+República Checa,Masculino,1604,2007
+Rumania,Femenino,235,2007
+Rumania,Masculino,234,2007
+Rusia,Femenino,10096,2007
+Rusia,Masculino,11344,2007
+Suecia,Femenino,1983,2007
+Suecia,Masculino,2566,2007
+Suiza,Femenino,13855,2007
+Suiza,Masculino,15393,2007
+Ucrania,Femenino,948,2007
+Ucrania,Masculino,991,2007
+Otros de Europa,Femenino,969,2007
+Otros de Europa,Masculino,1027,2007
+Asia,Femenino,2929,2007
+Asia,Masculino,6189,2007
+Corea del Sur,Femenino,421,2007
+Corea del Sur,Masculino,841,2007
+China,Femenino,220,2007
+China,Masculino,314,2007
+India,Femenino,150,2007
+India,Masculino,513,2007
+Israel,Femenino,573,2007
+Israel,Masculino,1729,2007
+Japón,Femenino,958,2007
+Japón,Masculino,1618,2007
+Tailandia,Femenino,0,2007
+Tailandia,Masculino,0,2007
+Taiwán,Femenino,191,2007
+Taiwán,Masculino,402,2007
+Otros de Asia,Femenino,416,2007
+Otros de Asia,Masculino,772,2007
+Resto del mundo,Femenino,765,2007
+Resto del mundo,Masculino,1296,2007
+Australia,Femenino,595,2007
+Australia,Masculino,924,2007
+Otros resto del mundo,Femenino,170,2007
+Otros resto del mundo,Masculino,372,2007
+Dominicanos residentes,Femenino,184037,2008
+Dominicanos residentes,Masculino,189302,2008
+Extranjeros residentes,Femenino,18568,2008
+Extranjeros residentes,Masculino,27164,2008
+Dominicanos no residentes,Femenino,269194,2008
+Dominicanos no residentes,Masculino,262748,2008
+Extranjeros no residentes,Femenino,1555277,2008
+Extranjeros no residentes,Masculino,1892453,2008
+América del norte,Femenino,808352,2008
+América del norte,Masculino,962974,2008
+Canadá,Femenino,308489,2008
+Canadá,Masculino,331307,2008
+Estados Unidos,Femenino,492501,2008
+Estados Unidos,Masculino,615397,2008
+México,Femenino,77362,2008
+México,Masculino,16270,2008
+América central y Caribe,Femenino,64794,2008
+América central y Caribe,Masculino,103222,2008
+Aruba,Femenino,1206,2008
+Aruba,Masculino,1214,2008
+Bahamas,Femenino,0,2008
+Bahamas,Masculino,0,2008
+"Caicos y Turcas, Islas",Femenino,297,2008
+"Caicos y Turcas, Islas",Masculino,923,2008
+Costa Rica,Femenino,3255,2008
+Costa Rica,Masculino,5462,2008
+Cuba,Femenino,1540,2008
+Cuba,Masculino,2336,2008
+Curazao,Femenino,1690,2008
+Curazao,Masculino,2493,2008
+El Salvador,Femenino,1443,2008
+El Salvador,Masculino,2317,2008
+Guadalupe,Femenino,2129,2008
+Guadalupe,Masculino,3028,2008
+Guatemala,Femenino,1746,2008
+Guatemala,Masculino,3403,2008
+Haití,Femenino,2679,2008
+Haití,Masculino,4441,2008
+Honduras,Femenino,899,2008
+Honduras,Masculino,1331,2008
+Jamaica,Femenino,438,2008
+Jamaica,Masculino,854,2008
+Martinica,Femenino,1974,2008
+Martinica,Masculino,2665,2008
+Nicaragua,Femenino,0,2008
+Nicaragua,Masculino,0,2008
+Panamá,Femenino,2996,2008
+Panamá,Masculino,5660,2008
+Puerto Rico,Femenino,38297,2008
+Puerto Rico,Masculino,59295,2008
+San Martín,Femenino,1184,2008
+San Martín,Masculino,1828,2008
+Trinidad y Tobago,Femenino,669,2008
+Trinidad y Tobago,Masculino,798,2008
+"Vírgenes Americanas, Islas",Femenino,467,2008
+"Vírgenes Americanas, Islas",Masculino,1025,2008
+Otros del Caribe,Femenino,1885,2008
+Otros del Caribe,Masculino,4149,2008
+América del sur,Femenino,84282,2008
+América del sur,Masculino,104339,2008
+Argentina,Femenino,15457,2008
+Argentina,Masculino,20019,2008
+Bolivia,Femenino,485,2008
+Bolivia,Masculino,652,2008
+Brasil,Femenino,5555,2008
+Brasil,Masculino,7958,2008
+Colombia,Femenino,14324,2008
+Colombia,Masculino,16813,2008
+Chile,Femenino,13601,2008
+Chile,Masculino,14940,2008
+Ecuador,Femenino,7356,2008
+Ecuador,Masculino,9330,2008
+Perú,Femenino,7282,2008
+Perú,Masculino,8767,2008
+Uruguay,Femenino,1123,2008
+Uruguay,Masculino,1444,2008
+Venezuela,Femenino,18625,2008
+Venezuela,Masculino,23759,2008
+Otros de Suramérica,Femenino,474,2008
+Otros de Suramérica,Masculino,657,2008
+Europa,Femenino,594196,2008
+Europa,Masculino,714705,2008
+Alemania,Femenino,91781,2008
+Alemania,Masculino,115159,2008
+Austria,Femenino,3937,2008
+Austria,Masculino,5705,2008
+Bélgica,Femenino,18618,2008
+Bélgica,Masculino,24558,2008
+Bulgaria,Femenino,215,2008
+Bulgaria,Masculino,321,2008
+Checoslovaquia,Femenino,0,2008
+Checoslovaquia,Masculino,0,2008
+Dinamarca,Femenino,1117,2008
+Dinamarca,Masculino,1181,2008
+Escocia,Femenino,3414,2008
+Escocia,Masculino,3168,2008
+España,Femenino,102470,2008
+España,Masculino,137168,2008
+Finlandia,Femenino,1440,2008
+Finlandia,Masculino,1328,2008
+Francia,Femenino,132128,2008
+Francia,Masculino,147280,2008
+Grecia,Femenino,319,2008
+Grecia,Masculino,549,2008
+Holanda,Femenino,22446,2008
+Holanda,Masculino,27514,2008
+Hungría,Femenino,315,2008
+Hungría,Masculino,453,2008
+Reino Unido,Femenino,99464,2008
+Reino Unido,Masculino,106908,2008
+Irlanda,Femenino,1308,2008
+Irlanda,Masculino,1585,2008
+Italia,Femenino,57283,2008
+Italia,Masculino,70100,2008
+Luxemburgo,Femenino,166,2008
+Luxemburgo,Masculino,225,2008
+Noruega,Femenino,1018,2008
+Noruega,Masculino,1189,2008
+Polonia,Femenino,2194,2008
+Polonia,Masculino,3242,2008
+Portugal,Femenino,14031,2008
+Portugal,Masculino,18147,2008
+República Checa,Femenino,2275,2008
+República Checa,Masculino,2451,2008
+Rumania,Femenino,297,2008
+Rumania,Masculino,268,2008
+Rusia,Femenino,17803,2008
+Rusia,Masculino,21931,2008
+Suecia,Femenino,2827,2008
+Suecia,Masculino,2875,2008
+Suiza,Femenino,14983,2008
+Suiza,Masculino,18877,2008
+Ucrania,Femenino,1131,2008
+Ucrania,Masculino,1114,2008
+Otros de Europa,Femenino,1216,2008
+Otros de Europa,Masculino,1409,2008
+Asia,Femenino,2605,2008
+Asia,Masculino,5609,2008
+Corea del Sur,Femenino,315,2008
+Corea del Sur,Masculino,699,2008
+China,Femenino,157,2008
+China,Masculino,334,2008
+India,Femenino,232,2008
+India,Masculino,522,2008
+Israel,Femenino,421,2008
+Israel,Masculino,1289,2008
+Japón,Femenino,836,2008
+Japón,Masculino,1445,2008
+Tailandia,Femenino,0,2008
+Tailandia,Masculino,0,2008
+Taiwán,Femenino,182,2008
+Taiwán,Masculino,382,2008
+Otros de Asia,Femenino,462,2008
+Otros de Asia,Masculino,938,2008
+Resto del mundo,Femenino,1048,2008
+Resto del mundo,Masculino,1604,2008
+Australia,Femenino,823,2008
+Australia,Masculino,1051,2008
+Otros resto del mundo,Femenino,225,2008
+Otros resto del mundo,Masculino,553,2008
+Dominicanos residentes,Femenino,187488,2009
+Dominicanos residentes,Masculino,188385,2009
+Extranjeros residentes,Femenino,18792,2009
+Extranjeros residentes,Masculino,27788,2009
+Dominicanos no residentes,Femenino,298162,2009
+Dominicanos no residentes,Masculino,278525,2009
+Extranjeros no residentes,Femenino,1655836,2009
+Extranjeros no residentes,Masculino,1759780,2009
+América del norte,Femenino,890003,2009
+América del norte,Masculino,929291,2009
+Canadá,Femenino,332362,2009
+Canadá,Masculino,317749,2009
+Estados Unidos,Femenino,552015,2009
+Estados Unidos,Masculino,598860,2009
+México,Femenino,5626,2009
+México,Masculino,12682,2009
+América central y Caribe,Femenino,72733,2009
+América central y Caribe,Masculino,102090,2009
+Aruba,Femenino,884,2009
+Aruba,Masculino,1026,2009
+Bahamas,Femenino,0,2009
+Bahamas,Masculino,0,2009
+"Caicos y Turcas, Islas",Femenino,302,2009
+"Caicos y Turcas, Islas",Masculino,739,2009
+Costa Rica,Femenino,3156,2009
+Costa Rica,Masculino,4954,2009
+Cuba,Femenino,1282,2009
+Cuba,Masculino,2013,2009
+Curazao,Femenino,1753,2009
+Curazao,Masculino,2613,2009
+El Salvador,Femenino,1481,2009
+El Salvador,Masculino,1981,2009
+Guadalupe,Femenino,2415,2009
+Guadalupe,Masculino,2919,2009
+Guatemala,Femenino,1938,2009
+Guatemala,Masculino,3845,2009
+Haití,Femenino,2039,2009
+Haití,Masculino,3417,2009
+Honduras,Femenino,641,2009
+Honduras,Masculino,1118,2009
+Jamaica,Femenino,330,2009
+Jamaica,Masculino,552,2009
+Martinica,Femenino,1375,2009
+Martinica,Masculino,2011,2009
+Nicaragua,Femenino,0,2009
+Nicaragua,Masculino,0,2009
+Panamá,Femenino,3891,2009
+Panamá,Masculino,7078,2009
+Puerto Rico,Femenino,46609,2009
+Puerto Rico,Masculino,61001,2009
+San Martín,Femenino,1387,2009
+San Martín,Masculino,1557,2009
+Trinidad y Tobago,Femenino,413,2009
+Trinidad y Tobago,Masculino,530,2009
+"Vírgenes Americanas, Islas",Femenino,294,2009
+"Vírgenes Americanas, Islas",Masculino,775,2009
+Otros del Caribe,Femenino,2543,2009
+Otros del Caribe,Masculino,3961,2009
+América del sur,Femenino,99935,2009
+América del sur,Masculino,108645,2009
+Argentina,Femenino,20549,2009
+Argentina,Masculino,22581,2009
+Bolivia,Femenino,1529,2009
+Bolivia,Masculino,1524,2009
+Brasil,Femenino,8949,2009
+Brasil,Masculino,10621,2009
+Colombia,Femenino,13845,2009
+Colombia,Masculino,15311,2009
+Chile,Femenino,15050,2009
+Chile,Masculino,14445,2009
+Ecuador,Femenino,7885,2009
+Ecuador,Masculino,7912,2009
+Perú,Femenino,9786,2009
+Perú,Masculino,10039,2009
+Uruguay,Femenino,1788,2009
+Uruguay,Masculino,2077,2009
+Venezuela,Femenino,19539,2009
+Venezuela,Masculino,23096,2009
+Otros de Suramérica,Femenino,1015,2009
+Otros de Suramérica,Masculino,1039,2009
+Europa,Femenino,590130,2009
+Europa,Masculino,613126,2009
+Alemania,Femenino,86769,2009
+Alemania,Masculino,91764,2009
+Austria,Femenino,5056,2009
+Austria,Masculino,4993,2009
+Bélgica,Femenino,18984,2009
+Bélgica,Masculino,19145,2009
+Bulgaria,Femenino,229,2009
+Bulgaria,Masculino,270,2009
+Checoslovaquia,Femenino,0,2009
+Checoslovaquia,Masculino,0,2009
+Dinamarca,Femenino,971,2009
+Dinamarca,Masculino,1090,2009
+Escocia,Femenino,2674,2009
+Escocia,Masculino,3037,2009
+España,Femenino,111230,2009
+España,Masculino,120045,2009
+Finlandia,Femenino,2090,2009
+Finlandia,Masculino,2355,2009
+Francia,Femenino,122959,2009
+Francia,Masculino,124079,2009
+Grecia,Femenino,195,2009
+Grecia,Masculino,372,2009
+Holanda,Femenino,20214,2009
+Holanda,Masculino,21391,2009
+Hungría,Femenino,336,2009
+Hungría,Masculino,368,2009
+Reino Unido,Femenino,89737,2009
+Reino Unido,Masculino,86443,2009
+Irlanda,Femenino,818,2009
+Irlanda,Masculino,949,2009
+Italia,Femenino,52348,2009
+Italia,Masculino,63427,2009
+Luxemburgo,Femenino,214,2009
+Luxemburgo,Masculino,259,2009
+Noruega,Femenino,1227,2009
+Noruega,Masculino,1348,2009
+Polonia,Femenino,1681,2009
+Polonia,Masculino,2114,2009
+Portugal,Femenino,21721,2009
+Portugal,Masculino,21009,2009
+República Checa,Femenino,2434,2009
+República Checa,Masculino,3092,2009
+Rumania,Femenino,288,2009
+Rumania,Masculino,304,2009
+Rusia,Femenino,27049,2009
+Rusia,Masculino,22703,2009
+Suecia,Femenino,2960,2009
+Suecia,Masculino,3193,2009
+Suiza,Femenino,14555,2009
+Suiza,Masculino,15028,2009
+Ucrania,Femenino,1097,2009
+Ucrania,Masculino,1230,2009
+Otros de Europa,Femenino,2294,2009
+Otros de Europa,Masculino,3118,2009
+Asia,Femenino,2187,2009
+Asia,Masculino,5420,2009
+Corea del Sur,Femenino,221,2009
+Corea del Sur,Masculino,716,2009
+China,Femenino,105,2009
+China,Masculino,276,2009
+India,Femenino,182,2009
+India,Masculino,624,2009
+Israel,Femenino,338,2009
+Israel,Masculino,1107,2009
+Japón,Femenino,741,2009
+Japón,Masculino,1295,2009
+Tailandia,Femenino,0,2009
+Tailandia,Masculino,0,2009
+Taiwán,Femenino,160,2009
+Taiwán,Masculino,317,2009
+Otros de Asia,Femenino,440,2009
+Otros de Asia,Masculino,1085,2009
+Resto del mundo,Femenino,848,2009
+Resto del mundo,Masculino,1208,2009
+Australia,Femenino,626,2009
+Australia,Masculino,771,2009
+Otros resto del mundo,Femenino,222,2009
+Otros resto del mundo,Masculino,437,2009
+Dominicanos residentes,Femenino,207042,2010
+Dominicanos residentes,Masculino,203871,2010
+Extranjeros residentes,Femenino,20119,2010
+Extranjeros residentes,Masculino,30689,2010
+Dominicanos no residentes,Femenino,315422,2010
+Dominicanos no residentes,Masculino,288011,2010
+Extranjeros no residentes,Femenino,1866642,2010
+Extranjeros no residentes,Masculino,1654468,2010
+América del norte,Femenino,1029783,2010
+América del norte,Masculino,872533,2010
+Canadá,Femenino,379197,2010
+Canadá,Masculino,282861,2010
+Estados Unidos,Femenino,643459,2010
+Estados Unidos,Masculino,576104,2010
+México,Femenino,7127,2010
+México,Masculino,13568,2010
+América central y Caribe,Femenino,81230,2010
+América central y Caribe,Masculino,108403,2010
+Aruba,Femenino,957,2010
+Aruba,Masculino,916,2010
+Bahamas,Femenino,0,2010
+Bahamas,Masculino,0,2010
+"Caicos y Turcas, Islas",Femenino,355,2010
+"Caicos y Turcas, Islas",Masculino,681,2010
+Costa Rica,Femenino,2869,2010
+Costa Rica,Masculino,5542,2010
+Cuba,Femenino,1679,2010
+Cuba,Masculino,2139,2010
+Curazao,Femenino,1428,2010
+Curazao,Masculino,2979,2010
+El Salvador,Femenino,1394,2010
+El Salvador,Masculino,2316,2010
+Guadalupe,Femenino,2082,2010
+Guadalupe,Masculino,3106,2010
+Guatemala,Femenino,1754,2010
+Guatemala,Masculino,3666,2010
+Haití,Femenino,3384,2010
+Haití,Masculino,6134,2010
+Honduras,Femenino,781,2010
+Honduras,Masculino,1396,2010
+Jamaica,Femenino,458,2010
+Jamaica,Masculino,666,2010
+Martinica,Femenino,1952,2010
+Martinica,Masculino,2300,2010
+Nicaragua,Femenino,0,2010
+Nicaragua,Masculino,0,2010
+Panamá,Femenino,2977,2010
+Panamá,Masculino,6429,2010
+Puerto Rico,Femenino,55401,2010
+Puerto Rico,Masculino,62800,2010
+San Martín,Femenino,849,2010
+San Martín,Masculino,1671,2010
+Trinidad y Tobago,Femenino,568,2010
+Trinidad y Tobago,Masculino,870,2010
+"Vírgenes Americanas, Islas",Femenino,226,2010
+"Vírgenes Americanas, Islas",Masculino,600,2010
+Otros del Caribe,Femenino,2116,2010
+Otros del Caribe,Masculino,4192,2010
+América del sur,Femenino,140926,2010
+América del sur,Masculino,135090,2010
+Argentina,Femenino,36543,2010
+Argentina,Masculino,32639,2010
+Bolivia,Femenino,2584,2010
+Bolivia,Masculino,2522,2010
+Brasil,Femenino,19258,2010
+Brasil,Masculino,17895,2010
+Colombia,Femenino,15282,2010
+Colombia,Masculino,15981,2010
+Chile,Femenino,21958,2010
+Chile,Masculino,18771,2010
+Ecuador,Femenino,9171,2010
+Ecuador,Masculino,7426,2010
+Perú,Femenino,11413,2010
+Perú,Masculino,13223,2010
+Uruguay,Femenino,2074,2010
+Uruguay,Masculino,2380,2010
+Venezuela,Femenino,21876,2010
+Venezuela,Masculino,23320,2010
+Otros de Suramérica,Femenino,767,2010
+Otros de Suramérica,Masculino,933,2010
+Europa,Femenino,610977,2010
+Europa,Masculino,530213,2010
+Alemania,Femenino,97942,2010
+Alemania,Masculino,83376,2010
+Austria,Femenino,4806,2010
+Austria,Masculino,4834,2010
+Bélgica,Femenino,21630,2010
+Bélgica,Masculino,16557,2010
+Bulgaria,Femenino,259,2010
+Bulgaria,Masculino,323,2010
+Checoslovaquia,Femenino,0,2010
+Checoslovaquia,Masculino,0,2010
+Dinamarca,Femenino,874,2010
+Dinamarca,Masculino,1271,2010
+Escocia,Femenino,3154,2010
+Escocia,Masculino,3819,2010
+España,Femenino,102351,2010
+España,Masculino,87255,2010
+Finlandia,Femenino,2094,2010
+Finlandia,Masculino,2151,2010
+Francia,Femenino,131284,2010
+Francia,Masculino,99691,2010
+Grecia,Femenino,129,2010
+Grecia,Masculino,366,2010
+Holanda,Femenino,21154,2010
+Holanda,Masculino,18946,2010
+Hungría,Femenino,357,2010
+Hungría,Masculino,446,2010
+Reino Unido,Femenino,87110,2010
+Reino Unido,Masculino,74138,2010
+Irlanda,Femenino,803,2010
+Irlanda,Masculino,761,2010
+Italia,Femenino,40900,2010
+Italia,Masculino,54052,2010
+Luxemburgo,Femenino,223,2010
+Luxemburgo,Masculino,272,2010
+Noruega,Femenino,772,2010
+Noruega,Masculino,1119,2010
+Polonia,Femenino,2391,2010
+Polonia,Masculino,2543,2010
+Portugal,Femenino,20906,2010
+Portugal,Masculino,16035,2010
+República Checa,Femenino,3037,2010
+República Checa,Masculino,3075,2010
+Rumania,Femenino,446,2010
+Rumania,Masculino,302,2010
+Rusia,Femenino,42557,2010
+Rusia,Masculino,33502,2010
+Suecia,Femenino,3550,2010
+Suecia,Masculino,4210,2010
+Suiza,Femenino,15565,2010
+Suiza,Masculino,14012,2010
+Ucrania,Femenino,1571,2010
+Ucrania,Masculino,1861,2010
+Otros de Europa,Femenino,5112,2010
+Otros de Europa,Masculino,5296,2010
+Asia,Femenino,2578,2010
+Asia,Masculino,6415,2010
+Corea del Sur,Femenino,343,2010
+Corea del Sur,Masculino,1063,2010
+China,Femenino,188,2010
+China,Masculino,458,2010
+India,Femenino,104,2010
+India,Masculino,744,2010
+Israel,Femenino,414,2010
+Israel,Masculino,1062,2010
+Japón,Femenino,787,2010
+Japón,Masculino,1444,2010
+Tailandia,Femenino,0,2010
+Tailandia,Masculino,0,2010
+Taiwán,Femenino,153,2010
+Taiwán,Masculino,302,2010
+Otros de Asia,Femenino,589,2010
+Otros de Asia,Masculino,1342,2010
+Resto del mundo,Femenino,1148,2010
+Resto del mundo,Masculino,1814,2010
+Australia,Femenino,724,2010
+Australia,Masculino,952,2010
+Otros resto del mundo,Femenino,424,2010
+Otros resto del mundo,Masculino,862,2010
+Dominicanos residentes,Femenino,210727,2011
+Dominicanos residentes,Masculino,208244,2011
+Extranjeros residentes,Femenino,20131,2011
+Extranjeros residentes,Masculino,30940,2011
+Dominicanos no residentes,Femenino,320124,2011
+Dominicanos no residentes,Masculino,283310,2011
+Extranjeros no residentes,Femenino,1854529,2011
+Extranjeros no residentes,Masculino,1848468,2011
+América del norte,Femenino,1018013,2011
+América del norte,Masculino,970922,2011
+Canadá,Femenino,363632,2011
+Canadá,Masculino,304658,2011
+Estados Unidos,Femenino,646480,2011
+Estados Unidos,Masculino,650698,2011
+México,Femenino,7901,2011
+México,Masculino,15566,2011
+América central y Caribe,Femenino,72171,2011
+América central y Caribe,Masculino,114624,2011
+Aruba,Femenino,821,2011
+Aruba,Masculino,1067,2011
+Bahamas,Femenino,0,2011
+Bahamas,Masculino,0,2011
+"Caicos y Turcas, Islas",Femenino,220,2011
+"Caicos y Turcas, Islas",Masculino,698,2011
+Costa Rica,Femenino,3533,2011
+Costa Rica,Masculino,6085,2011
+Cuba,Femenino,1507,2011
+Cuba,Masculino,2331,2011
+Curazao,Femenino,1487,2011
+Curazao,Masculino,2895,2011
+El Salvador,Femenino,1450,2011
+El Salvador,Masculino,2420,2011
+Guadalupe,Femenino,2409,2011
+Guadalupe,Masculino,4027,2011
+Guatemala,Femenino,2240,2011
+Guatemala,Masculino,4168,2011
+Haití,Femenino,3213,2011
+Haití,Masculino,6504,2011
+Honduras,Femenino,916,2011
+Honduras,Masculino,1542,2011
+Jamaica,Femenino,381,2011
+Jamaica,Masculino,646,2011
+Martinica,Femenino,1594,2011
+Martinica,Masculino,2239,2011
+Nicaragua,Femenino,0,2011
+Nicaragua,Masculino,0,2011
+Panamá,Femenino,4444,2011
+Panamá,Masculino,7935,2011
+Puerto Rico,Femenino,44141,2011
+Puerto Rico,Masculino,65364,2011
+San Martín,Femenino,1138,2011
+San Martín,Masculino,1516,2011
+Trinidad y Tobago,Femenino,433,2011
+Trinidad y Tobago,Masculino,774,2011
+"Vírgenes Americanas, Islas",Femenino,260,2011
+"Vírgenes Americanas, Islas",Masculino,589,2011
+Otros del Caribe,Femenino,1984,2011
+Otros del Caribe,Masculino,3824,2011
+América del sur,Femenino,187191,2011
+América del sur,Masculino,196259,2011
+Argentina,Femenino,51044,2011
+Argentina,Masculino,46418,2011
+Bolivia,Femenino,3955,2011
+Bolivia,Masculino,3666,2011
+Brasil,Femenino,37474,2011
+Brasil,Masculino,39151,2011
+Colombia,Femenino,19183,2011
+Colombia,Masculino,21799,2011
+Chile,Femenino,26162,2011
+Chile,Masculino,23700,2011
+Ecuador,Femenino,8830,2011
+Ecuador,Masculino,9956,2011
+Perú,Femenino,13875,2011
+Perú,Masculino,16771,2011
+Uruguay,Femenino,2635,2011
+Uruguay,Masculino,2991,2011
+Venezuela,Femenino,22758,2011
+Venezuela,Masculino,30321,2011
+Otros de Suramérica,Femenino,1275,2011
+Otros de Suramérica,Masculino,1486,2011
+Europa,Femenino,573809,2011
+Europa,Masculino,558200,2011
+Alemania,Femenino,95497,2011
+Alemania,Masculino,88350,2011
+Austria,Femenino,4037,2011
+Austria,Masculino,4202,2011
+Bélgica,Femenino,19420,2011
+Bélgica,Masculino,17535,2011
+Bulgaria,Femenino,168,2011
+Bulgaria,Masculino,387,2011
+Checoslovaquia,Femenino,0,2011
+Checoslovaquia,Masculino,0,2011
+Dinamarca,Femenino,671,2011
+Dinamarca,Masculino,1038,2011
+Escocia,Femenino,1053,2011
+Escocia,Masculino,936,2011
+España,Femenino,82522,2011
+España,Masculino,87671,2011
+Finlandia,Femenino,1239,2011
+Finlandia,Masculino,1144,2011
+Francia,Femenino,130073,2011
+Francia,Masculino,116343,2011
+Grecia,Femenino,96,2011
+Grecia,Masculino,358,2011
+Holanda,Femenino,18531,2011
+Holanda,Masculino,19330,2011
+Hungría,Femenino,307,2011
+Hungría,Masculino,473,2011
+Reino Unido,Femenino,71897,2011
+Reino Unido,Masculino,62961,2011
+Irlanda,Femenino,398,2011
+Irlanda,Masculino,698,2011
+Italia,Femenino,44421,2011
+Italia,Masculino,55401,2011
+Luxemburgo,Femenino,221,2011
+Luxemburgo,Masculino,214,2011
+Noruega,Femenino,693,2011
+Noruega,Masculino,834,2011
+Polonia,Femenino,3305,2011
+Polonia,Masculino,3601,2011
+Portugal,Femenino,15437,2011
+Portugal,Masculino,13966,2011
+República Checa,Femenino,2963,2011
+República Checa,Masculino,3033,2011
+Rumania,Femenino,327,2011
+Rumania,Masculino,644,2011
+Rusia,Femenino,61847,2011
+Rusia,Masculino,58905,2011
+Suecia,Femenino,2548,2011
+Suecia,Masculino,2791,2011
+Suiza,Femenino,12549,2011
+Suiza,Masculino,13973,2011
+Ucrania,Femenino,1750,2011
+Ucrania,Masculino,1752,2011
+Otros de Europa,Femenino,1839,2011
+Otros de Europa,Masculino,1660,2011
+Asia,Femenino,2440,2011
+Asia,Masculino,6936,2011
+Corea del Sur,Femenino,334,2011
+Corea del Sur,Masculino,966,2011
+China,Femenino,310,2011
+China,Masculino,591,2011
+India,Femenino,111,2011
+India,Masculino,853,2011
+Israel,Femenino,303,2011
+Israel,Masculino,901,2011
+Japón,Femenino,643,2011
+Japón,Masculino,1627,2011
+Tailandia,Femenino,0,2011
+Tailandia,Masculino,0,2011
+Taiwán,Femenino,216,2011
+Taiwán,Masculino,302,2011
+Otros de Asia,Femenino,523,2011
+Otros de Asia,Masculino,1696,2011
+Resto del mundo,Femenino,905,2011
+Resto del mundo,Masculino,1527,2011
+Australia,Femenino,541,2011
+Australia,Masculino,820,2011
+Otros resto del mundo,Femenino,364,2011
+Otros resto del mundo,Masculino,707,2011
+Dominicanos residentes,Femenino,219013,2012
+Dominicanos residentes,Masculino,212439,2012
+Extranjeros residentes,Femenino,20774,2012
+Extranjeros residentes,Masculino,32189,2012
+Dominicanos no residentes,Femenino,338738,2012
+Dominicanos no residentes,Masculino,300175,2012
+Extranjeros no residentes,Femenino,1970722,2012
+Extranjeros no residentes,Masculino,1952971,2012
+América del norte,Femenino,1123161,2012
+América del norte,Masculino,1071907,2012
+Canadá,Femenino,370778,2012
+Canadá,Masculino,318765,2012
+Estados Unidos,Femenino,743064,2012
+Estados Unidos,Masculino,735851,2012
+México,Femenino,9319,2012
+México,Masculino,17291,2012
+América central y Caribe,Femenino,72171,2012
+América central y Caribe,Masculino,118716,2012
+Aruba,Femenino,679,2012
+Aruba,Masculino,826,2012
+Bahamas,Femenino,0,2012
+Bahamas,Masculino,0,2012
+"Caicos y Turcas, Islas",Femenino,366,2012
+"Caicos y Turcas, Islas",Masculino,875,2012
+Costa Rica,Femenino,3950,2012
+Costa Rica,Masculino,5929,2012
+Cuba,Femenino,1611,2012
+Cuba,Masculino,2385,2012
+Curazao,Femenino,1884,2012
+Curazao,Masculino,3427,2012
+El Salvador,Femenino,1609,2012
+El Salvador,Masculino,2313,2012
+Guadalupe,Femenino,2346,2012
+Guadalupe,Masculino,3731,2012
+Guatemala,Femenino,2118,2012
+Guatemala,Masculino,4141,2012
+Haití,Femenino,2706,2012
+Haití,Masculino,6725,2012
+Honduras,Femenino,815,2012
+Honduras,Masculino,1182,2012
+Jamaica,Femenino,420,2012
+Jamaica,Masculino,626,2012
+Martinica,Femenino,1696,2012
+Martinica,Masculino,2922,2012
+Nicaragua,Femenino,0,2012
+Nicaragua,Masculino,0,2012
+Panamá,Femenino,5735,2012
+Panamá,Masculino,8571,2012
+Puerto Rico,Femenino,44751,2012
+Puerto Rico,Masculino,67842,2012
+San Martín,Femenino,1320,2012
+San Martín,Masculino,2091,2012
+Trinidad y Tobago,Femenino,415,2012
+Trinidad y Tobago,Masculino,857,2012
+"Vírgenes Americanas, Islas",Femenino,289,2012
+"Vírgenes Americanas, Islas",Masculino,776,2012
+Otros del Caribe,Femenino,2112,2012
+Otros del Caribe,Masculino,3497,2012
+América del sur,Femenino,216828,2012
+América del sur,Masculino,212950,2012
+Argentina,Femenino,52087,2012
+Argentina,Masculino,49234,2012
+Bolivia,Femenino,3799,2012
+Bolivia,Masculino,3602,2012
+Brasil,Femenino,40303,2012
+Brasil,Masculino,39634,2012
+Colombia,Femenino,22516,2012
+Colombia,Masculino,22439,2012
+Chile,Femenino,32867,2012
+Chile,Masculino,27937,2012
+Ecuador,Femenino,6328,2012
+Ecuador,Masculino,7561,2012
+Perú,Femenino,20172,2012
+Perú,Masculino,18781,2012
+Uruguay,Femenino,2696,2012
+Uruguay,Masculino,3174,2012
+Venezuela,Femenino,34074,2012
+Venezuela,Masculino,38606,2012
+Otros de Suramérica,Femenino,1986,2012
+Otros de Suramérica,Masculino,1982,2012
+Europa,Femenino,552531,2012
+Europa,Masculino,541233,2012
+Alemania,Femenino,94162,2012
+Alemania,Masculino,89371,2012
+Austria,Femenino,3672,2012
+Austria,Masculino,4242,2012
+Bélgica,Femenino,17930,2012
+Bélgica,Masculino,16181,2012
+Bulgaria,Femenino,231,2012
+Bulgaria,Masculino,382,2012
+Checoslovaquia,Femenino,0,2012
+Checoslovaquia,Masculino,0,2012
+Dinamarca,Femenino,1306,2012
+Dinamarca,Masculino,993,2012
+Escocia,Femenino,80,2012
+Escocia,Masculino,125,2012
+España,Femenino,77142,2012
+España,Masculino,79050,2012
+Finlandia,Femenino,1247,2012
+Finlandia,Masculino,1538,2012
+Francia,Femenino,130891,2012
+Francia,Masculino,114142,2012
+Grecia,Femenino,98,2012
+Grecia,Masculino,244,2012
+Holanda,Femenino,16772,2012
+Holanda,Masculino,17453,2012
+Hungría,Femenino,228,2012
+Hungría,Masculino,318,2012
+Reino Unido,Femenino,49493,2012
+Reino Unido,Masculino,45913,2012
+Irlanda,Femenino,280,2012
+Irlanda,Masculino,560,2012
+Italia,Femenino,39509,2012
+Italia,Masculino,50258,2012
+Luxemburgo,Femenino,271,2012
+Luxemburgo,Masculino,299,2012
+Noruega,Femenino,661,2012
+Noruega,Masculino,956,2012
+Polonia,Femenino,3185,2012
+Polonia,Masculino,3402,2012
+Portugal,Femenino,13450,2012
+Portugal,Masculino,12075,2012
+República Checa,Femenino,2661,2012
+República Checa,Masculino,2861,2012
+Rumania,Femenino,171,2012
+Rumania,Masculino,396,2012
+Rusia,Femenino,81303,2012
+Rusia,Masculino,81854,2012
+Suecia,Femenino,1830,2012
+Suecia,Masculino,1773,2012
+Suiza,Femenino,13882,2012
+Suiza,Masculino,13933,2012
+Ucrania,Femenino,1295,2012
+Ucrania,Masculino,1847,2012
+Otros de Europa,Femenino,781,2012
+Otros de Europa,Masculino,1067,2012
+Asia,Femenino,2400,2012
+Asia,Masculino,6517,2012
+Corea del Sur,Femenino,357,2012
+Corea del Sur,Masculino,859,2012
+China,Femenino,220,2012
+China,Masculino,743,2012
+India,Femenino,147,2012
+India,Masculino,794,2012
+Israel,Femenino,277,2012
+Israel,Masculino,800,2012
+Japón,Femenino,622,2012
+Japón,Masculino,1414,2012
+Tailandia,Femenino,0,2012
+Tailandia,Masculino,0,2012
+Taiwán,Femenino,167,2012
+Taiwán,Masculino,320,2012
+Otros de Asia,Femenino,610,2012
+Otros de Asia,Masculino,1587,2012
+Resto del mundo,Femenino,980,2012
+Resto del mundo,Masculino,1648,2012
+Australia,Femenino,678,2012
+Australia,Masculino,980,2012
+Otros resto del mundo,Femenino,302,2012
+Otros resto del mundo,Masculino,668,2012
+Dominicanos residentes,Femenino,212951,2013
+Dominicanos residentes,Masculino,208222,2013
+Extranjeros residentes,Femenino,21951,2013
+Extranjeros residentes,Masculino,30788,2013
+Dominicanos no residentes,Femenino,327149,2013
+Dominicanos no residentes,Masculino,297867,2013
+Extranjeros no residentes,Femenino,2158372,2013
+Extranjeros no residentes,Masculino,1906382,2013
+América del norte,Femenino,1259039,2013
+América del norte,Masculino,1075398,2013
+Canadá,Femenino,385801,2013
+Canadá,Masculino,302090,2013
+Estados Unidos,Femenino,863951,2013
+Estados Unidos,Masculino,758887,2013
+México,Femenino,9287,2013
+México,Masculino,14421,2013
+América central y Caribe,Femenino,76486,2013
+América central y Caribe,Masculino,110314,2013
+Aruba,Femenino,1131,2013
+Aruba,Masculino,1153,2013
+Bahamas,Femenino,0,2013
+Bahamas,Masculino,0,2013
+"Caicos y Turcas, Islas",Femenino,447,2013
+"Caicos y Turcas, Islas",Masculino,900,2013
+Costa Rica,Femenino,4442,2013
+Costa Rica,Masculino,6506,2013
+Cuba,Femenino,2888,2013
+Cuba,Masculino,4233,2013
+Curazao,Femenino,1702,2013
+Curazao,Masculino,2792,2013
+El Salvador,Femenino,1050,2013
+El Salvador,Masculino,1934,2013
+Guadalupe,Femenino,3002,2013
+Guadalupe,Masculino,4304,2013
+Guatemala,Femenino,1849,2013
+Guatemala,Masculino,3908,2013
+Haití,Femenino,2884,2013
+Haití,Masculino,4377,2013
+Honduras,Femenino,1047,2013
+Honduras,Masculino,1733,2013
+Jamaica,Femenino,357,2013
+Jamaica,Masculino,556,2013
+Martinica,Femenino,1626,2013
+Martinica,Masculino,2638,2013
+Nicaragua,Femenino,0,2013
+Nicaragua,Masculino,0,2013
+Panamá,Femenino,5277,2013
+Panamá,Masculino,8385,2013
+Puerto Rico,Femenino,43991,2013
+Puerto Rico,Masculino,59831,2013
+San Martín,Femenino,1533,2013
+San Martín,Masculino,2038,2013
+Trinidad y Tobago,Femenino,924,2013
+Trinidad y Tobago,Masculino,1067,2013
+"Vírgenes Americanas, Islas",Femenino,253,2013
+"Vírgenes Americanas, Islas",Masculino,651,2013
+Otros del Caribe,Femenino,2083,2013
+Otros del Caribe,Masculino,3308,2013
+América del sur,Femenino,247608,2013
+América del sur,Masculino,203790,2013
+Argentina,Femenino,60281,2013
+Argentina,Masculino,45420,2013
+Bolivia,Femenino,5171,2013
+Bolivia,Masculino,3788,2013
+Brasil,Femenino,50611,2013
+Brasil,Masculino,40703,2013
+Colombia,Femenino,22404,2013
+Colombia,Masculino,21192,2013
+Chile,Femenino,42308,2013
+Chile,Masculino,31616,2013
+Ecuador,Femenino,5840,2013
+Ecuador,Masculino,5134,2013
+Perú,Femenino,19565,2013
+Perú,Masculino,15585,2013
+Uruguay,Femenino,2931,2013
+Uruguay,Masculino,2803,2013
+Venezuela,Femenino,35637,2013
+Venezuela,Masculino,34767,2013
+Otros de Suramérica,Femenino,2860,2013
+Otros de Suramérica,Masculino,2782,2013
+Europa,Femenino,571805,2013
+Europa,Masculino,508639,2013
+Alemania,Femenino,117647,2013
+Alemania,Masculino,95586,2013
+Austria,Femenino,3986,2013
+Austria,Masculino,3463,2013
+Bélgica,Femenino,15284,2013
+Bélgica,Masculino,12781,2013
+Bulgaria,Femenino,210,2013
+Bulgaria,Masculino,301,2013
+Checoslovaquia,Femenino,0,2013
+Checoslovaquia,Masculino,0,2013
+Dinamarca,Femenino,1530,2013
+Dinamarca,Masculino,1617,2013
+Escocia,Femenino,145,2013
+Escocia,Masculino,165,2013
+España,Femenino,70779,2013
+España,Masculino,69207,2013
+Finlandia,Femenino,1554,2013
+Finlandia,Masculino,1857,2013
+Francia,Femenino,122829,2013
+Francia,Masculino,95570,2013
+Grecia,Femenino,116,2013
+Grecia,Masculino,221,2013
+Holanda,Femenino,12898,2013
+Holanda,Masculino,12518,2013
+Hungría,Femenino,436,2013
+Hungría,Masculino,335,2013
+Reino Unido,Femenino,57832,2013
+Reino Unido,Masculino,47798,2013
+Irlanda,Femenino,261,2013
+Irlanda,Masculino,417,2013
+Italia,Femenino,31975,2013
+Italia,Masculino,42201,2013
+Luxemburgo,Femenino,235,2013
+Luxemburgo,Masculino,231,2013
+Noruega,Femenino,1120,2013
+Noruega,Masculino,1386,2013
+Polonia,Femenino,2995,2013
+Polonia,Masculino,2875,2013
+Portugal,Femenino,9502,2013
+Portugal,Masculino,7072,2013
+República Checa,Femenino,2959,2013
+República Checa,Masculino,3020,2013
+Rumania,Femenino,313,2013
+Rumania,Masculino,341,2013
+Rusia,Femenino,96529,2013
+Rusia,Masculino,87436,2013
+Suecia,Femenino,4753,2013
+Suecia,Masculino,5857,2013
+Suiza,Femenino,13070,2013
+Suiza,Masculino,13425,2013
+Ucrania,Femenino,2186,2013
+Ucrania,Masculino,2262,2013
+Otros de Europa,Femenino,661,2013
+Otros de Europa,Masculino,661,2013
+Asia,Femenino,2426,2013
+Asia,Masculino,6743,2013
+Corea del Sur,Femenino,413,2013
+Corea del Sur,Masculino,1042,2013
+China,Femenino,293,2013
+China,Masculino,912,2013
+India,Femenino,142,2013
+India,Masculino,747,2013
+Israel,Femenino,278,2013
+Israel,Masculino,945,2013
+Japón,Femenino,568,2013
+Japón,Masculino,1075,2013
+Tailandia,Femenino,0,2013
+Tailandia,Masculino,0,2013
+Taiwán,Femenino,200,2013
+Taiwán,Masculino,670,2013
+Otros de Asia,Femenino,532,2013
+Otros de Asia,Masculino,1352,2013
+Resto del mundo,Femenino,1008,2013
+Resto del mundo,Masculino,1498,2013
+Australia,Femenino,684,2013
+Australia,Masculino,901,2013
+Otros resto del mundo,Femenino,324,2013
+Otros resto del mundo,Masculino,597,2013
+Dominicanos residentes,Femenino,227615,2014
+Dominicanos residentes,Masculino,233342,2014
+Extranjeros residentes,Femenino,19425,2014
+Extranjeros residentes,Masculino,26984,2014
+Dominicanos no residentes,Femenino,349300,2014
+Dominicanos no residentes,Masculino,327434,2014
+Extranjeros no residentes,Femenino,2242568,2014
+Extranjeros no residentes,Masculino,2222075,2014
+América del norte,Femenino,1297419,2014
+América del norte,Masculino,1275990,2014
+Canadá,Femenino,369157,2014
+Canadá,Masculino,343088,2014
+Estados Unidos,Femenino,915271,2014
+Estados Unidos,Masculino,914184,2014
+México,Femenino,12991,2014
+México,Masculino,18718,2014
+América central y Caribe,Femenino,88646,2014
+América central y Caribe,Masculino,118386,2014
+Aruba,Femenino,519,2014
+Aruba,Masculino,784,2014
+Bahamas,Femenino,0,2014
+Bahamas,Masculino,0,2014
+"Caicos y Turcas, Islas",Femenino,451,2014
+"Caicos y Turcas, Islas",Masculino,890,2014
+Costa Rica,Femenino,5019,2014
+Costa Rica,Masculino,6411,2014
+Cuba,Femenino,4343,2014
+Cuba,Masculino,5490,2014
+Curazao,Femenino,1695,2014
+Curazao,Masculino,2641,2014
+El Salvador,Femenino,1498,2014
+El Salvador,Masculino,2122,2014
+Guadalupe,Femenino,2271,2014
+Guadalupe,Masculino,3335,2014
+Guatemala,Femenino,2652,2014
+Guatemala,Masculino,4429,2014
+Haití,Femenino,1929,2014
+Haití,Masculino,5311,2014
+Honduras,Femenino,1163,2014
+Honduras,Masculino,1329,2014
+Jamaica,Femenino,471,2014
+Jamaica,Masculino,769,2014
+Martinica,Femenino,980,2014
+Martinica,Masculino,1812,2014
+Nicaragua,Femenino,0,2014
+Nicaragua,Masculino,0,2014
+Panamá,Femenino,5096,2014
+Panamá,Masculino,8123,2014
+Puerto Rico,Femenino,55723,2014
+Puerto Rico,Masculino,68350,2014
+San Martín,Femenino,1380,2014
+San Martín,Masculino,1714,2014
+Trinidad y Tobago,Femenino,1281,2014
+Trinidad y Tobago,Masculino,1310,2014
+"Vírgenes Americanas, Islas",Femenino,199,2014
+"Vírgenes Americanas, Islas",Masculino,423,2014
+Otros del Caribe,Femenino,1976,2014
+Otros del Caribe,Masculino,3143,2014
+América del sur,Femenino,277381,2014
+América del sur,Masculino,257911,2014
+Argentina,Femenino,59398,2014
+Argentina,Masculino,51382,2014
+Bolivia,Femenino,5139,2014
+Bolivia,Masculino,4625,2014
+Brasil,Femenino,58658,2014
+Brasil,Masculino,53943,2014
+Colombia,Femenino,28641,2014
+Colombia,Masculino,29319,2014
+Chile,Femenino,44221,2014
+Chile,Masculino,37863,2014
+Ecuador,Femenino,4801,2014
+Ecuador,Masculino,5333,2014
+Perú,Femenino,16843,2014
+Perú,Masculino,16070,2014
+Uruguay,Femenino,2617,2014
+Uruguay,Masculino,2721,2014
+Venezuela,Femenino,54296,2014
+Venezuela,Masculino,54080,2014
+Otros de Suramérica,Femenino,2767,2014
+Otros de Suramérica,Masculino,2575,2014
+Europa,Femenino,575547,2014
+Europa,Masculino,562647,2014
+Alemania,Femenino,115665,2014
+Alemania,Masculino,114653,2014
+Austria,Femenino,4469,2014
+Austria,Masculino,4941,2014
+Bélgica,Femenino,20097,2014
+Bélgica,Masculino,16662,2014
+Bulgaria,Femenino,287,2014
+Bulgaria,Masculino,314,2014
+Checoslovaquia,Femenino,0,2014
+Checoslovaquia,Masculino,0,2014
+Dinamarca,Femenino,1640,2014
+Dinamarca,Masculino,1789,2014
+Escocia,Femenino,85,2014
+Escocia,Masculino,85,2014
+España,Femenino,70131,2014
+España,Masculino,76667,2014
+Finlandia,Femenino,1947,2014
+Finlandia,Masculino,1837,2014
+Francia,Femenino,116674,2014
+Francia,Masculino,102402,2014
+Grecia,Femenino,125,2014
+Grecia,Masculino,233,2014
+Holanda,Femenino,12889,2014
+Holanda,Masculino,12803,2014
+Hungría,Femenino,573,2014
+Hungría,Masculino,511,2014
+Reino Unido,Femenino,66363,2014
+Reino Unido,Masculino,58120,2014
+Irlanda,Femenino,297,2014
+Irlanda,Masculino,378,2014
+Italia,Femenino,33898,2014
+Italia,Masculino,42517,2014
+Luxemburgo,Femenino,288,2014
+Luxemburgo,Masculino,261,2014
+Noruega,Femenino,1095,2014
+Noruega,Masculino,1338,2014
+Polonia,Femenino,4635,2014
+Polonia,Masculino,4924,2014
+Portugal,Femenino,9175,2014
+Portugal,Masculino,7598,2014
+República Checa,Femenino,2517,2014
+República Checa,Masculino,2470,2014
+Rumania,Femenino,247,2014
+Rumania,Masculino,211,2014
+Rusia,Femenino,87691,2014
+Rusia,Masculino,88091,2014
+Suecia,Femenino,6499,2014
+Suecia,Masculino,7180,2014
+Suiza,Femenino,13631,2014
+Suiza,Masculino,12093,2014
+Ucrania,Femenino,3736,2014
+Ucrania,Masculino,3578,2014
+Otros de Europa,Femenino,893,2014
+Otros de Europa,Masculino,991,2014
+Asia,Femenino,2516,2014
+Asia,Masculino,5499,2014
+Corea del Sur,Femenino,270,2014
+Corea del Sur,Masculino,679,2014
+China,Femenino,446,2014
+China,Masculino,966,2014
+India,Femenino,141,2014
+India,Masculino,527,2014
+Israel,Femenino,255,2014
+Israel,Masculino,668,2014
+Japón,Femenino,683,2014
+Japón,Masculino,877,2014
+Tailandia,Femenino,0,2014
+Tailandia,Masculino,0,2014
+Taiwán,Femenino,185,2014
+Taiwán,Masculino,546,2014
+Otros de Asia,Femenino,536,2014
+Otros de Asia,Masculino,1236,2014
+Resto del mundo,Femenino,1059,2014
+Resto del mundo,Masculino,1642,2014
+Australia,Femenino,738,2014
+Australia,Masculino,1131,2014
+Otros resto del mundo,Femenino,321,2014
+Otros resto del mundo,Masculino,511,2014
+Dominicanos residentes,Femenino,258365,2015
+Dominicanos residentes,Masculino,253425,2015
+Extranjeros residentes,Femenino,16054,2015
+Extranjeros residentes,Masculino,23300,2015
+Dominicanos no residentes,Femenino,405984,2015
+Dominicanos no residentes,Masculino,360919,2015
+Extranjeros no residentes,Femenino,2399460,2015
+Extranjeros no residentes,Masculino,2433496,2015
+América del norte,Femenino,1417105,2015
+América del norte,Masculino,1412772,2015
+Canadá,Femenino,383275,2015
+Canadá,Masculino,367623,2015
+Estados Unidos,Femenino,1020974,2015
+Estados Unidos,Masculino,1027788,2015
+México,Femenino,12856,2015
+México,Masculino,17361,2015
+América central y Caribe,Femenino,95607,2015
+América central y Caribe,Masculino,125245,2015
+Aruba,Femenino,754,2015
+Aruba,Masculino,992,2015
+Bahamas,Femenino,0,2015
+Bahamas,Masculino,0,2015
+"Caicos y Turcas, Islas",Femenino,563,2015
+"Caicos y Turcas, Islas",Masculino,1070,2015
+Costa Rica,Femenino,5935,2015
+Costa Rica,Masculino,6946,2015
+Cuba,Femenino,7312,2015
+Cuba,Masculino,8424,2015
+Curazao,Femenino,2005,2015
+Curazao,Masculino,3183,2015
+El Salvador,Femenino,1485,2015
+El Salvador,Masculino,1905,2015
+Guadalupe,Femenino,1795,2015
+Guadalupe,Masculino,2234,2015
+Guatemala,Femenino,2585,2015
+Guatemala,Masculino,4175,2015
+Haití,Femenino,1666,2015
+Haití,Masculino,8912,2015
+Honduras,Femenino,956,2015
+Honduras,Masculino,1169,2015
+Jamaica,Femenino,483,2015
+Jamaica,Masculino,725,2015
+Martinica,Femenino,657,2015
+Martinica,Masculino,1111,2015
+Nicaragua,Femenino,0,2015
+Nicaragua,Masculino,0,2015
+Panamá,Femenino,7316,2015
+Panamá,Masculino,10022,2015
+Puerto Rico,Femenino,57166,2015
+Puerto Rico,Masculino,67479,2015
+San Martín,Femenino,1678,2015
+San Martín,Masculino,2232,2015
+Trinidad y Tobago,Femenino,1001,2015
+Trinidad y Tobago,Masculino,1216,2015
+"Vírgenes Americanas, Islas",Femenino,241,2015
+"Vírgenes Americanas, Islas",Masculino,462,2015
+Otros del Caribe,Femenino,2009,2015
+Otros del Caribe,Masculino,2988,2015
+América del sur,Femenino,341512,2015
+América del sur,Masculino,329510,2015
+Argentina,Femenino,67953,2015
+Argentina,Masculino,62849,2015
+Bolivia,Femenino,5264,2015
+Bolivia,Masculino,5829,2015
+Brasil,Femenino,69784,2015
+Brasil,Masculino,69410,2015
+Colombia,Femenino,36636,2015
+Colombia,Masculino,37335,2015
+Chile,Femenino,44961,2015
+Chile,Masculino,41584,2015
+Ecuador,Femenino,5042,2015
+Ecuador,Masculino,5218,2015
+Perú,Femenino,21363,2015
+Perú,Masculino,20957,2015
+Uruguay,Femenino,4636,2015
+Uruguay,Masculino,4385,2015
+Venezuela,Femenino,83810,2015
+Venezuela,Masculino,80060,2015
+Otros de Suramérica,Femenino,2063,2015
+Otros de Suramérica,Masculino,1883,2015
+Europa,Femenino,541156,2015
+Europa,Masculino,558553,2015
+Alemania,Femenino,123531,2015
+Alemania,Masculino,124717,2015
+Austria,Femenino,4234,2015
+Austria,Masculino,4121,2015
+Bélgica,Femenino,18577,2015
+Bélgica,Masculino,18960,2015
+Bulgaria,Femenino,273,2015
+Bulgaria,Masculino,373,2015
+Checoslovaquia,Femenino,0,2015
+Checoslovaquia,Masculino,0,2015
+Dinamarca,Femenino,1180,2015
+Dinamarca,Masculino,1219,2015
+Escocia,Femenino,190,2015
+Escocia,Masculino,160,2015
+España,Femenino,78743,2015
+España,Masculino,90824,2015
+Finlandia,Femenino,2107,2015
+Finlandia,Masculino,2071,2015
+Francia,Femenino,115609,2015
+Francia,Masculino,105703,2015
+Grecia,Femenino,126,2015
+Grecia,Masculino,150,2015
+Holanda,Femenino,14901,2015
+Holanda,Masculino,14916,2015
+Hungría,Femenino,645,2015
+Hungría,Masculino,536,2015
+Reino Unido,Femenino,68434,2015
+Reino Unido,Masculino,71798,2015
+Irlanda,Femenino,392,2015
+Irlanda,Masculino,422,2015
+Italia,Femenino,36538,2015
+Italia,Masculino,45280,2015
+Luxemburgo,Femenino,285,2015
+Luxemburgo,Masculino,240,2015
+Noruega,Femenino,562,2015
+Noruega,Masculino,677,2015
+Polonia,Femenino,5853,2015
+Polonia,Masculino,5574,2015
+Portugal,Femenino,11146,2015
+Portugal,Masculino,12441,2015
+República Checa,Femenino,2807,2015
+República Checa,Masculino,2938,2015
+Rumania,Femenino,194,2015
+Rumania,Masculino,289,2015
+Rusia,Femenino,33273,2015
+Rusia,Masculino,33848,2015
+Suecia,Femenino,6945,2015
+Suecia,Masculino,6348,2015
+Suiza,Femenino,12062,2015
+Suiza,Masculino,12403,2015
+Ucrania,Femenino,1847,2015
+Ucrania,Masculino,1787,2015
+Otros de Europa,Femenino,702,2015
+Otros de Europa,Masculino,758,2015
+Asia,Femenino,2907,2015
+Asia,Masculino,5686,2015
+Corea del Sur,Femenino,350,2015
+Corea del Sur,Masculino,826,2015
+China,Femenino,607,2015
+China,Masculino,1073,2015
+India,Femenino,152,2015
+India,Masculino,549,2015
+Israel,Femenino,397,2015
+Israel,Masculino,766,2015
+Japón,Femenino,501,2015
+Japón,Masculino,776,2015
+Tailandia,Femenino,0,2015
+Tailandia,Masculino,0,2015
+Taiwán,Femenino,315,2015
+Taiwán,Masculino,589,2015
+Otros de Asia,Femenino,585,2015
+Otros de Asia,Masculino,1107,2015
+Resto del mundo,Femenino,1173,2015
+Resto del mundo,Masculino,1730,2015
+Australia,Femenino,948,2015
+Australia,Masculino,1263,2015
+Otros resto del mundo,Femenino,225,2015
+Otros resto del mundo,Masculino,467,2015
+Dominicanos residentes,Femenino,286977,2016
+Dominicanos residentes,Masculino,268718,2016
+Extranjeros residentes,Femenino,18993,2016
+Extranjeros residentes,Masculino,24947,2016
+Dominicanos no residentes,Femenino,439977,2016
+Dominicanos no residentes,Masculino,385260,2016
+Extranjeros no residentes,Femenino,2587547,2016
+Extranjeros no residentes,Masculino,2546563,2016
+América del norte,Femenino,1490435,2016
+América del norte,Masculino,1449570,2016
+Canadá,Femenino,392042,2016
+Canadá,Masculino,379801,2016
+Estados Unidos,Femenino,1083861,2016
+Estados Unidos,Masculino,1050293,2016
+México,Femenino,14532,2016
+México,Masculino,19476,2016
+América central y Caribe,Femenino,117318,2016
+América central y Caribe,Masculino,143042,2016
+Aruba,Femenino,1080,2016
+Aruba,Masculino,1246,2016
+Bahamas,Femenino,0,2016
+Bahamas,Masculino,0,2016
+"Caicos y Turcas, Islas",Femenino,600,2016
+"Caicos y Turcas, Islas",Masculino,1090,2016
+Costa Rica,Femenino,6190,2016
+Costa Rica,Masculino,7418,2016
+Cuba,Femenino,10354,2016
+Cuba,Masculino,12286,2016
+Curazao,Femenino,2655,2016
+Curazao,Masculino,3783,2016
+El Salvador,Femenino,1340,2016
+El Salvador,Masculino,1832,2016
+Guadalupe,Femenino,1775,2016
+Guadalupe,Masculino,2703,2016
+Guatemala,Femenino,2520,2016
+Guatemala,Masculino,4159,2016
+Haití,Femenino,1848,2016
+Haití,Masculino,6898,2016
+Honduras,Femenino,1210,2016
+Honduras,Masculino,1455,2016
+Jamaica,Femenino,431,2016
+Jamaica,Masculino,776,2016
+Martinica,Femenino,431,2016
+Martinica,Masculino,776,2016
+Nicaragua,Femenino,0,2016
+Nicaragua,Masculino,0,2016
+Panamá,Femenino,17101,2016
+Panamá,Masculino,18722,2016
+Puerto Rico,Femenino,62520,2016
+Puerto Rico,Masculino,70205,2016
+San Martín,Femenino,1987,2016
+San Martín,Masculino,2720,2016
+Trinidad y Tobago,Femenino,2599,2016
+Trinidad y Tobago,Masculino,2547,2016
+"Vírgenes Americanas, Islas",Femenino,239,2016
+"Vírgenes Americanas, Islas",Masculino,363,2016
+Otros del Caribe,Femenino,2104,2016
+Otros del Caribe,Masculino,3644,2016
+América del sur,Femenino,363631,2016
+América del sur,Masculino,338465,2016
+Argentina,Femenino,70617,2016
+Argentina,Masculino,65594,2016
+Bolivia,Femenino,5546,2016
+Bolivia,Masculino,5201,2016
+Brasil,Femenino,64985,2016
+Brasil,Masculino,59703,2016
+Colombia,Femenino,48224,2016
+Colombia,Masculino,47437,2016
+Chile,Femenino,45354,2016
+Chile,Masculino,38956,2016
+Ecuador,Femenino,4466,2016
+Ecuador,Masculino,4915,2016
+Perú,Femenino,25620,2016
+Perú,Masculino,22677,2016
+Uruguay,Femenino,10520,2016
+Uruguay,Masculino,9240,2016
+Venezuela,Femenino,85018,2016
+Venezuela,Masculino,81395,2016
+Otros de Suramérica,Femenino,3281,2016
+Otros de Suramérica,Masculino,3347,2016
+Europa,Femenino,611851,2016
+Europa,Masculino,608016,2016
+Alemania,Femenino,130639,2016
+Alemania,Masculino,128658,2016
+Austria,Femenino,3976,2016
+Austria,Masculino,3843,2016
+Bélgica,Femenino,21500,2016
+Bélgica,Masculino,20437,2016
+Bulgaria,Femenino,340,2016
+Bulgaria,Masculino,405,2016
+Checoslovaquia,Femenino,0,2016
+Checoslovaquia,Masculino,0,2016
+Dinamarca,Femenino,1264,2016
+Dinamarca,Masculino,1135,2016
+Escocia,Femenino,80,2016
+Escocia,Masculino,95,2016
+España,Femenino,78092,2016
+España,Masculino,86731,2016
+Finlandia,Femenino,2464,2016
+Finlandia,Masculino,2470,2016
+Francia,Femenino,117503,2016
+Francia,Masculino,105275,2016
+Grecia,Femenino,97,2016
+Grecia,Masculino,269,2016
+Holanda,Femenino,16466,2016
+Holanda,Masculino,17575,2016
+Hungría,Femenino,750,2016
+Hungría,Masculino,741,2016
+Reino Unido,Femenino,81784,2016
+Reino Unido,Masculino,81937,2016
+Irlanda,Femenino,325,2016
+Irlanda,Masculino,365,2016
+Italia,Femenino,35328,2016
+Italia,Masculino,41319,2016
+Luxemburgo,Femenino,281,2016
+Luxemburgo,Masculino,355,2016
+Noruega,Femenino,502,2016
+Noruega,Masculino,623,2016
+Polonia,Femenino,11360,2016
+Polonia,Masculino,12368,2016
+Portugal,Femenino,12211,2016
+Portugal,Masculino,11645,2016
+República Checa,Femenino,2613,2016
+República Checa,Masculino,2663,2016
+Rumania,Femenino,209,2016
+Rumania,Masculino,209,2016
+Rusia,Femenino,68825,2016
+Rusia,Masculino,63338,2016
+Suecia,Femenino,8451,2016
+Suecia,Masculino,8109,2016
+Suiza,Femenino,14173,2016
+Suiza,Masculino,15000,2016
+Ucrania,Femenino,1694,2016
+Ucrania,Masculino,1490,2016
+Otros de Europa,Femenino,924,2016
+Otros de Europa,Masculino,961,2016
+Asia,Femenino,3140,2016
+Asia,Masculino,6133,2016
+Corea del Sur,Femenino,564,2016
+Corea del Sur,Masculino,1003,2016
+China,Femenino,564,2016
+China,Masculino,1003,2016
+India,Femenino,246,2016
+India,Masculino,606,2016
+Israel,Femenino,466,2016
+Israel,Masculino,760,2016
+Japón,Femenino,565,2016
+Japón,Masculino,945,2016
+Tailandia,Femenino,0,2016
+Tailandia,Masculino,0,2016
+Taiwán,Femenino,195,2016
+Taiwán,Masculino,370,2016
+Otros de Asia,Femenino,649,2016
+Otros de Asia,Masculino,1210,2016
+Resto del mundo,Femenino,1172,2016
+Resto del mundo,Masculino,1337,2016
+Australia,Femenino,834,2016
+Australia,Masculino,858,2016
+Otros resto del mundo,Femenino,338,2016
+Otros resto del mundo,Masculino,479,2016
+Dominicanos residentes,Femenino,344679,2017
+Dominicanos residentes,Masculino,259518,2017
+Extranjeros residentes,Femenino,19373,2017
+Extranjeros residentes,Masculino,20771,2017
+Dominicanos no residentes,Femenino,473617,2017
+Dominicanos no residentes,Masculino,359908,2017
+Extranjeros no residentes,Femenino,2823246,2017
+Extranjeros no residentes,Masculino,2530771,2017
+América del norte,Femenino,1596932,2017
+América del norte,Masculino,1420330,2017
+Canadá,Femenino,434534,2017
+Canadá,Masculino,402570,2017
+Estados Unidos,Femenino,1145607,2017
+Estados Unidos,Masculino,1000841,2017
+México,Femenino,16791,2017
+México,Masculino,16919,2017
+América central y Caribe,Femenino,125138,2017
+América central y Caribe,Masculino,122716,2017
+Aruba,Femenino,1095,2017
+Aruba,Masculino,855,2017
+Bahamas,Femenino,0,2017
+Bahamas,Masculino,0,2017
+"Caicos y Turcas, Islas",Femenino,715,2017
+"Caicos y Turcas, Islas",Masculino,1018,2017
+Costa Rica,Femenino,6513,2017
+Costa Rica,Masculino,6099,2017
+Cuba,Femenino,15384,2017
+Cuba,Masculino,12920,2017
+Curazao,Femenino,2982,2017
+Curazao,Masculino,2648,2017
+El Salvador,Femenino,1775,2017
+El Salvador,Masculino,1840,2017
+Guadalupe,Femenino,1795,2017
+Guadalupe,Masculino,2245,2017
+Guatemala,Femenino,3694,2017
+Guatemala,Masculino,4184,2017
+Haití,Femenino,2626,2017
+Haití,Masculino,7461,2017
+Honduras,Femenino,1523,2017
+Honduras,Masculino,1353,2017
+Jamaica,Femenino,1116,2017
+Jamaica,Masculino,1087,2017
+Martinica,Femenino,1023,2017
+Martinica,Masculino,1319,2017
+Nicaragua,Femenino,0,2017
+Nicaragua,Masculino,0,2017
+Panamá,Femenino,15660,2017
+Panamá,Masculino,15495,2017
+Puerto Rico,Femenino,61080,2017
+Puerto Rico,Masculino,55766,2017
+San Martín,Femenino,2158,2017
+San Martín,Masculino,2086,2017
+Trinidad y Tobago,Femenino,2405,2017
+Trinidad y Tobago,Masculino,2050,2017
+"Vírgenes Americanas, Islas",Femenino,150,2017
+"Vírgenes Americanas, Islas",Masculino,385,2017
+Otros del Caribe,Femenino,3444,2017
+Otros del Caribe,Masculino,3905,2017
+América del sur,Femenino,371412,2017
+América del sur,Masculino,312808,2017
+Argentina,Femenino,94448,2017
+Argentina,Masculino,85838,2017
+Bolivia,Femenino,5707,2017
+Bolivia,Masculino,4955,2017
+Brasil,Femenino,50966,2017
+Brasil,Masculino,42519,2017
+Colombia,Femenino,55604,2017
+Colombia,Masculino,45534,2017
+Chile,Femenino,53489,2017
+Chile,Masculino,44291,2017
+Ecuador,Femenino,6059,2017
+Ecuador,Masculino,5030,2017
+Perú,Femenino,27441,2017
+Perú,Masculino,23578,2017
+Uruguay,Femenino,14370,2017
+Uruguay,Masculino,11580,2017
+Venezuela,Femenino,59540,2017
+Venezuela,Masculino,45901,2017
+Otros de Suramérica,Femenino,3788,2017
+Otros de Suramérica,Masculino,3582,2017
+Europa,Femenino,721346,2017
+Europa,Masculino,665120,2017
+Alemania,Femenino,136148,2017
+Alemania,Masculino,129250,2017
+Austria,Femenino,5015,2017
+Austria,Masculino,5445,2017
+Bélgica,Femenino,20196,2017
+Bélgica,Masculino,17317,2017
+Bulgaria,Femenino,1089,2017
+Bulgaria,Masculino,930,2017
+Checoslovaquia,Femenino,0,2017
+Checoslovaquia,Masculino,0,2017
+Dinamarca,Femenino,1171,2017
+Dinamarca,Masculino,1375,2017
+Escocia,Femenino,299,2017
+Escocia,Masculino,290,2017
+España,Femenino,88308,2017
+España,Masculino,84757,2017
+Finlandia,Femenino,2765,2017
+Finlandia,Masculino,2270,2017
+Francia,Femenino,115482,2017
+Francia,Masculino,97765,2017
+Grecia,Femenino,276,2017
+Grecia,Masculino,340,2017
+Holanda,Femenino,17108,2017
+Holanda,Masculino,15462,2017
+Hungría,Femenino,1926,2017
+Hungría,Masculino,2033,2017
+Reino Unido,Femenino,92646,2017
+Reino Unido,Masculino,83294,2017
+Irlanda,Femenino,395,2017
+Irlanda,Masculino,400,2017
+Italia,Femenino,38750,2017
+Italia,Masculino,39997,2017
+Luxemburgo,Femenino,325,2017
+Luxemburgo,Masculino,290,2017
+Noruega,Femenino,814,2017
+Noruega,Masculino,810,2017
+Polonia,Femenino,15884,2017
+Polonia,Masculino,16336,2017
+Portugal,Femenino,16172,2017
+Portugal,Masculino,15185,2017
+República Checa,Femenino,2627,2017
+República Checa,Masculino,2251,2017
+Rumania,Femenino,1843,2017
+Rumania,Masculino,1731,2017
+Rusia,Femenino,125823,2017
+Rusia,Masculino,114225,2017
+Suecia,Femenino,9858,2017
+Suecia,Masculino,9163,2017
+Suiza,Femenino,17318,2017
+Suiza,Masculino,15755,2017
+Ucrania,Femenino,6801,2017
+Ucrania,Masculino,6434,2017
+Otros de Europa,Femenino,2307,2017
+Otros de Europa,Masculino,2015,2017
+Asia,Femenino,6567,2017
+Asia,Masculino,8048,2017
+Corea del Sur,Femenino,1347,2017
+Corea del Sur,Masculino,1435,2017
+China,Femenino,686,2017
+China,Masculino,962,2017
+India,Femenino,600,2017
+India,Masculino,813,2017
+Israel,Femenino,850,2017
+Israel,Masculino,1256,2017
+Japón,Femenino,675,2017
+Japón,Masculino,841,2017
+Tailandia,Femenino,0,2017
+Tailandia,Masculino,0,2017
+Taiwán,Femenino,330,2017
+Taiwán,Masculino,350,2017
+Otros de Asia,Femenino,2079,2017
+Otros de Asia,Masculino,2391,2017
+Resto del mundo,Femenino,1851,2017
+Resto del mundo,Masculino,1749,2017
+Australia,Femenino,1134,2017
+Australia,Masculino,1193,2017
+Otros resto del mundo,Femenino,717,2017
+Otros resto del mundo,Masculino,556,2017
+Dominicanos residentes,Femenino,361571,2018
+Dominicanos residentes,Masculino,247536,2018
+Extranjeros residentes,Femenino,22530,2018
+Extranjeros residentes,Masculino,19809,2018
+Dominicanos no residentes,Femenino,552880,2018
+Dominicanos no residentes,Masculino,397447,2018
+Extranjeros no residentes,Femenino,2956718,2018
+Extranjeros no residentes,Masculino,2661843,2018
+América del norte,Femenino,1727469,2018
+América del norte,Masculino,1552423,2018
+Canadá,Femenino,467123,2018
+Canadá,Masculino,437337,2018
+Estados Unidos,Femenino,1238916,2018
+Estados Unidos,Masculino,1096071,2018
+México,Femenino,21430,2018
+México,Masculino,19015,2018
+América central y Caribe,Femenino,115457,2018
+América central y Caribe,Masculino,108643,2018
+Aruba,Femenino,941,2018
+Aruba,Masculino,740,2018
+Bahamas,Femenino,0,2018
+Bahamas,Masculino,0,2018
+"Caicos y Turcas, Islas",Femenino,961,2018
+"Caicos y Turcas, Islas",Masculino,1483,2018
+Costa Rica,Femenino,6418,2018
+Costa Rica,Masculino,5585,2018
+Cuba,Femenino,12268,2018
+Cuba,Masculino,8958,2018
+Curazao,Femenino,1793,2018
+Curazao,Masculino,1458,2018
+El Salvador,Femenino,2453,2018
+El Salvador,Masculino,2283,2018
+Guadalupe,Femenino,1546,2018
+Guadalupe,Masculino,1922,2018
+Guatemala,Femenino,4267,2018
+Guatemala,Masculino,4084,2018
+Haití,Femenino,3078,2018
+Haití,Masculino,9328,2018
+Honduras,Femenino,1920,2018
+Honduras,Masculino,1710,2018
+Jamaica,Femenino,1339,2018
+Jamaica,Masculino,1052,2018
+Martinica,Femenino,798,2018
+Martinica,Masculino,980,2018
+Nicaragua,Femenino,0,2018
+Nicaragua,Masculino,0,2018
+Panamá,Femenino,11768,2018
+Panamá,Masculino,11027,2018
+Puerto Rico,Femenino,58309,2018
+Puerto Rico,Masculino,50334,2018
+San Martín,Femenino,1947,2018
+San Martín,Masculino,1739,2018
+Trinidad y Tobago,Femenino,1533,2018
+Trinidad y Tobago,Masculino,1291,2018
+"Vírgenes Americanas, Islas",Femenino,248,2018
+"Vírgenes Americanas, Islas",Masculino,459,2018
+Otros del Caribe,Femenino,3870,2018
+Otros del Caribe,Masculino,4210,2018
+América del sur,Femenino,410896,2018
+América del sur,Masculino,351434,2018
+Argentina,Femenino,410896,2018
+Argentina,Masculino,351434,2018
+Bolivia,Femenino,7072,2018
+Bolivia,Masculino,6013,2018
+Brasil,Femenino,67105,2018
+Brasil,Masculino,62899,2018
+Colombia,Femenino,58149,2018
+Colombia,Masculino,47735,2018
+Chile,Femenino,61850,2018
+Chile,Masculino,52568,2018
+Ecuador,Femenino,5924,2018
+Ecuador,Masculino,5419,2018
+Perú,Femenino,19652,2018
+Perú,Masculino,17410,2018
+Uruguay,Femenino,15269,2018
+Uruguay,Masculino,12167,2018
+Venezuela,Femenino,55900,2018
+Venezuela,Masculino,39350,2018
+Otros de Suramérica,Femenino,4641,2018
+Otros de Suramérica,Masculino,4180,2018
+Europa,Femenino,692812,2018
+Europa,Masculino,639081,2018
+Alemania,Femenino,107380,2018
+Alemania,Masculino,109148,2018
+Austria,Femenino,5746,2018
+Austria,Masculino,5821,2018
+Bélgica,Femenino,18563,2018
+Bélgica,Masculino,16320,2018
+Bulgaria,Femenino,1177,2018
+Bulgaria,Masculino,1029,2018
+Checoslovaquia,Femenino,0,2018
+Checoslovaquia,Masculino,0,2018
+Dinamarca,Femenino,2113,2018
+Dinamarca,Masculino,2083,2018
+Escocia,Femenino,245,2018
+Escocia,Masculino,237,2018
+España,Femenino,82037,2018
+España,Masculino,77173,2018
+Finlandia,Femenino,2019,2018
+Finlandia,Masculino,2195,2018
+Francia,Femenino,119227,2018
+Francia,Masculino,101831,2018
+Grecia,Femenino,293,2018
+Grecia,Masculino,306,2018
+Holanda,Femenino,14255,2018
+Holanda,Masculino,12967,2018
+Hungría,Femenino,2210,2018
+Hungría,Masculino,2136,2018
+Reino Unido,Femenino,95959,2018
+Reino Unido,Masculino,89970,2018
+Irlanda,Femenino,544,2018
+Irlanda,Masculino,403,2018
+Italia,Femenino,39798,2018
+Italia,Masculino,36636,2018
+Luxemburgo,Femenino,546,2018
+Luxemburgo,Masculino,529,2018
+Noruega,Femenino,800,2018
+Noruega,Masculino,1016,2018
+Polonia,Femenino,18996,2018
+Polonia,Masculino,17211,2018
+Portugal,Femenino,21493,2018
+Portugal,Masculino,19052,2018
+República Checa,Femenino,4116,2018
+República Checa,Masculino,3571,2018
+Rumania,Femenino,2760,2018
+Rumania,Masculino,2488,2018
+Rusia,Femenino,116327,2018
+Rusia,Masculino,102614,2018
+Suecia,Femenino,5699,2018
+Suecia,Masculino,6162,2018
+Suiza,Femenino,19375,2018
+Suiza,Masculino,17798,2018
+Ucrania,Femenino,8084,2018
+Ucrania,Masculino,7305,2018
+Otros de Europa,Femenino,3050,2018
+Otros de Europa,Masculino,3080,2018
+Asia,Femenino,8418,2018
+Asia,Masculino,8794,2018
+Corea del Sur,Femenino,768,2018
+Corea del Sur,Masculino,751,2018
+China,Femenino,1912,2018
+China,Masculino,1947,2018
+India,Femenino,803,2018
+India,Masculino,799,2018
+Israel,Femenino,1127,2018
+Israel,Masculino,1304,2018
+Japón,Femenino,797,2018
+Japón,Masculino,905,2018
+Tailandia,Femenino,0,2018
+Tailandia,Masculino,0,2018
+Taiwán,Femenino,210,2018
+Taiwán,Masculino,192,2018
+Otros de Asia,Femenino,2801,2018
+Otros de Asia,Masculino,2896,2018
+Resto del mundo,Femenino,1666,2018
+Resto del mundo,Masculino,1468,2018
+Australia,Femenino,605,2018
+Australia,Masculino,634,2018
+Otros resto del mundo,Femenino,1061,2018
+Otros resto del mundo,Masculino,834,2018
+Dominicanos residentes,Femenino,395859,2019
+Dominicanos residentes,Masculino,240308,2019
+Extranjeros residentes,Femenino,23520,2019
+Extranjeros residentes,Masculino,21134,2019
+Dominicanos no residentes,Femenino,654891,2019
+Dominicanos no residentes,Masculino,433526,2019
+Extranjeros no residentes,Femenino,2900436,2019
+Extranjeros no residentes,Masculino,2457183,2019
+América del norte,Femenino,1689136,2019
+América del norte,Masculino,1439012,2019
+Canadá,Femenino,465344,2019
+Canadá,Masculino,426632,2019
+Estados Unidos,Femenino,1196397,2019
+Estados Unidos,Masculino,990325,2019
+México,Femenino,27395,2019
+México,Masculino,22055,2019
+América central y Caribe,Femenino,121851,2019
+América central y Caribe,Masculino,106694,2019
+Aruba,Femenino,670,2019
+Aruba,Masculino,458,2019
+Bahamas,Femenino,0,2019
+Bahamas,Masculino,0,2019
+"Caicos y Turcas, Islas",Femenino,968,2019
+"Caicos y Turcas, Islas",Masculino,1462,2019
+Costa Rica,Femenino,7241,2019
+Costa Rica,Masculino,5397,2019
+Cuba,Femenino,12541,2019
+Cuba,Masculino,6848,2019
+Curazao,Femenino,976,2019
+Curazao,Masculino,656,2019
+El Salvador,Femenino,2380,2019
+El Salvador,Masculino,1746,2019
+Guadalupe,Femenino,1828,2019
+Guadalupe,Masculino,2049,2019
+Guatemala,Femenino,4836,2019
+Guatemala,Masculino,4202,2019
+Haití,Femenino,4550,2019
+Haití,Masculino,12984,2019
+Honduras,Femenino,2020,2019
+Honduras,Masculino,1412,2019
+Jamaica,Femenino,1615,2019
+Jamaica,Masculino,1006,2019
+Martinica,Femenino,852,2019
+Martinica,Masculino,977,2019
+Nicaragua,Femenino,0,2019
+Nicaragua,Masculino,0,2019
+Panamá,Femenino,10644,2019
+Panamá,Masculino,9560,2019
+Puerto Rico,Femenino,63453,2019
+Puerto Rico,Masculino,50615,2019
+San Martín,Femenino,1289,2019
+San Martín,Masculino,1019,2019
+Trinidad y Tobago,Femenino,2084,2019
+Trinidad y Tobago,Masculino,1537,2019
+"Vírgenes Americanas, Islas",Femenino,169,2019
+"Vírgenes Americanas, Islas",Masculino,298,2019
+Otros del Caribe,Femenino,3735,2019
+Otros del Caribe,Masculino,4468,2019
+América del sur,Femenino,402271,2019
+América del sur,Masculino,312108,2019
+Argentina,Femenino,101550,2019
+Argentina,Masculino,84869,2019
+Bolivia,Femenino,7499,2019
+Bolivia,Masculino,6711,2019
+Brasil,Femenino,58293,2019
+Brasil,Masculino,48809,2019
+Colombia,Femenino,60187,2019
+Colombia,Masculino,46179,2019
+Chile,Femenino,63904,2019
+Chile,Masculino,50588,2019
+Ecuador,Femenino,6566,2019
+Ecuador,Masculino,5247,2019
+Perú,Femenino,21286,2019
+Perú,Masculino,17992,2019
+Uruguay,Femenino,14158,2019
+Uruguay,Masculino,10810,2019
+Venezuela,Femenino,64437,2019
+Venezuela,Masculino,37354,2019
+Otros de Suramérica,Femenino,4391,2019
+Otros de Suramérica,Masculino,3549,2019
+Europa,Femenino,676482,2019
+Europa,Masculino,588795,2019
+Alemania,Femenino,91349,2019
+Alemania,Masculino,87559,2019
+Austria,Femenino,6035,2019
+Austria,Masculino,5504,2019
+Bélgica,Femenino,17763,2019
+Bélgica,Masculino,15134,2019
+Bulgaria,Femenino,1369,2019
+Bulgaria,Masculino,1224,2019
+Checoslovaquia,Femenino,0,2019
+Checoslovaquia,Masculino,0,2019
+Dinamarca,Femenino,2280,2019
+Dinamarca,Masculino,2153,2019
+Escocia,Femenino,489,2019
+Escocia,Masculino,417,2019
+España,Femenino,88756,2019
+España,Masculino,76961,2019
+Finlandia,Femenino,2395,2019
+Finlandia,Masculino,2280,2019
+Francia,Femenino,117314,2019
+Francia,Masculino,93874,2019
+Grecia,Femenino,400,2019
+Grecia,Masculino,388,2019
+Holanda,Femenino,17486,2019
+Holanda,Masculino,16311,2019
+Hungría,Femenino,3022,2019
+Hungría,Masculino,2548,2019
+Reino Unido,Femenino,84752,2019
+Reino Unido,Masculino,71827,2019
+Irlanda,Femenino,666,2019
+Irlanda,Masculino,758,2019
+Italia,Femenino,45559,2019
+Italia,Masculino,38366,2019
+Luxemburgo,Femenino,563,2019
+Luxemburgo,Masculino,519,2019
+Noruega,Femenino,756,2019
+Noruega,Masculino,674,2019
+Polonia,Femenino,17380,2019
+Polonia,Masculino,16268,2019
+Portugal,Femenino,19269,2019
+Portugal,Masculino,16497,2019
+República Checa,Femenino,4040,2019
+República Checa,Masculino,3609,2019
+Rumania,Femenino,4017,2019
+Rumania,Masculino,3743,2019
+Rusia,Femenino,112133,2019
+Rusia,Masculino,96826,2019
+Suecia,Femenino,4792,2019
+Suecia,Masculino,4740,2019
+Suiza,Femenino,18051,2019
+Suiza,Masculino,15937,2019
+Ucrania,Femenino,12088,2019
+Ucrania,Masculino,11175,2019
+Otros de Europa,Femenino,3758,2019
+Otros de Europa,Masculino,3503,2019
+Asia,Femenino,8996,2019
+Asia,Masculino,8959,2019
+Corea del Sur,Femenino,709,2019
+Corea del Sur,Masculino,662,2019
+China,Femenino,2955,2019
+China,Masculino,2676,2019
+India,Femenino,777,2019
+India,Masculino,876,2019
+Israel,Femenino,1364,2019
+Israel,Masculino,1286,2019
+Japón,Femenino,787,2019
+Japón,Masculino,780,2019
+Tailandia,Femenino,0,2019
+Tailandia,Masculino,0,2019
+Taiwán,Femenino,181,2019
+Taiwán,Masculino,153,2019
+Otros de Asia,Femenino,2223,2019
+Otros de Asia,Masculino,2526,2019
+Resto del mundo,Femenino,1700,2019
+Resto del mundo,Masculino,1615,2019
+Australia,Femenino,816,2019
+Australia,Masculino,879,2019
+Otros resto del mundo,Femenino,884,2019
+Otros resto del mundo,Masculino,736,2019
+Dominicanos residentes,Femenino,161701,2020
+Dominicanos residentes,Masculino,123214,2020
+Extranjeros residentes,Femenino,8416,2020
+Extranjeros residentes,Masculino,8782,2020
+Dominicanos no residentes,Femenino,386010,2020
+Dominicanos no residentes,Masculino,320106,2020
+Extranjeros no residentes,Femenino,881509,2020
+Extranjeros no residentes,Masculino,817685,2020
+América del norte,Femenino,562126,2020
+América del norte,Masculino,519284,2020
+Canadá,Femenino,187144,2020
+Canadá,Masculino,170808,2020
+Estados Unidos,Femenino,368533,2020
+Estados Unidos,Masculino,341239,2020
+México,Femenino,6449,2020
+México,Masculino,7237,2020
+América central y Caribe,Femenino,26258,2020
+América central y Caribe,Masculino,36815,2020
+Aruba,Femenino,61,2020
+Aruba,Masculino,118,2020
+Bahamas,Femenino,0,2020
+Bahamas,Masculino,0,2020
+"Caicos y Turcas, Islas",Femenino,274,2020
+"Caicos y Turcas, Islas",Masculino,525,2020
+Costa Rica,Femenino,1654,2020
+Costa Rica,Masculino,1587,2020
+Cuba,Femenino,1906,2020
+Cuba,Masculino,1759,2020
+Curazao,Femenino,125,2020
+Curazao,Masculino,128,2020
+El Salvador,Femenino,628,2020
+El Salvador,Masculino,516,2020
+Guadalupe,Femenino,213,2020
+Guadalupe,Masculino,364,2020
+Guatemala,Femenino,1143,2020
+Guatemala,Masculino,1199,2020
+Haití,Femenino,1767,2020
+Haití,Masculino,8979,2020
+Honduras,Femenino,533,2020
+Honduras,Masculino,443,2020
+Jamaica,Femenino,380,2020
+Jamaica,Masculino,448,2020
+Martinica,Femenino,96,2020
+Martinica,Masculino,196,2020
+Nicaragua,Femenino,0,2020
+Nicaragua,Masculino,0,2020
+Panamá,Femenino,2988,2020
+Panamá,Masculino,3363,2020
+Puerto Rico,Femenino,13068,2020
+Puerto Rico,Masculino,15403,2020
+San Martín,Femenino,200,2020
+San Martín,Masculino,248,2020
+Trinidad y Tobago,Femenino,256,2020
+Trinidad y Tobago,Masculino,223,2020
+"Vírgenes Americanas, Islas",Femenino,99,2020
+"Vírgenes Americanas, Islas",Masculino,146,2020
+Otros del Caribe,Femenino,867,2020
+Otros del Caribe,Masculino,1170,2020
+América del sur,Femenino,94280,2020
+América del sur,Masculino,79459,2020
+Argentina,Femenino,20274,2020
+Argentina,Masculino,17885,2020
+Bolivia,Femenino,1806,2020
+Bolivia,Masculino,1518,2020
+Brasil,Femenino,14706,2020
+Brasil,Masculino,12842,2020
+Colombia,Femenino,16071,2020
+Colombia,Masculino,13006,2020
+Chile,Femenino,13751,2020
+Chile,Masculino,11856,2020
+Ecuador,Femenino,1347,2020
+Ecuador,Masculino,1248,2020
+Perú,Femenino,5711,2020
+Perú,Masculino,4850,2020
+Uruguay,Femenino,2613,2020
+Uruguay,Masculino,2168,2020
+Venezuela,Femenino,16648,2020
+Venezuela,Masculino,13046,2020
+Otros de Suramérica,Femenino,1353,2020
+Otros de Suramérica,Masculino,1040,2020
+Europa,Femenino,195888,2020
+Europa,Masculino,178519,2020
+Alemania,Femenino,17893,2020
+Alemania,Masculino,18855,2020
+Austria,Femenino,1874,2020
+Austria,Masculino,1814,2020
+Bélgica,Femenino,4495,2020
+Bélgica,Masculino,3333,2020
+Bulgaria,Femenino,712,2020
+Bulgaria,Masculino,809,2020
+Checoslovaquia,Femenino,0,2020
+Checoslovaquia,Masculino,0,2020
+Dinamarca,Femenino,1088,2020
+Dinamarca,Masculino,910,2020
+Escocia,Femenino,89,2020
+Escocia,Masculino,101,2020
+España,Femenino,22341,2020
+España,Masculino,21730,2020
+Finlandia,Femenino,2627,2020
+Finlandia,Masculino,2023,2020
+Francia,Femenino,41870,2020
+Francia,Masculino,34441,2020
+Grecia,Femenino,145,2020
+Grecia,Masculino,169,2020
+Holanda,Femenino,3783,2020
+Holanda,Masculino,4330,2020
+Hungría,Femenino,1356,2020
+Hungría,Masculino,1240,2020
+Reino Unido,Femenino,15777,2020
+Reino Unido,Masculino,14106,2020
+Irlanda,Femenino,434,2020
+Irlanda,Masculino,353,2020
+Italia,Femenino,11486,2020
+Italia,Masculino,11344,2020
+Luxemburgo,Femenino,235,2020
+Luxemburgo,Masculino,162,2020
+Noruega,Femenino,175,2020
+Noruega,Masculino,209,2020
+Polonia,Femenino,5407,2020
+Polonia,Masculino,5120,2020
+Portugal,Femenino,2727,2020
+Portugal,Masculino,2377,2020
+República Checa,Femenino,1958,2020
+República Checa,Masculino,1820,2020
+Rumania,Femenino,1317,2020
+Rumania,Masculino,1182,2020
+Rusia,Femenino,37574,2020
+Rusia,Masculino,33178,2020
+Suecia,Femenino,2718,2020
+Suecia,Masculino,2583,2020
+Suiza,Femenino,5560,2020
+Suiza,Masculino,5264,2020
+Ucrania,Femenino,10923,2020
+Ucrania,Masculino,9862,2020
+Otros de Europa,Femenino,1324,2020
+Otros de Europa,Masculino,1204,2020
+Asia,Femenino,2415,2020
+Asia,Masculino,3053,2020
+Corea del Sur,Femenino,200,2020
+Corea del Sur,Masculino,236,2020
+China,Femenino,514,2020
+China,Masculino,439,2020
+India,Femenino,186,2020
+India,Masculino,386,2020
+Israel,Femenino,276,2020
+Israel,Masculino,324,2020
+Japón,Femenino,133,2020
+Japón,Masculino,145,2020
+Tailandia,Femenino,0,2020
+Tailandia,Masculino,0,2020
+Taiwán,Femenino,30,2020
+Taiwán,Masculino,30,2020
+Otros de Asia,Femenino,1076,2020
+Otros de Asia,Masculino,1493,2020
+Resto del mundo,Femenino,542,2020
+Resto del mundo,Masculino,555,2020
+Australia,Femenino,276,2020
+Australia,Masculino,296,2020
+Otros resto del mundo,Femenino,266,2020
+Otros resto del mundo,Masculino,259,2020
+Dominicanos residentes,Femenino,300787,2021
+Dominicanos residentes,Masculino,228427,2021
+Extranjeros residentes,Femenino,30939,2021
+Extranjeros residentes,Masculino,35662,2021
+Dominicanos no residentes,Femenino,744390,2021
+Dominicanos no residentes,Masculino,594702,2021
+Extranjeros no residentes,Femenino,1908432,2021
+Extranjeros no residentes,Masculino,1746785,2021
+América del norte,Femenino,1191268,2021
+América del norte,Masculino,1074319,2021
+Canadá,Femenino,82620,2021
+Canadá,Masculino,80080,2021
+Estados Unidos,Femenino,1094011,2021
+Estados Unidos,Masculino,976011,2021
+México,Femenino,14637,2021
+México,Masculino,17270,2021
+América central y Caribe,Femenino,74202,2021
+América central y Caribe,Masculino,92368,2021
+Aruba,Femenino,708,2021
+Aruba,Masculino,772,2021
+Bahamas,Femenino,0,2021
+Bahamas,Masculino,0,2021
+"Caicos y Turcas, Islas",Femenino,849,2021
+"Caicos y Turcas, Islas",Masculino,1424,2021
+Costa Rica,Femenino,3144,2021
+Costa Rica,Masculino,3310,2021
+Cuba,Femenino,1633,2021
+Cuba,Masculino,1542,2021
+Curazao,Femenino,1163,2021
+Curazao,Masculino,1703,2021
+El Salvador,Femenino,1415,2021
+El Salvador,Masculino,1432,2021
+Guadalupe,Femenino,1082,2021
+Guadalupe,Masculino,1517,2021
+Guatemala,Femenino,3113,2021
+Guatemala,Masculino,3526,2021
+Haití,Femenino,6215,2021
+Haití,Masculino,12739,2021
+Honduras,Femenino,1585,2021
+Honduras,Masculino,1706,2021
+Jamaica,Femenino,871,2021
+Jamaica,Masculino,897,2021
+Martinica,Femenino,875,2021
+Martinica,Masculino,1212,2021
+Nicaragua,Femenino,0,2021
+Nicaragua,Masculino,0,2021
+Panamá,Femenino,7521,2021
+Panamá,Masculino,8734,2021
+Puerto Rico,Femenino,40663,2021
+Puerto Rico,Masculino,46181,2021
+San Martín,Femenino,709,2021
+San Martín,Masculino,1049,2021
+Trinidad y Tobago,Femenino,154,2021
+Trinidad y Tobago,Masculino,275,2021
+"Vírgenes Americanas, Islas",Femenino,471,2021
+"Vírgenes Americanas, Islas",Masculino,671,2021
+Otros del Caribe,Femenino,2037,2021
+Otros del Caribe,Masculino,3678,2021
+América del sur,Femenino,221379,2021
+América del sur,Masculino,183515,2021
+Argentina,Femenino,15972,2021
+Argentina,Masculino,13777,2021
+Bolivia,Femenino,6686,2021
+Bolivia,Masculino,4897,2021
+Brasil,Femenino,22334,2021
+Brasil,Masculino,19139,2021
+Colombia,Femenino,68960,2021
+Colombia,Masculino,53964,2021
+Chile,Femenino,17816,2021
+Chile,Masculino,15866,2021
+Ecuador,Femenino,7224,2021
+Ecuador,Masculino,5893,2021
+Perú,Femenino,1010,2021
+Perú,Masculino,13046,2021
+Uruguay,Femenino,5763,2021
+Uruguay,Masculino,4806,2021
+Venezuela,Femenino,56454,2021
+Venezuela,Masculino,48807,2021
+Otros de Suramérica,Femenino,4160,2021
+Otros de Suramérica,Masculino,3320,2021
+Europa,Femenino,416644,2021
+Europa,Masculino,388222,2021
+Alemania,Femenino,52214,2021
+Alemania,Masculino,53315,2021
+Austria,Femenino,2798,2021
+Austria,Masculino,3098,2021
+Bélgica,Femenino,6911,2021
+Bélgica,Masculino,6433,2021
+Bulgaria,Femenino,1384,2021
+Bulgaria,Masculino,1169,2021
+Checoslovaquia,Femenino,0,2021
+Checoslovaquia,Masculino,0,2021
+Dinamarca,Femenino,687,2021
+Dinamarca,Masculino,832,2021
+Escocia,Femenino,26,2021
+Escocia,Masculino,13,2021
+España,Femenino,61003,2021
+España,Masculino,61365,2021
+Finlandia,Femenino,208,2021
+Finlandia,Masculino,294,2021
+Francia,Femenino,53703,2021
+Francia,Masculino,49992,2021
+Grecia,Femenino,222,2021
+Grecia,Masculino,575,2021
+Holanda,Femenino,5027,2021
+Holanda,Masculino,5525,2021
+Hungría,Femenino,2101,2021
+Hungría,Masculino,2028,2021
+Reino Unido,Femenino,8712,2021
+Reino Unido,Masculino,9065,2021
+Irlanda,Femenino,421,2021
+Irlanda,Masculino,447,2021
+Italia,Femenino,11600,2021
+Italia,Masculino,15237,2021
+Luxemburgo,Femenino,795,2021
+Luxemburgo,Masculino,746,2021
+Noruega,Femenino,339,2021
+Noruega,Masculino,457,2021
+Polonia,Femenino,30153,2021
+Polonia,Masculino,26973,2021
+Portugal,Femenino,10820,2021
+Portugal,Masculino,9862,2021
+República Checa,Femenino,5370,2021
+República Checa,Masculino,4915,2021
+Rumania,Femenino,4503,2021
+Rumania,Masculino,3666,2021
+Rusia,Femenino,99155,2021
+Rusia,Masculino,79800,2021
+Suecia,Femenino,789,2021
+Suecia,Masculino,841,2021
+Suiza,Femenino,17731,2021
+Suiza,Masculino,17322,2021
+Ucrania,Femenino,35613,2021
+Ucrania,Masculino,29800,2021
+Otros de Europa,Femenino,4359,2021
+Otros de Europa,Masculino,4452,2021
+Asia,Femenino,4275,2021
+Asia,Masculino,7375,2021
+Corea del Sur,Femenino,235,2021
+Corea del Sur,Masculino,450,2021
+China,Femenino,234,2021
+China,Masculino,481,2021
+India,Femenino,214,2021
+India,Masculino,541,2021
+Israel,Femenino,1379,2021
+Israel,Masculino,1523,2021
+Japón,Femenino,128,2021
+Japón,Masculino,180,2021
+Tailandia,Femenino,0,2021
+Tailandia,Masculino,0,2021
+Taiwán,Femenino,23,2021
+Taiwán,Masculino,28,2021
+Otros de Asia,Femenino,2062,2021
+Otros de Asia,Masculino,4172,2021
+Resto del mundo,Femenino,664,2021
+Resto del mundo,Masculino,986,2021
+Australia,Femenino,110,2021
+Australia,Masculino,233,2021
+Otros resto del mundo,Femenino,554,2021
+Otros resto del mundo,Masculino,753,2021
+Dominicanos residentes,Femenino,354964,2022
+Dominicanos residentes,Masculino,292142,2022
+Extranjeros residentes,Femenino,60690,2022
+Extranjeros residentes,Masculino,71523,2022
+Dominicanos no residentes,Femenino,744919,2022
+Dominicanos no residentes,Masculino,613126,2022
+Extranjeros no residentes,Femenino,2966511,2022
+Extranjeros no residentes,Masculino,2838838,2022
+América del norte,Femenino,1724219,2022
+América del norte,Masculino,1642972,2022
+Canadá,Femenino,374312,2022
+Canadá,Masculino,339979,2022
+Estados Unidos,Femenino,1325739,2022
+Estados Unidos,Masculino,1271457,2022
+México,Femenino,24168,2022
+México,Masculino,31536,2022
+América central y Caribe,Femenino,122750,2022
+América central y Caribe,Masculino,146600,2022
+Aruba,Femenino,1137,2022
+Aruba,Masculino,1461,2022
+Bahamas,Femenino,0,2022
+Bahamas,Masculino,0,2022
+"Caicos y Turcas, Islas",Femenino,1490,2022
+"Caicos y Turcas, Islas",Masculino,2575,2022
+Costa Rica,Femenino,4596,2022
+Costa Rica,Masculino,6266,2022
+Cuba,Femenino,5270,2022
+Cuba,Masculino,5523,2022
+Curazao,Femenino,2072,2022
+Curazao,Masculino,3073,2022
+El Salvador,Femenino,3035,2022
+El Salvador,Masculino,3118,2022
+Guadalupe,Femenino,3643,2022
+Guadalupe,Masculino,4329,2022
+Guatemala,Femenino,5850,2022
+Guatemala,Masculino,7637,2022
+Haití,Femenino,12784,2022
+Haití,Masculino,16108,2022
+Honduras,Femenino,2514,2022
+Honduras,Masculino,2765,2022
+Jamaica,Femenino,2317,2022
+Jamaica,Masculino,2742,2022
+Martinica,Femenino,2846,2022
+Martinica,Masculino,3547,2022
+Nicaragua,Femenino,0,2022
+Nicaragua,Masculino,0,2022
+Panamá,Femenino,10865,2022
+Panamá,Masculino,14415,2022
+Puerto Rico,Femenino,56859,2022
+Puerto Rico,Masculino,62186,2022
+San Martín,Femenino,1067,2022
+San Martín,Masculino,1728,2022
+Trinidad y Tobago,Femenino,1607,2022
+Trinidad y Tobago,Masculino,1440,2022
+"Vírgenes Americanas, Islas",Femenino,684,2022
+"Vírgenes Americanas, Islas",Masculino,1040,2022
+Otros del Caribe,Femenino,4114,2022
+Otros del Caribe,Masculino,6646,2022
+América del sur,Femenino,451346,2022
+América del sur,Masculino,394296,2022
+Argentina,Femenino,94014,2022
+Argentina,Masculino,83870,2022
+Bolivia,Femenino,6517,2022
+Bolivia,Masculino,5438,2022
+Brasil,Femenino,35967,2022
+Brasil,Masculino,35367,2022
+Colombia,Femenino,140098,2022
+Colombia,Masculino,116535,2022
+Chile,Femenino,64456,2022
+Chile,Masculino,54774,2022
+Ecuador,Femenino,19393,2022
+Ecuador,Masculino,16063,2022
+Perú,Femenino,39325,2022
+Perú,Masculino,32073,2022
+Uruguay,Femenino,12568,2022
+Uruguay,Masculino,10818,2022
+Venezuela,Femenino,32990,2022
+Venezuela,Masculino,34584,2022
+Otros de Suramérica,Femenino,6018,2022
+Otros de Suramérica,Masculino,4774,2022
+Europa,Femenino,660277,2022
+Europa,Masculino,639880,2022
+Alemania,Femenino,92837,2022
+Alemania,Masculino,92981,2022
+Austria,Femenino,6575,2022
+Austria,Masculino,7011,2022
+Bélgica,Femenino,17633,2022
+Bélgica,Masculino,16116,2022
+Bulgaria,Femenino,2425,2022
+Bulgaria,Masculino,2264,2022
+Checoslovaquia,Femenino,0,2022
+Checoslovaquia,Masculino,0,2022
+Dinamarca,Femenino,1778,2022
+Dinamarca,Masculino,1812,2022
+Escocia,Femenino,0,2022
+Escocia,Masculino,0,2022
+España,Femenino,93216,2022
+España,Masculino,99657,2022
+Finlandia,Femenino,504,2022
+Finlandia,Masculino,622,2022
+Francia,Femenino,113251,2022
+Francia,Masculino,104722,2022
+Grecia,Femenino,319,2022
+Grecia,Masculino,553,2022
+Holanda,Femenino,15051,2022
+Holanda,Masculino,15303,2022
+Hungría,Femenino,4574,2022
+Hungría,Masculino,4459,2022
+Reino Unido,Femenino,102751,2022
+Reino Unido,Masculino,94193,2022
+Irlanda,Femenino,1818,2022
+Irlanda,Masculino,1789,2022
+Italia,Femenino,35123,2022
+Italia,Masculino,41463,2022
+Luxemburgo,Femenino,1335,2022
+Luxemburgo,Masculino,1365,2022
+Noruega,Femenino,1228,2022
+Noruega,Masculino,1377,2022
+Polonia,Femenino,28904,2022
+Polonia,Masculino,26450,2022
+Portugal,Femenino,26012,2022
+Portugal,Masculino,24231,2022
+República Checa,Femenino,13292,2022
+República Checa,Masculino,12244,2022
+Rumania,Femenino,5480,2022
+Rumania,Masculino,5216,2022
+Rusia,Femenino,52600,2022
+Rusia,Masculino,43336,2022
+Suecia,Femenino,1887,2022
+Suecia,Masculino,2052,2022
+Suiza,Femenino,22518,2022
+Suiza,Masculino,22666,2022
+Ucrania,Femenino,10332,2022
+Ucrania,Masculino,8452,2022
+Otros de Europa,Femenino,8834,2022
+Otros de Europa,Masculino,9546,2022
+Asia,Femenino,6126,2022
+Asia,Masculino,12462,2022
+Corea del Sur,Femenino,338,2022
+Corea del Sur,Masculino,854,2022
+China,Femenino,427,2022
+China,Masculino,1127,2022
+India,Femenino,325,2022
+India,Masculino,1116,2022
+Israel,Femenino,1769,2022
+Israel,Masculino,1999,2022
+Japón,Femenino,210,2022
+Japón,Masculino,422,2022
+Tailandia,Femenino,0,2022
+Tailandia,Masculino,0,2022
+Taiwán,Femenino,63,2022
+Taiwán,Masculino,106,2022
+Otros de Asia,Femenino,2994,2022
+Otros de Asia,Masculino,6838,2022
+Resto del mundo,Femenino,1793,2022
+Resto del mundo,Masculino,2629,2022
+Australia,Femenino,514,2022
+Australia,Masculino,721,2022
+Otros resto del mundo,Femenino,1279,2022
+Otros resto del mundo,Masculino,1908,2022
+Dominicanos residentes,Femenino,436446,2023
+Dominicanos residentes,Masculino,360631,2023
+Extranjeros residentes,Femenino,71398,2023
+Extranjeros residentes,Masculino,81948,2023
+Dominicanos no residentes,Femenino,726682,2023
+Dominicanos no residentes,Masculino,601187,2023
+Extranjeros no residentes,Femenino,3455055,2023
+Extranjeros no residentes,Masculino,3275746,2023
+América del norte,Femenino,2232423,2023
+América del norte,Masculino,2099607,2023
+Canadá,Femenino,575647,2023
+Canadá,Masculino,516601,2023
+Estados Unidos,Femenino,1617348,2023
+Estados Unidos,Masculino,1535986,2023
+México,Femenino,39427,2023
+México,Masculino,47020,2023
+América central y Caribe,Femenino,194966,2023
+América central y Caribe,Masculino,213833,2023
+Aruba,Femenino,1280,2023
+Aruba,Masculino,1474,2023
+Bahamas,Femenino,0,2023
+Bahamas,Masculino,0,2023
+"Caicos y Turcas, Islas",Femenino,1811,2023
+"Caicos y Turcas, Islas",Masculino,3063,2023
+Costa Rica,Femenino,10690,2023
+Costa Rica,Masculino,11903,2023
+Cuba,Femenino,5612,2023
+Cuba,Masculino,5863,2023
+Curazao,Femenino,2169,2023
+Curazao,Masculino,3013,2023
+El Salvador,Femenino,8286,2023
+El Salvador,Masculino,7721,2023
+Guadalupe,Femenino,4437,2023
+Guadalupe,Masculino,4748,2023
+Guatemala,Femenino,14388,2023
+Guatemala,Masculino,15600,2023
+Haití,Femenino,13930,2023
+Haití,Masculino,18526,2023
+Honduras,Femenino,3700,2023
+Honduras,Masculino,3888,2023
+Jamaica,Femenino,7934,2023
+Jamaica,Masculino,6567,2023
+Martinica,Femenino,3782,2023
+Martinica,Masculino,4190,2023
+Nicaragua,Femenino,0,2023
+Nicaragua,Masculino,0,2023
+Panamá,Femenino,16484,2023
+Panamá,Masculino,20277,2023
+Puerto Rico,Femenino,89732,2023
+Puerto Rico,Masculino,92375,2023
+San Martín,Femenino,1984,2023
+San Martín,Masculino,2642,2023
+Trinidad y Tobago,Femenino,1672,2023
+Trinidad y Tobago,Masculino,1735,2023
+"Vírgenes Americanas, Islas",Femenino,940,2023
+"Vírgenes Americanas, Islas",Masculino,1420,2023
+Otros del Caribe,Femenino,6133,2023
+Otros del Caribe,Masculino,8828,2023
+América del sur,Femenino,523903,2023
+América del sur,Masculino,453850,2023
+Argentina,Femenino,105504,2023
+Argentina,Masculino,94164,2023
+Bolivia,Femenino,6377,2023
+Bolivia,Masculino,5444,2023
+Brasil,Femenino,56010,2023
+Brasil,Masculino,53761,2023
+Colombia,Femenino,168540,2023
+Colombia,Masculino,137117,2023
+Chile,Femenino,69894,2023
+Chile,Masculino,58407,2023
+Ecuador,Femenino,26143,2023
+Ecuador,Masculino,21520,2023
+Perú,Femenino,43825,2023
+Perú,Masculino,35537,2023
+Uruguay,Femenino,13892,2023
+Uruguay,Masculino,12135,2023
+Venezuela,Femenino,27727,2023
+Venezuela,Masculino,30409,2023
+Otros de Suramérica,Femenino,5992,2023
+Otros de Suramérica,Masculino,5356,2023
+Europa,Femenino,494917,2023
+Europa,Masculino,490010,2023
+Alemania,Femenino,70467,2023
+Alemania,Masculino,70527,2023
+Austria,Femenino,5727,2023
+Austria,Masculino,5991,2023
+Bélgica,Femenino,12498,2023
+Bélgica,Masculino,11652,2023
+Bulgaria,Femenino,1969,2023
+Bulgaria,Masculino,1793,2023
+Checoslovaquia,Femenino,0,2023
+Checoslovaquia,Masculino,0,2023
+Dinamarca,Femenino,1553,2023
+Dinamarca,Masculino,1708,2023
+Escocia,Femenino,0,2023
+Escocia,Masculino,0,2023
+España,Femenino,92403,2023
+España,Masculino,97820,2023
+Finlandia,Femenino,635,2023
+Finlandia,Masculino,658,2023
+Francia,Femenino,74218,2023
+Francia,Masculino,69615,2023
+Grecia,Femenino,420,2023
+Grecia,Masculino,666,2023
+Holanda,Femenino,12048,2023
+Holanda,Masculino,12528,2023
+Hungría,Femenino,2649,2023
+Hungría,Masculino,2657,2023
+Reino Unido,Femenino,91613,2023
+Reino Unido,Masculino,84156,2023
+Irlanda,Femenino,1690,2023
+Irlanda,Masculino,1723,2023
+Italia,Femenino,36065,2023
+Italia,Masculino,42436,2023
+Luxemburgo,Femenino,890,2023
+Luxemburgo,Masculino,906,2023
+Noruega,Femenino,1147,2023
+Noruega,Masculino,1254,2023
+Polonia,Femenino,19296,2023
+Polonia,Masculino,17545,2023
+Portugal,Femenino,25392,2023
+Portugal,Masculino,23581,2023
+República Checa,Femenino,8987,2023
+República Checa,Masculino,8125,2023
+Rumania,Femenino,3241,2023
+Rumania,Masculino,3238,2023
+Rusia,Femenino,1516,2023
+Rusia,Masculino,1551,2023
+Suecia,Femenino,1867,2023
+Suecia,Masculino,1983,2023
+Suiza,Femenino,17905,2023
+Suiza,Masculino,17986,2023
+Ucrania,Femenino,2887,2023
+Ucrania,Masculino,2113,2023
+Otros de Europa,Femenino,7295,2023
+Otros de Europa,Masculino,7797,2023
+Asia,Femenino,6533,2023
+Asia,Masculino,14897,2023
+Corea del Sur,Femenino,493,2023
+Corea del Sur,Masculino,1241,2023
+China,Femenino,1283,2023
+China,Masculino,2597,2023
+India,Femenino,615,2023
+India,Masculino,1778,2023
+Israel,Femenino,1122,2023
+Israel,Masculino,1494,2023
+Japón,Femenino,367,2023
+Japón,Masculino,762,2023
+Tailandia,Femenino,0,2023
+Tailandia,Masculino,0,2023
+Taiwán,Femenino,128,2023
+Taiwán,Masculino,181,2023
+Otros de Asia,Femenino,2524,2023
+Otros de Asia,Masculino,6845,2023
+Resto del mundo,Femenino,2315,2023
+Resto del mundo,Masculino,3549,2023
+Australia,Femenino,840,2023
+Australia,Masculino,1058,2023
+Otros resto del mundo,Femenino,1475,2023
+Otros resto del mundo,Masculino,2492,2023
+Dominicanos residentes,Femenino,451455,2024
+Dominicanos residentes,Masculino,384298,2024
+Extranjeros residentes,Femenino,69375,2024
+Extranjeros residentes,Masculino,79080,2024
+Dominicanos no residentes,Femenino,767347,2024
+Dominicanos no residentes,Masculino,642991,2024
+Extranjeros no residentes,Femenino,3692995,2024
+Extranjeros no residentes,Masculino,3432367,2024
+América del norte,Femenino,2398353,2024
+América del norte,Masculino,2221627,2024
+Canadá,Femenino,630455,2024
+Canadá,Masculino,558201,2024
+Estados Unidos,Femenino,1713119,2024
+Estados Unidos,Masculino,1603119,2024
+México,Femenino,54779,2024
+México,Masculino,60307,2024
+América central y Caribe,Femenino,204071,2024
+América central y Caribe,Masculino,215075,2024
+Aruba,Femenino,1491,2024
+Aruba,Masculino,1672,2024
+Bahamas,Femenino,0,2024
+Bahamas,Masculino,0,2024
+"Caicos y Turcas, Islas",Femenino,1864,2024
+"Caicos y Turcas, Islas",Masculino,3136,2024
+Costa Rica,Femenino,13213,2024
+Costa Rica,Masculino,13602,2024
+Cuba,Femenino,6498,2024
+Cuba,Masculino,6705,2024
+Curazao,Femenino,2359,2024
+Curazao,Masculino,3189,2024
+El Salvador,Femenino,9044,2024
+El Salvador,Masculino,8023,2024
+Guadalupe,Femenino,3725,2024
+Guadalupe,Masculino,4149,2024
+Guatemala,Femenino,17910,2024
+Guatemala,Masculino,18566,2024
+Haití,Femenino,2953,2024
+Haití,Masculino,4774,2024
+Honduras,Femenino,4528,2024
+Honduras,Masculino,4519,2024
+Jamaica,Femenino,10016,2024
+Jamaica,Masculino,7682,2024
+Martinica,Femenino,4341,2024
+Martinica,Masculino,4421,2024
+Nicaragua,Femenino,0,2024
+Nicaragua,Masculino,0,2024
+Panamá,Femenino,16261,2024
+Panamá,Masculino,20209,2024
+Puerto Rico,Femenino,97387,2024
+Puerto Rico,Masculino,98646,2024
+San Martín,Femenino,2110,2024
+San Martín,Masculino,2683,2024
+Trinidad y Tobago,Femenino,2501,2024
+Trinidad y Tobago,Masculino,2278,2024
+"Vírgenes Americanas, Islas",Femenino,858,2024
+"Vírgenes Americanas, Islas",Masculino,1269,2024
+Otros del Caribe,Femenino,7011,2024
+Otros del Caribe,Masculino,9552,2024
+América del sur,Femenino,606881,2024
+América del sur,Masculino,512746,2024
+Argentina,Femenino,144091,2024
+Argentina,Masculino,126786,2024
+Bolivia,Femenino,5960,2024
+Bolivia,Masculino,5505,2024
+Brasil,Femenino,61382,2024
+Brasil,Masculino,58500,2024
+Colombia,Femenino,188814,2024
+Colombia,Masculino,146998,2024
+Chile,Femenino,79973,2024
+Chile,Masculino,65032,2024
+Ecuador,Femenino,35918,2024
+Ecuador,Masculino,28659,2024
+Perú,Femenino,51887,2024
+Perú,Masculino,42119,2024
+Uruguay,Femenino,16862,2024
+Uruguay,Masculino,14466,2024
+Venezuela,Femenino,15495,2024
+Venezuela,Masculino,19085,2024
+Otros de Suramérica,Femenino,6501,2024
+Otros de Suramérica,Masculino,5596,2024
+Europa,Femenino,479379,2024
+Europa,Masculino,463167,2024
+Alemania,Femenino,67684,2024
+Alemania,Masculino,67124,2024
+Austria,Femenino,6284,2024
+Austria,Masculino,6401,2024
+Bélgica,Femenino,12928,2024
+Bélgica,Masculino,12111,2024
+Bulgaria,Femenino,2005,2024
+Bulgaria,Masculino,1749,2024
+Checoslovaquia,Femenino,0,2024
+Checoslovaquia,Masculino,0,2024
+Dinamarca,Femenino,1194,2024
+Dinamarca,Masculino,1280,2024
+Escocia,Femenino,0,2024
+Escocia,Masculino,0,2024
+España,Femenino,62057,2024
+España,Masculino,69263,2024
+Finlandia,Femenino,664,2024
+Finlandia,Masculino,749,2024
+Francia,Femenino,72805,2024
+Francia,Masculino,66977,2024
+Grecia,Femenino,421,2024
+Grecia,Masculino,826,2024
+Holanda,Femenino,12226,2024
+Holanda,Masculino,12309,2024
+Hungría,Femenino,2717,2024
+Hungría,Masculino,2587,2024
+Reino Unido,Femenino,99931,2024
+Reino Unido,Masculino,89946,2024
+Irlanda,Femenino,1640,2024
+Irlanda,Masculino,1614,2024
+Italia,Femenino,41228,2024
+Italia,Masculino,45733,2024
+Luxemburgo,Femenino,923,2024
+Luxemburgo,Masculino,889,2024
+Noruega,Femenino,1126,2024
+Noruega,Masculino,1233,2024
+Polonia,Femenino,19744,2024
+Polonia,Masculino,18047,2024
+Portugal,Femenino,25926,2024
+Portugal,Masculino,23963,2024
+República Checa,Femenino,7629,2024
+República Checa,Masculino,6976,2024
+Rumania,Femenino,2560,2024
+Rumania,Masculino,2425,2024
+Rusia,Femenino,1510,2024
+Rusia,Masculino,1543,2024
+Suecia,Femenino,1706,2024
+Suecia,Masculino,1774,2024
+Suiza,Femenino,18148,2024
+Suiza,Masculino,17963,2024
+Ucrania,Femenino,2925,2024
+Ucrania,Masculino,2113,2024
+Otros de Europa,Femenino,7398,2024
+Otros de Europa,Masculino,7572,2024
+Asia,Femenino,7547,2024
+Asia,Masculino,15969,2024
+Corea del Sur,Femenino,560,2024
+Corea del Sur,Masculino,997,2024
+China,Femenino,1823,2024
+China,Masculino,3725,2024
+India,Femenino,617,2024
+India,Masculino,1975,2024
+Israel,Femenino,1359,2024
+Israel,Masculino,1672,2024
+Japón,Femenino,485,2024
+Japón,Masculino,802,2024
+Tailandia,Femenino,0,2024
+Tailandia,Masculino,0,2024
+Taiwán,Femenino,135,2024
+Taiwán,Masculino,157,2024
+Otros de Asia,Femenino,2569,2024
+Otros de Asia,Masculino,6642,2024
+Resto del mundo,Femenino,2764,2024
+Resto del mundo,Masculino,3783,2024
+Australia,Femenino,1032,2024
+Australia,Masculino,1248,2024
+Otros resto del mundo,Femenino,1732,2024
+Otros resto del mundo,Masculino,2535,2024
+Dominicanos residentes,Femenino,483458,2025
+Dominicanos residentes,Masculino,388042,2025
+Extranjeros residentes,Femenino,69890,2025
+Extranjeros residentes,Masculino,80266,2025
+Dominicanos no residentes,Femenino,827660,2025
+Dominicanos no residentes,Masculino,691304,2025
+Extranjeros no residentes,Femenino,3769834,2025
+Extranjeros no residentes,Masculino,3571911,2025
+América del norte,Femenino,2350808,2025
+América del norte,Masculino,2219934,2025
+Canadá,Femenino,593384,2025
+Canadá,Masculino,550858,2025
+Estados Unidos,Femenino,1676969,2025
+Estados Unidos,Masculino,1588285,2025
+México,Femenino,80455,2025
+México,Masculino,80791,2025
+América central y Caribe,Femenino,211770,2025
+América central y Caribe,Masculino,217437,2025
+Aruba,Femenino,1590,2025
+Aruba,Masculino,1851,2025
+Bahamas,Femenino,0,2025
+Bahamas,Masculino,0,2025
+"Caicos y Turcas, Islas",Femenino,2198,2025
+"Caicos y Turcas, Islas",Masculino,3016,2025
+Costa Rica,Femenino,15946,2025
+Costa Rica,Masculino,15406,2025
+Cuba,Femenino,11117,2025
+Cuba,Masculino,9558,2025
+Curazao,Femenino,2973,2025
+Curazao,Masculino,3544,2025
+El Salvador,Femenino,6792,2025
+El Salvador,Masculino,6529,2025
+Guadalupe,Femenino,3938,2025
+Guadalupe,Masculino,4028,2025
+Guatemala,Femenino,17151,2025
+Guatemala,Masculino,17403,2025
+Haití,Femenino,2068,2025
+Haití,Masculino,3205,2025
+Honduras,Femenino,4537,2025
+Honduras,Masculino,4623,2025
+Jamaica,Femenino,7916,2025
+Jamaica,Masculino,6355,2025
+Martinica,Femenino,4156,2025
+Martinica,Masculino,4307,2025
+Nicaragua,Femenino,0,2025
+Nicaragua,Masculino,0,2025
+Panamá,Femenino,17720,2025
+Panamá,Masculino,21444,2025
+Puerto Rico,Femenino,99810,2025
+Puerto Rico,Masculino,100244,2025
+San Martín,Femenino,2427,2025
+San Martín,Masculino,2771,2025
+Trinidad y Tobago,Femenino,2260,2025
+Trinidad y Tobago,Masculino,2059,2025
+"Vírgenes Americanas, Islas",Femenino,786,2025
+"Vírgenes Americanas, Islas",Masculino,1080,2025
+Otros del Caribe,Femenino,8384,2025
+Otros del Caribe,Masculino,10012,2025
+América del sur,Femenino,731538,2025
+América del sur,Masculino,658537,2025
+Argentina,Femenino,230440,2025
+Argentina,Masculino,209762,2025
+Bolivia,Femenino,4047,2025
+Bolivia,Masculino,4119,2025
+Brasil,Femenino,72143,2025
+Brasil,Masculino,69114,2025
+Colombia,Femenino,215996,2025
+Colombia,Masculino,183899,2025
+Chile,Femenino,76782,2025
+Chile,Masculino,69166,2025
+Ecuador,Femenino,35463,2025
+Ecuador,Masculino,31771,2025
+Perú,Femenino,66272,2025
+Perú,Masculino,60071,2025
+Uruguay,Femenino,16577,2025
+Uruguay,Masculino,15006,2025
+Venezuela,Femenino,6639,2025
+Venezuela,Masculino,9216,2025
+Otros de Suramérica,Femenino,7178,2025
+Otros de Suramérica,Masculino,6414,2025
+Europa,Femenino,463829,2025
+Europa,Masculino,456859,2025
+Alemania,Femenino,62977,2025
+Alemania,Masculino,62810,2025
+Austria,Femenino,5920,2025
+Austria,Masculino,6187,2025
+Bélgica,Femenino,10839,2025
+Bélgica,Masculino,10533,2025
+Bulgaria,Femenino,1791,2025
+Bulgaria,Masculino,1658,2025
+Checoslovaquia,Femenino,0,2025
+Checoslovaquia,Masculino,0,2025
+Dinamarca,Femenino,1194,2025
+Dinamarca,Masculino,1292,2025
+Escocia,Femenino,0,2025
+Escocia,Masculino,0,2025
+España,Femenino,64380,2025
+España,Masculino,68859,2025
+Finlandia,Femenino,627,2025
+Finlandia,Masculino,751,2025
+Francia,Femenino,67513,2025
+Francia,Masculino,65282,2025
+Grecia,Femenino,406,2025
+Grecia,Masculino,552,2025
+Holanda,Femenino,12737,2025
+Holanda,Masculino,12525,2025
+Hungría,Femenino,2280,2025
+Hungría,Masculino,2298,2025
+Reino Unido,Femenino,102280,2025
+Reino Unido,Masculino,93720,2025
+Irlanda,Femenino,1471,2025
+Irlanda,Masculino,1439,2025
+Italia,Femenino,46674,2025
+Italia,Masculino,48685,2025
+Luxemburgo,Femenino,897,2025
+Luxemburgo,Masculino,934,2025
+Noruega,Femenino,1093,2025
+Noruega,Masculino,1229,2025
+Polonia,Femenino,18170,2025
+Polonia,Masculino,17392,2025
+Portugal,Femenino,21810,2025
+Portugal,Masculino,20554,2025
+República Checa,Femenino,6575,2025
+República Checa,Masculino,6097,2025
+Rumania,Femenino,2622,2025
+Rumania,Masculino,2638,2025
+Rusia,Femenino,1449,2025
+Rusia,Masculino,1618,2025
+Suecia,Femenino,2513,2025
+Suecia,Masculino,2516,2025
+Suiza,Femenino,17748,2025
+Suiza,Masculino,17637,2025
+Ucrania,Femenino,2489,2025
+Ucrania,Masculino,2109,2025
+Otros de Europa,Femenino,7373,2025
+Otros de Europa,Masculino,7546,2025
+Asia,Femenino,8877,2025
+Asia,Masculino,15384,2025
+Corea del Sur,Femenino,586,2025
+Corea del Sur,Masculino,814,2025
+China,Femenino,2137,2025
+China,Masculino,4012,2025
+India,Femenino,802,2025
+India,Masculino,1773,2025
+Israel,Femenino,1586,2025
+Israel,Masculino,1854,2025
+Japón,Femenino,545,2025
+Japón,Masculino,866,2025
+Tailandia,Femenino,0,2025
+Tailandia,Masculino,0,2025
+Taiwán,Femenino,190,2025
+Taiwán,Masculino,243,2025
+Otros de Asia,Femenino,3030,2025
+Otros de Asia,Masculino,5820,2025
+Resto del mundo,Femenino,3012,2025
+Resto del mundo,Masculino,3759,2025
+Australia,Femenino,1147,2025
+Australia,Masculino,1301,2025
+Otros resto del mundo,Femenino,1865,2025
+Otros resto del mundo,Masculino,2457,2025
