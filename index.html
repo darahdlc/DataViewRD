@@ -29,11 +29,23 @@
         <div class="hud-title">Dominican Republic <span class="hud-flag">·</span> <span id="ov-year">2024</span></div>
         <div class="hud-bigstat">
           <div class="bignum" id="ov-bignum">—</div>
-          <div class="bignum-sub">total arrivals</div>
+          <div class="bignum-sub">arrivals this year</div>
+        </div>
+        <div class="hud-substat">
+          <span class="hud-substat-label">All‑time total (1999–2025)</span>
+          <span class="hud-substat-val" id="ov-alltime">—</span>
         </div>
         <div class="hud-controls">
           <input type="range" id="ov-slider" min="1999" max="2025" step="1" value="2024">
           <button id="ov-play" class="play-btn play-ghost" title="Play">▶</button>
+        </div>
+        <div class="hud-extra">
+          <div class="scale-toggle ov-scale">
+            <span>Color scale</span>
+            <button class="scale-btn active" data-ovscale="log">Log</button>
+            <button class="scale-btn"        data-ovscale="linear">Linear</button>
+          </div>
+          <button class="ov-zoom-btn" id="ov-zoom-reset" title="Reset zoom">Reset zoom</button>
         </div>
       </div>
       <svg id="overview-map" class="world-map showcase-map"></svg>

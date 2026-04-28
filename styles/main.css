@@ -260,11 +260,14 @@ body {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   background: transparent;
+  cursor: grab;
 }
+.showcase-map:active { cursor: grabbing; }
 .showcase-map .country-bg {
   fill: #1a2a3e;
   stroke: #0f1c2c;
   stroke-width: 0.5;
+  vector-effect: non-scaling-stroke;
 }
 .showcase-map .country-bg.origin {
   fill: #314c70;
@@ -280,6 +283,7 @@ body {
   stroke-linecap: round;
   filter: drop-shadow(0 0 4px rgba(246,173,85,0.5));
   pointer-events: none;
+  vector-effect: non-scaling-stroke;
 }
 .showcase-map .arc-glow {
   fill: none;
@@ -287,6 +291,7 @@ body {
   stroke-linecap: round;
   opacity: 0.18;
   pointer-events: none;
+  vector-effect: non-scaling-stroke;
 }
 .showcase-map .origin-dot {
   fill: #fbd38d;
@@ -367,6 +372,56 @@ body {
   font-size: 13px; color: #cbd5e0;
   letter-spacing: 0.04em;
 }
+.hud-substat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 8px 12px;
+  background: rgba(246,173,85,0.08);
+  border: 1px solid rgba(246,173,85,0.25);
+  border-radius: 8px;
+}
+.hud-substat-label {
+  font-size: 11px;
+  color: #cbd5e0;
+  letter-spacing: 0.05em;
+}
+.hud-substat-val {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fbd38d;
+  font-variant-numeric: tabular-nums;
+}
+.hud-extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+.ov-scale span { color: #cbd5e0; }
+.ov-scale .scale-btn {
+  background: rgba(255,255,255,0.05);
+  color: #cbd5e0;
+  border-color: rgba(255,255,255,0.15);
+}
+.ov-scale .scale-btn.active {
+  background: #f6ad55;
+  color: #1a202c;
+  border-color: #f6ad55;
+}
+.ov-zoom-btn {
+  background: rgba(255,255,255,0.06);
+  color: #cbd5e0;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.ov-zoom-btn:hover { background: rgba(255,255,255,0.12); color: #fff; }
 .hud-controls {
   display: flex; align-items: center; gap: 12px;
   background: rgba(255,255,255,0.06);
