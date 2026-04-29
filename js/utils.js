@@ -15,6 +15,24 @@ const fmt = d3.format(',.0f');
 const fmtPct = d3.format('+.1%');
 const fmtPctSimple = d3.format('.1%');
 
+// Safe percent change: never divides by 0 and never returns Infinity.
+// - prev > 0   -> (curr - prev) / prev
+// - prev == 0, curr  > 0 -> +1   (treated as +100% growth from nothing)
+// - prev == 0, curr  < 0 -> -1   (defensive; arrivals are non-negative)
+// - prev == 0, curr == 0 -> 0
+// `clamp` (default false) limits the result to [-1, +1].
+function safePctChange(curr, prev, clamp = false) {
+  if (curr == null || prev == null || isNaN(curr) || isNaN(prev)) return null;
+  let v;
+  if (prev === 0) {
+    v = curr === 0 ? 0 : (curr > 0 ? 1 : -1);
+  } else {
+    v = (curr - prev) / prev;
+  }
+  if (clamp) v = Math.max(-1, Math.min(1, v));
+  return v;
+}
+
 function fmtCompact(n) {
   if (n == null || isNaN(n)) return '—';
   if (Math.abs(n) >= 1e6) return (n/1e6).toFixed(2) + 'M';

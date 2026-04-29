@@ -164,8 +164,8 @@ const Explorer = (() => {
     const panel = document.getElementById('country-panel');
     const d = c.data[App.currentYear];
     const prev = c.data[App.currentYear - 1];
-    const change = prev ? (d.total - prev.total) / prev.total : null;
-    const femalePct = d.female / d.total;
+    const change = prev ? safePctChange(d.total, prev.total) : null;
+    const femalePct = d.total ? d.female / d.total : 0;
 
     panel.innerHTML = `
       <h2>${c.name}</h2>

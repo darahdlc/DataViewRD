@@ -46,8 +46,8 @@ const Compare = (() => {
   function pctChange(iso) {
     const c = App.data.countries[iso];
     const a = c.data[App.yearA], b = c.data[App.yearB];
-    if (!a || !a.total) return null;
-    return (b.total - a.total) / a.total;
+    if (!a || !b) return null;
+    return safePctChange(b.total, a.total, true);
   }
 
   function onHover(ev, feat) {
@@ -57,7 +57,7 @@ const Compare = (() => {
       return;
     }
     const a = c.data[App.yearA], b = c.data[App.yearB];
-    const pc = (b.total - a.total) / a.total;
+    const pc = safePctChange(b.total, a.total, true);
     showTip(`
       <strong>${c.name}</strong><br>
       <div class="tt-row"><span>${App.yearA}</span><span>${fmtCompact(a.total)}</span></div>
@@ -104,9 +104,9 @@ const Compare = (() => {
           totalA: a.total, totalB: b.total,
           femA: a.female, femB: b.female,
           maleA: a.male, maleB: b.male,
-          pc: (b.total - a.total) / a.total,
-          fpc: (b.female - a.female) / Math.max(1, a.female),
-          mpc: (b.male - a.male) / Math.max(1, a.male),
+          pc:  safePctChange(b.total,  a.total,  true),
+          fpc: safePctChange(b.female, a.female, true),
+          mpc: safePctChange(b.male,   a.male,   true),
         };
       })
       .sort((x, y) => Math.abs(y.pc) - Math.abs(x.pc))

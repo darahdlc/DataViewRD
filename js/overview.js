@@ -1,18 +1,12 @@
 // ============== MODE 0: OVERVIEW (showcase) ==============
-// World map with curved arrows from each origin to the Dominican Republic.
-// Countries are colored on a sequential blue choropleth scale (log or linear),
-// the same scale used in the Explorer view.
 const Overview = (() => {
   let svg, gRoot, gMap, gArcs, gOrigins, gPulse, drLabel, projection, path;
   let zoomBehavior;
   let inited = false;
   let allTimeTotal = 0;
 
-  // Dominican Republic centroid (lon, lat) — Santo Domingo
   const DR_LL = [-70.16, 18.74];
 
-  // Independent scale state for the Overview tab so toggling here
-  // doesn't disturb the Explorer view.
   let ovScale = 'log';
 
   function init() {
@@ -23,13 +17,11 @@ const Overview = (() => {
       .fitExtent([[20, 60], [width - 20, height - 60]], { type: 'Sphere' });
     path = d3.geoPath(projection);
 
-    // Single root group so a single zoom transform moves the whole scene
     gRoot    = svg.append('g').attr('class', 'g-root');
     gMap     = gRoot.append('g').attr('class', 'g-map');
     gArcs    = gRoot.append('g').attr('class', 'g-arcs');
     gOrigins = gRoot.append('g').attr('class', 'g-origins');
 
-    // Defs: arrow marker
     const defs = svg.append('defs');
     const marker = defs.append('marker')
       .attr('id', 'ov-arrow')
@@ -76,14 +68,12 @@ const Overview = (() => {
         .text('Dominican Republic');
     }
 
-    // Zoom & pan
     zoomBehavior = d3.zoom()
       .scaleExtent([1, 8])
       .translateExtent([[-50, -50], [width + 50, height + 50]])
       .on('zoom', (e) => gRoot.attr('transform', e.transform));
     svg.call(zoomBehavior);
 
-    // Wheel-zoom should not also scroll the page
     svg.on('wheel', (e) => e.preventDefault(), { passive: false });
 
     // All-time total — sum globalTotals across every year (incl. ungeo buckets)
