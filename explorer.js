@@ -86,7 +86,7 @@ const Explorer = (() => {
       .attr('id', 'exp-grad').attr('x1', 0).attr('x2', 1);
     d3.range(0, 1.001, 0.1).forEach(t => {
       grad.append('stop').attr('offset', `${t*100}%`)
-        .attr('stop-color', d3.interpolateBlues(t));
+        .attr('stop-color', SEQ_INTERP(t));
     });
     sv.append('rect').attr('x', 0).attr('y', 0).attr('width', W).attr('height', H)
       .attr('fill', 'url(#exp-grad)').attr('stroke', '#cbd5e0');
@@ -101,13 +101,7 @@ const Explorer = (() => {
     slider.value = App.currentYear;
     display.textContent = App.currentYear;
     slider.addEventListener('input', (e) => {
-      App.currentYear = +e.target.value;
-      display.textContent = App.currentYear;
-      colorize();
-      if (App.selectedCountry) {
-        const c = { iso: App.selectedCountry, ...App.data.countries[App.selectedCountry] };
-        renderPanel(c);
-      }
+      setYear(+e.target.value); // central sync — updates all sliders + charts
     });
     // Markers
     const markers = document.getElementById('slider-markers');
@@ -135,36 +129,16 @@ const Explorer = (() => {
     });
   }
 
-  let playTimer = null;
   function setupPlay() {
     const btn = document.getElementById('play-btn');
-    btn.addEventListener('click', () => {
-      if (playTimer) {
-        clearInterval(playTimer); playTimer = null;
-        btn.textContent = '▶';
-      } else {
-        btn.textContent = '⏸';
-        playTimer = setInterval(() => {
-          let y = App.currentYear + 1;
-          if (y > 2025) y = 1999;
-          App.currentYear = y;
-          document.getElementById('year-slider').value = y;
-          document.getElementById('year-display').textContent = y;
-          colorize();
-          if (App.selectedCountry) {
-            const c = { iso: App.selectedCountry, ...App.data.countries[App.selectedCountry] };
-            renderPanel(c);
-          }
-        }, 700);
-      }
-    });
+    btn.addEventListener('click', togglePlay); // shared timer across all tabs
   }
 
   function renderPanel(c) {
     const panel = document.getElementById('country-panel');
     const d = c.data[App.currentYear];
     const prev = c.data[App.currentYear - 1];
-    const change = prev ? safePctChange(d.total, prev.total, true) : null;
+    const change = prev ? safePctChange(d.total, prev.total) : null; // accurate, uncapped
     const femalePct = d.total ? d.female / d.total : 0;
 
     panel.innerHTML = `
@@ -196,7 +170,8 @@ const Explorer = (() => {
     const years = App.data.years;
     const data = years.map(y => ({ year: y, value: c.data[y][key] }));
     const x = d3.scaleLinear().domain([1999, 2025]).range([0, innerW]);
-    const y = d3.scaleLinear().domain([0, d3.max(data, d => d.value) * 1.1]).range([innerH, 0]);
+    const yMax = Math.max(1, d3.max(data, d => d.value) || 0); // guard against all-zero series
+    const y = d3.scaleLinear().domain([0, yMax * 1.1]).range([innerH, 0]);
 
     const g = svg.append('g').attr('transform', `translate(${m.l},${m.t})`);
 
@@ -236,7 +211,13 @@ const Explorer = (() => {
     }
   }
 
-  function refresh() { colorize(); }
+  function refresh() {
+    colorize();
+    if (App.selectedCountry && App.data.countries[App.selectedCountry]) {
+      const c = { iso: App.selectedCountry, ...App.data.countries[App.selectedCountry] };
+      renderPanel(c);
+    }
+  }
 
   return { init, refresh, colorize };
 })();
