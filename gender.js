@@ -81,9 +81,9 @@ const Gender = (() => {
       grad.append('stop').attr('offset', `${t*100}%`).attr('stop-color', DIV_INTERP(t));
     });
     sv.append('rect').attr('width', W).attr('height', H).attr('fill', 'url(#gender-grad)').attr('stroke', '#cbd5e0');
-    sv.append('text').attr('x', 0).attr('y', H+14).attr('font-size', 10).text('More male');
+    sv.append('text').attr('x', 0).attr('y', H+14).attr('font-size', 10).text('More female');
     sv.append('text').attr('x', W/2).attr('y', H+14).attr('text-anchor', 'middle').attr('font-size', 10).text('50/50');
-    sv.append('text').attr('x', W).attr('y', H+14).attr('text-anchor', 'end').attr('font-size', 10).text('More female');
+    sv.append('text').attr('x', W).attr('y', H+14).attr('text-anchor', 'end').attr('font-size', 10).text('More male');
   }
 
   function drawSlider() {
