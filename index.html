@@ -101,13 +101,17 @@
       </div>
     </div>
     <aside class="side-panel">
-      <h2>Global female / male split</h2>
-      <p class="hint">100 % stacked area across all years. Hover the map for country‑level ratios.</p>
-      <svg id="gender-stack" class="aux-chart"></svg>
-      <div id="gender-tooltip-info" class="tooltip-info">
-        <h3>Hover a country</h3>
-        <p>Tooltip shows exact female % and male % for the selected year.</p>
+      <div id="gender-country-panel">
+        <div class="panel-empty">
+          <h2>Click a country</h2>
+          <p>Select any highlighted country on the map to see its female and
+            male arrivals trajectory side by side.</p>
+        </div>
       </div>
+      <hr class="panel-sep" />
+      <h2>Global female / male split</h2>
+      <p class="hint">100 % stacked area across all years.</p>
+      <svg id="gender-stack" class="aux-chart"></svg>
     </aside>
   </section>
 

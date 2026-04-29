@@ -162,6 +162,37 @@ const Overview = (() => {
     sv.append('text').attr('x', 0).attr('y', H + 26)
       .attr('font-size', 10).attr('fill', '#a0aec0')
       .text(`arrivals per country · ${ovScale === 'log' ? 'log' : 'linear'} scale`);
+
+    // ---- Arc thickness legend ----
+    // Three sample widths matching the wScale used to draw the arcs, with labels
+    // showing the approximate magnitude each thickness represents this year.
+    const yearTotals = Object.values(App.data.countries).map(c => c.data[App.currentYear]?.total || 0);
+    const maxV = Math.max(1, d3.max(yearTotals) || 1);
+    const sample = [maxV * 0.05, maxV * 0.30, maxV];
+    const wScale = d3.scaleSqrt().domain([1, maxV]).range([0.35, 3.2]);
+
+    const tw = 200, th = 38;
+    const tv = legend.append('svg').attr('width', tw + 8).attr('height', th)
+      .style('display', 'block').style('margin-top', '6px');
+    const xStep = tw / sample.length;
+    sample.forEach((v, i) => {
+      const cx = i * xStep + xStep/2;
+      // Sample arc — short curved stroke with thickness from wScale
+      tv.append('path')
+        .attr('d', `M ${cx-22} 14 Q ${cx} 4, ${cx+22} 14`)
+        .attr('fill', 'none')
+        .attr('stroke', '#f6ad55')
+        .attr('stroke-width', wScale(Math.max(1, v)))
+        .attr('opacity', 0.9);
+      tv.append('text')
+        .attr('x', cx).attr('y', 30)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', 10).attr('fill', '#e2e8f0')
+        .text(fmtCompact(v));
+    });
+    legend.append('span')
+      .style('color', '#a0aec0').style('font-size', '11px')
+      .text('arc thickness · arrivals from that origin');
   }
 
   function setupZoomReset() {

@@ -17,7 +17,8 @@ const Gender = (() => {
         .attr('d', path)
         .on('mouseover', onHover)
         .on('mousemove', moveTip)
-        .on('mouseout',  () => hideTip());
+        .on('mouseout',  () => hideTip())
+        .on('click',     onClick);
 
     svg.call(d3.zoom().scaleExtent([1, 6]).on('zoom', (e) => g.attr('transform', e.transform)));
 
@@ -27,6 +28,17 @@ const Gender = (() => {
     setupPlay();
     mapInited = true;
     colorize(); // paint the choropleth as soon as the paths are mounted
+    if (App.selectedCountry && App.data.countries[App.selectedCountry]) {
+      renderCountryPanel({ iso: App.selectedCountry, ...App.data.countries[App.selectedCountry] });
+    }
+  }
+
+  function onClick(ev, feat) {
+    const c = getCountryByNum(feat.id);
+    if (!c) return;
+    App.selectedCountry = c.iso;
+    g.selectAll('.country').classed('selected', d => d.id === feat.id);
+    renderCountryPanel(c);
   }
 
   function onHover(ev, feat) {
@@ -84,7 +96,7 @@ const Gender = (() => {
     });
     const markers = document.getElementById('slider-markers-2');
     markers.innerHTML = '';
-    [[2008, '2008 crisis'], [2020, 'COVID']].forEach(([y, label]) => {
+    [[2020, 'COVID']].forEach(([y, label]) => {
       const pct = (y - 1999) / (2025 - 1999) * 100;
       const m = document.createElement('div');
       m.className = 'slider-marker';
@@ -123,7 +135,7 @@ const Gender = (() => {
       .y1(d => y(d[1]))
       .curve(d3.curveMonotoneX);
 
-    const colors = { female: '#d53f8c', male: '#3182ce' };
+    const colors = { female: FEMALE_COLOR, male: MALE_COLOR };
     g.selectAll('path').data(stack).join('path')
       .attr('fill', d => colors[d.key])
       .attr('opacity', 0.85)
@@ -156,7 +168,84 @@ const Gender = (() => {
       .text(`M ${fmtPctSimple(1-lastF)}`);
   }
 
-  function refresh() { colorize(); drawStack(); }
+  function refresh() {
+    colorize();
+    drawStack();
+    if (App.selectedCountry && App.data.countries[App.selectedCountry] && mapInited) {
+      const c = { iso: App.selectedCountry, ...App.data.countries[App.selectedCountry] };
+      renderCountryPanel(c);
+    }
+  }
+
+  function renderCountryPanel(c) {
+    const panel = document.getElementById('gender-country-panel');
+    if (!panel) return;
+    const d = c.data[App.currentYear];
+    const fp = d.total ? d.female / d.total : 0;
+    panel.innerHTML = `
+      <h2>${c.name}</h2>
+      <p class="hint">${c.continent} · ${App.currentYear}</p>
+      <div class="stats-box">
+        <div class="stat"><div class="stat-label">Female %</div><div class="stat-value female">${fmtPctSimple(fp)}</div></div>
+        <div class="stat"><div class="stat-label">Male %</div><div class="stat-value male">${fmtPctSimple(1 - fp)}</div></div>
+      </div>
+      <h3>Female arrivals</h3>
+      <svg id="gender-line-female" width="100%" height="120"></svg>
+      <h3>Male arrivals</h3>
+      <svg id="gender-line-male" width="100%" height="120"></svg>
+    `;
+    drawLine('#gender-line-female', c, 'female', FEMALE_COLOR);
+    drawLine('#gender-line-male',   c, 'male',   MALE_COLOR);
+  }
+
+  function drawLine(sel, c, key, color) {
+    const svg = d3.select(sel);
+    svg.selectAll('*').remove();
+    const node = svg.node();
+    const W = node.getBoundingClientRect().width;
+    const H = +svg.attr('height') || 120;
+    const m = { t: 8, r: 8, b: 22, l: 44 };
+    const innerW = W - m.l - m.r, innerH = H - m.t - m.b;
+    const years = App.data.years;
+    const data = years.map(y => ({ year: y, value: c.data[y][key] }));
+    const x = d3.scaleLinear().domain([1999, 2025]).range([0, innerW]);
+    const yMax = Math.max(1, d3.max(data, d => d.value) || 0);
+    const y = d3.scaleLinear().domain([0, yMax * 1.1]).range([innerH, 0]);
+
+    const g2 = svg.append('g').attr('transform', `translate(${m.l},${m.t})`);
+
+    g2.append('rect')
+      .attr('x', x(2020) - 4).attr('y', 0)
+      .attr('width', x(2022) - x(2020) + 8).attr('height', innerH)
+      .attr('fill', '#fed7d7').attr('opacity', 0.4);
+
+    g2.append('g').attr('transform', `translate(0,${innerH})`)
+      .call(d3.axisBottom(x).tickFormat(d3.format('d')).ticks(6).tickSizeOuter(0))
+      .selectAll('text').style('font-size', '10px');
+    g2.append('g')
+      .call(d3.axisLeft(y).ticks(4).tickFormat(d => fmtCompact(d)).tickSizeOuter(0))
+      .selectAll('text').style('font-size', '10px');
+
+    const line = d3.line()
+      .x(d => x(d.year))
+      .y(d => y(d.value))
+      .curve(d3.curveMonotoneX);
+
+    g2.append('path').datum(data)
+      .attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2)
+      .attr('d', line);
+
+    g2.append('line')
+      .attr('x1', x(App.currentYear)).attr('x2', x(App.currentYear))
+      .attr('y1', 0).attr('y2', innerH)
+      .attr('stroke', '#1a202c').attr('stroke-dasharray', '2,2').attr('opacity', .5);
+
+    const cur = data.find(d => d.year === App.currentYear);
+    if (cur) {
+      g2.append('circle').attr('cx', x(cur.year)).attr('cy', y(cur.value))
+        .attr('r', 4).attr('fill', color).attr('stroke', '#fff').attr('stroke-width', 2);
+    }
+  }
 
   return { init, refresh, colorize, drawStack };
 })();
