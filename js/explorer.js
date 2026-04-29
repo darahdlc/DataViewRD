@@ -90,8 +90,8 @@ const Explorer = (() => {
     });
     sv.append('rect').attr('x', 0).attr('y', 0).attr('width', W).attr('height', H)
       .attr('fill', 'url(#exp-grad)').attr('stroke', '#cbd5e0');
-    sv.append('text').attr('x', 0).attr('y', H + 14).attr('font-size', 10).text('Fewer Volume');
-    sv.append('text').attr('x', W).attr('y', H + 14).attr('text-anchor', 'end').attr('font-size', 10).text('Higher Volume');
+    sv.append('text').attr('x', 0).attr('y', H + 14).attr('font-size', 10).text('Few');
+    sv.append('text').attr('x', W).attr('y', H + 14).attr('text-anchor', 'end').attr('font-size', 10).text('Many');
     legend.append('span').text('arrivals · ' + (App.scaleType === 'log' ? 'log' : 'linear') + ' scale');
   }
 
