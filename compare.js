@@ -146,16 +146,16 @@ const Compare = (() => {
       .attr('text-anchor', 'end').attr('font-size', 11).attr('fill', '#2d3748')
       .text(d => d.name);
 
-    // female bar (top half)
+    // female bar (top half) — daltonic purple
     rows.append('rect')
       .attr('x', d => x(Math.min(0, d.fpc))).attr('y', 4)
       .attr('width', d => Math.abs(x(d.fpc) - x(0))).attr('height', 9)
-      .attr('fill', '#d53f8c').attr('opacity', 0.85);
-    // male bar (bottom half)
+      .attr('fill', FEMALE_COLOR).attr('opacity', 0.85);
+    // male bar (bottom half) — daltonic orange
     rows.append('rect')
       .attr('x', d => x(Math.min(0, d.mpc))).attr('y', 14)
       .attr('width', d => Math.abs(x(d.mpc) - x(0))).attr('height', 9)
-      .attr('fill', '#3182ce').attr('opacity', 0.85);
+      .attr('fill', MALE_COLOR).attr('opacity', 0.85);
 
     // Total-change numeric label so the exact value (e.g. "+582.0%") is always visible
     rows.append('text')

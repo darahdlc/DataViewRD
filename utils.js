@@ -138,6 +138,13 @@ const SEQ_INTERP = d3.interpolateViridis;
 // data when red-green deficiency is a concern.
 const DIV_INTERP = d3.interpolatePuOr;
 
+// Categorical female/male colors aligned with the diverging PuOr palette so
+// every chart in the app speaks the same color language.
+const FEMALE_COLOR      = '#5e3c99';  // purple (PuOr 4-class endpoint)
+const FEMALE_COLOR_LITE = '#b39ddb';  // lighter purple for tooltips
+const MALE_COLOR        = '#e66101';  // orange (PuOr 4-class endpoint)
+const MALE_COLOR_LITE   = '#ffb74d';  // lighter orange for tooltips
+
 const explorerColor = {
   log: null,
   linear: null,

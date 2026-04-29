@@ -104,12 +104,35 @@ body {
 .legend svg { display: block; }
 .ov-legend {
   margin-left: 0;
-  margin-top: 10px;
+  margin-top: 14px;
   color: #cbd5e0;
   font-size: 11px;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
+  align-items: stretch;
+  gap: 10px;
+}
+/* Each Overview legend is its own card so the color legend and the arc
+   thickness legend read as two distinct entities, not one stacked blob. */
+.ov-legend-block {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ov-legend-title {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f6ad55;
+  font-weight: 600;
+}
+.ov-legend-caption {
+  font-size: 10px;
+  color: #a0aec0;
+  margin-top: 2px;
 }
 
 /* ===== Slider ===== */
@@ -314,22 +337,21 @@ body {
 }
 .showcase-map .origin-label {
   fill: #fff;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
   paint-order: stroke;
-  stroke: rgba(0,0,0,0.65);
-  stroke-width: 3;
+  stroke: rgba(0,0,0,0.7);
+  stroke-width: 2.6;
   stroke-linejoin: round;
+  text-anchor: middle;
   pointer-events: none;
 }
-.showcase-map .origin-value {
-  fill: #fbd38d;
-  font-size: 10px;
-  font-weight: 500;
-  paint-order: stroke;
-  stroke: rgba(0,0,0,0.65);
-  stroke-width: 3;
+.showcase-map .origin-link {
+  stroke: rgba(251,211,141,0.55);
+  stroke-width: 0.6;
+  stroke-dasharray: 1.5 1.5;
   pointer-events: none;
+  vector-effect: non-scaling-stroke;
 }
 .showcase-map .arrow-head {
   fill: #f6ad55;

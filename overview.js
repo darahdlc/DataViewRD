@@ -135,11 +135,17 @@ const Overview = (() => {
     if (legend.empty()) return;
     legend.selectAll('*').remove();
 
+    // ===== Block 1 — choropleth color legend =====
+    const colorBlock = legend.append('div').attr('class', 'ov-legend-block');
+    colorBlock.append('div')
+      .attr('class', 'ov-legend-title')
+      .text('Country color · arrivals');
+
     const sc = ovScale === 'log' ? explorerColor.log : explorerColor.linear;
     const [minD, maxD] = sc.domain();
 
     const W = 200, H = 10;
-    const sv = legend.append('svg').attr('width', W + 8).attr('height', H + 28);
+    const sv = colorBlock.append('svg').attr('width', W + 8).attr('height', H + 18);
     const grad = sv.append('defs').append('linearGradient')
       .attr('id', 'ov-grad').attr('x1', 0).attr('x2', 1);
     d3.range(0, 1.001, 0.05).forEach(t => {
@@ -159,10 +165,99 @@ const Overview = (() => {
     sv.append('text').attr('x', W).attr('y', H + 12).attr('text-anchor', 'end')
       .attr('font-size', 10).attr('fill', '#e2e8f0').text(fmtCompact(maxD));
 
-    sv.append('text').attr('x', 0).attr('y', H + 26)
-      .attr('font-size', 10).attr('fill', '#a0aec0')
+    colorBlock.append('div')
+      .attr('class', 'ov-legend-caption')
       .text(`arrivals per country · ${ovScale === 'log' ? 'log' : 'linear'} scale`);
+
+    // ===== Block 2 — arc thickness legend =====
+    const arcBlock = legend.append('div').attr('class', 'ov-legend-block');
+    arcBlock.append('div')
+      .attr('class', 'ov-legend-title')
+      .text('Arc thickness · flow volume');
+
+    const yearTotals = Object.values(App.data.countries).map(c => c.data[App.currentYear]?.total || 0);
+    const maxV = Math.max(1, d3.max(yearTotals) || 1);
+    const sample = [maxV * 0.05, maxV * 0.30, maxV];
+    const wScale = d3.scaleSqrt().domain([1, maxV]).range([0.35, 3.2]);
+
+    const tw = 200, th = 38;
+    const tv = arcBlock.append('svg').attr('width', tw + 8).attr('height', th)
+      .style('display', 'block');
+    const xStep = tw / sample.length;
+    sample.forEach((v, i) => {
+      const cx = i * xStep + xStep/2;
+      // Sample arc — short curved stroke with thickness from wScale
+      tv.append('path')
+        .attr('d', `M ${cx-22} 14 Q ${cx} 4, ${cx+22} 14`)
+        .attr('fill', 'none')
+        .attr('stroke', '#f6ad55')
+        .attr('stroke-width', wScale(Math.max(1, v)))
+        .attr('opacity', 0.9);
+      tv.append('text')
+        .attr('x', cx).attr('y', 30)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', 10).attr('fill', '#e2e8f0')
+        .text(fmtCompact(v));
+    });
+    arcBlock.append('div')
+      .attr('class', 'ov-legend-caption')
+      .text('arrivals from that origin');
   }
+
+  // Resolve label overlaps by iteratively pushing rectangles apart while
+  // pulling them back toward their anchor (the country dot). Mutates `items`
+  // in place so the caller can transition from previous (x,y) to new (x,y).
+  function resolveLabelCollisions(items, opts = {}) {
+    const padX = opts.padX ?? 2;
+    const padY = opts.padY ?? 2;
+    const iters = opts.iters ?? 140;
+    const anchorPull = opts.anchorPull ?? 0.05;
+    items.forEach(d => {
+      d.w = Math.max(28, d.name.length * 5.6) + padX * 2;
+      d.h = 12 + padY * 2;
+      // Initialize from previous position if known, else just above the anchor
+      if (d.x == null || d.y == null) {
+        d.x = d.ax;
+        d.y = d.ay - 10;
+      }
+    });
+    const N = items.length;
+    for (let it = 0; it < iters; it++) {
+      let moved = false;
+      // Pull each label toward its desired anchored slot (above the dot)
+      for (let i = 0; i < N; i++) {
+        const a = items[i];
+        a.x += (a.ax - a.x) * anchorPull;
+        a.y += ((a.ay - 12) - a.y) * anchorPull;
+      }
+      // Push apart any pair that overlaps
+      for (let i = 0; i < N; i++) {
+        const a = items[i];
+        for (let j = i + 1; j < N; j++) {
+          const b = items[j];
+          const dx = b.x - a.x;
+          const dy = b.y - a.y;
+          const ox = (a.w + b.w) / 2 - Math.abs(dx);
+          const oy = (a.h + b.h) / 2 - Math.abs(dy);
+          if (ox > 0 && oy > 0) {
+            moved = true;
+            if (ox < oy) {
+              const sx = (dx >= 0 ? 1 : -1) * (ox / 2 + 0.5);
+              a.x -= sx; b.x += sx;
+            } else {
+              const sy = (dy >= 0 ? 1 : -1) * (oy / 2 + 0.5);
+              a.y -= sy; b.y += sy;
+            }
+          }
+        }
+      }
+      if (!moved && it > 8) break;
+    }
+    return items;
+  }
+
+  // Cache previous label positions across refreshes so transitions are smooth
+  const _labelPos = new Map();
 
   function setupZoomReset() {
     const btn = document.getElementById('ov-zoom-reset');
@@ -283,8 +378,7 @@ const Overview = (() => {
       exit => exit.transition().duration(300).attr('opacity', 0).remove()
     );
 
-    // Origin dots + top labels
-    const top = arcsData.slice(0, 12);
+    // Origin dots — one per country with data this year
     const dotR = d3.scaleSqrt().domain([1, maxV]).range([1.8, 5.5]);
 
     gOrigins.selectAll('circle.origin-dot').data(arcsData, d => d.iso).join(
@@ -305,33 +399,57 @@ const Overview = (() => {
       exit => exit.remove()
     );
 
-    gOrigins.selectAll('text.origin-label').data(top, d => d.iso).join(
-      enter => enter.append('text')
-        .attr('class', 'origin-label')
-        .attr('x', d => d.o[0])
-        .attr('y', d => d.o[1] - 10)
-        .attr('text-anchor', 'middle')
-        .text(d => d.name),
-      update => update.transition().duration(500)
-        .attr('x', d => d.o[0])
-        .attr('y', d => d.o[1] - 10)
-        .text(d => d.name),
-      exit => exit.remove()
+    // ----- Label all countries from the cleaned DB, animate to a
+    //       collision-resolved layout so names don't superpose. -----
+    const labels = arcsData.map(d => {
+      const prev = _labelPos.get(d.iso);
+      return {
+        iso: d.iso,
+        name: d.name,
+        ax: d.o[0], ay: d.o[1],
+        x: prev ? prev.x : d.o[0],
+        y: prev ? prev.y : d.o[1] - 10,
+      };
+    });
+    resolveLabelCollisions(labels);
+    // Persist resolved positions for the next refresh's animation start
+    _labelPos.clear();
+    labels.forEach(l => _labelPos.set(l.iso, { x: l.x, y: l.y }));
+
+    // Connector line from each dot to its (possibly displaced) label
+    gOrigins.selectAll('line.origin-link').data(labels, d => d.iso).join(
+      enter => enter.append('line')
+        .attr('class', 'origin-link')
+        .attr('x1', d => d.ax).attr('y1', d => d.ay)
+        .attr('x2', d => d.x).attr('y2', d => d.y + 4)
+        .attr('opacity', 0)
+        .call(s => s.transition().duration(700).attr('opacity', 0.45)),
+      update => update.transition().duration(600)
+        .attr('x1', d => d.ax).attr('y1', d => d.ay)
+        .attr('x2', d => d.x).attr('y2', d => d.y + 4)
+        .attr('opacity', 0.45),
+      exit => exit.transition().duration(300).attr('opacity', 0).remove()
     );
 
-    gOrigins.selectAll('text.origin-value').data(top, d => d.iso).join(
+    gOrigins.selectAll('text.origin-label').data(labels, d => d.iso).join(
       enter => enter.append('text')
-        .attr('class', 'origin-value')
-        .attr('x', d => d.o[0])
-        .attr('y', d => d.o[1] + 16)
+        .attr('class', 'origin-label')
+        .attr('x', d => d.ax).attr('y', d => d.ay - 10)
         .attr('text-anchor', 'middle')
-        .text(d => fmtCompact(d.total)),
-      update => update.transition().duration(500)
-        .attr('x', d => d.o[0])
-        .attr('y', d => d.o[1] + 16)
-        .text(d => fmtCompact(d.total)),
-      exit => exit.remove()
+        .attr('opacity', 0)
+        .text(d => d.name)
+        .call(s => s.transition().duration(700)
+          .attr('x', d => d.x).attr('y', d => d.y)
+          .attr('opacity', 1)),
+      update => update.transition().duration(600)
+        .attr('x', d => d.x).attr('y', d => d.y)
+        .text(d => d.name),
+      exit => exit.transition().duration(300).attr('opacity', 0).remove()
     );
+
+    // origin-value text removed — figure already in tooltip + leaderboard,
+    // and removing it keeps the map readable when all countries are labeled.
+    gOrigins.selectAll('text.origin-value').remove();
 
     drawLeaderboard(rows);
   }

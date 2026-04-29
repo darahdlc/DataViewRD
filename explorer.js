@@ -103,10 +103,10 @@ const Explorer = (() => {
     slider.addEventListener('input', (e) => {
       setYear(+e.target.value); // central sync — updates all sliders + charts
     });
-    // Markers
+    // Markers (COVID only — 2008 crisis label removed across the app)
     const markers = document.getElementById('slider-markers');
     markers.innerHTML = '';
-    [[2008, '2008 crisis'], [2020, 'COVID']].forEach(([y, label]) => {
+    [[2020, 'COVID']].forEach(([y, label]) => {
       const pct = (y - 1999) / (2025 - 1999) * 100;
       const m = document.createElement('div');
       m.className = 'slider-marker';
@@ -151,20 +151,19 @@ const Explorer = (() => {
           <div class="stat-value ${change > 0 ? 'up' : change < 0 ? 'down' : ''}">${change == null ? '—' : fmtPct(change)}</div></div>
         <div class="stat"><div class="stat-label">Male %</div><div class="stat-value male">${fmtPctSimple(1 - femalePct)}</div></div>
       </div>
-      <h3>Female arrivals</h3>
-      <svg id="line-female" width="100%" height="120"></svg>
-      <h3>Male arrivals</h3>
-      <svg id="line-male" width="100%" height="120"></svg>
+      <h3>Total arrivals over time</h3>
+      <p class="hint" style="margin-top:-4px">Combined female + male — for the gender breakdown, see the Gender Ratio tab.</p>
+      <svg id="line-total" width="100%" height="170"></svg>
     `;
-    drawLine('#line-female', c, 'female', '#d53f8c');
-    drawLine('#line-male', c, 'male', '#3182ce');
+    drawLine('#line-total', c, 'total', '#2c5282');
   }
 
   function drawLine(sel, c, key, color) {
     const svg = d3.select(sel);
     svg.selectAll('*').remove();
-    const W = svg.node().getBoundingClientRect().width;
-    const H = 120;
+    const node = svg.node();
+    const W = node.getBoundingClientRect().width;
+    const H = +svg.attr('height') || node.getBoundingClientRect().height || 120;
     const m = { t: 8, r: 8, b: 22, l: 44 };
     const innerW = W - m.l - m.r, innerH = H - m.t - m.b;
     const years = App.data.years;
