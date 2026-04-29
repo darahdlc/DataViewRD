@@ -1,116 +1,115 @@
-// Parses the official CSV (Llegada de Pasajeros por Nacionalidad, Sexo, Año)
+// Parses the cleaned English CSV (Passenger Arrivals by Nationality, Gender, Year)
 // into the passengers.json shape used by the visualization.
 //
-// Input:  data/passengers_raw.csv  (UTF-8 transcoded from latin1)
+// Input:  data/passengers_clean.csv
 // Output: data/passengers.json
 const fs = require('fs');
 const path = require('path');
 
-const SRC = path.join(__dirname, 'passengers_raw.csv');
+const SRC = path.join(__dirname, 'passengers_clean.csv');
 const OUT = path.join(__dirname, 'passengers.json');
 
 // Aggregator / non-country rows to NOT count as origin countries.
-// (These are continental/group totals or domestic categories.)
 const AGGREGATORS = new Set([
-  'Dominicanos residentes', 'Extranjeros residentes',
-  'Dominicanos no residentes', 'Extranjeros no residentes',
-  'América del norte', 'América central y Caribe', 'América del sur',
-  'Europa', 'Asia', 'Resto del mundo',
+  'Resident Dominicans', 'Resident Foreigners',
+  'Non-Resident Dominicans', 'Non-Resident Foreigners',
+  'North America', 'Central America and Caribbean', 'South America',
+  'Europe', 'Asia', 'Rest of the World',
 ]);
 
-// "Otros…" rows are real travellers but cannot be placed on the map -
+// "Other …" rows are real travellers but cannot be placed on the map -
 // keep them in the ungeolocalizable bucket and global totals.
 const UNGEO_NAMES = new Set([
-  'Otros del Caribe', 'Otros de Suramérica',
-  'Otros de Europa', 'Otros de Asia', 'Otros resto del mundo',
+  'Other Caribbean', 'Other South America',
+  'Other Europe', 'Other Asia', 'Other Rest of the World',
 ]);
 
-// Country directory: Spanish CSV name -> { iso3, isoNum, englishName, continent, lon, lat }
+// Country directory: clean-CSV English name -> { iso3, isoNum, displayName, continent, lon, lat }
 const C = (iso3, isoNum, name, continent, lon, lat) => ({ iso3, isoNum, name, continent, lon, lat });
 const COUNTRY_DIR = {
   // North America
-  'Estados Unidos':              C('USA','840','United States','North America', -98.35,  39.50),
-  'Canadá':                      C('CAN','124','Canada',        'North America',-106.35,  56.13),
-  'México':                      C('MEX','484','Mexico',        'North America',-102.55,  23.63),
+  'United States':              C('USA','840','United States','North America', -98.35,  39.50),
+  'Canada':                     C('CAN','124','Canada',        'North America',-106.35,  56.13),
+  'Mexico':                     C('MEX','484','Mexico',        'North America',-102.55,  23.63),
   // Central America & Caribbean
-  'Aruba':                       C('ABW','533','Aruba',         'Caribbean',     -69.97,  12.52),
-  'Bahamas':                     C('BHS','044','Bahamas',       'Caribbean',     -77.40,  24.25),
-  'Caicos y Turcas, Islas':      C('TCA','796','Turks & Caicos','Caribbean',     -71.80,  21.69),
-  'Costa Rica':                  C('CRI','188','Costa Rica',    'Central America',-84.07,   9.93),
-  'Cuba':                        C('CUB','192','Cuba',          'Caribbean',     -77.78,  21.52),
-  'Curazao':                     C('CUW','531','Curaçao',       'Caribbean',     -68.99,  12.16),
-  'El Salvador':                 C('SLV','222','El Salvador',   'Central America',-88.92,  13.79),
-  'Guadalupe':                   C('GLP','312','Guadeloupe',    'Caribbean',     -61.55,  16.27),
-  'Guatemala':                   C('GTM','320','Guatemala',     'Central America',-90.43,  15.78),
-  'Haití':                       C('HTI','332','Haiti',         'Caribbean',     -72.29,  18.97),
-  'Honduras':                    C('HND','340','Honduras',      'Central America',-86.24,  14.65),
-  'Jamaica':                     C('JAM','388','Jamaica',       'Caribbean',     -77.31,  18.10),
-  'Martinica':                   C('MTQ','474','Martinique',    'Caribbean',     -61.02,  14.64),
-  'Nicaragua':                   C('NIC','558','Nicaragua',     'Central America',-85.20,  12.87),
-  'Panamá':                      C('PAN','591','Panama',        'Central America',-80.12,   8.54),
-  'Puerto Rico':                 C('PRI','630','Puerto Rico',   'Caribbean',     -66.59,  18.22),
-  'San Martín':                  C('MAF','663','Saint Martin',  'Caribbean',     -63.07,  18.07),
-  'Trinidad y Tobago':           C('TTO','780','Trinidad & Tobago','Caribbean',  -61.22,  10.69),
-  'Vírgenes Americanas, Islas':  C('VIR','850','U.S. Virgin Is.','Caribbean',    -64.90,  18.34),
+  'Aruba':                      C('ABW','533','Aruba',         'Caribbean',     -69.97,  12.52),
+  'Bahamas':                    C('BHS','044','Bahamas',       'Caribbean',     -77.40,  24.25),
+  'Turks and Caicos Islands':   C('TCA','796','Turks & Caicos','Caribbean',     -71.80,  21.69),
+  'Costa Rica':                 C('CRI','188','Costa Rica',    'Central America',-84.07,   9.93),
+  'Cuba':                       C('CUB','192','Cuba',          'Caribbean',     -77.78,  21.52),
+  'Curacao':                    C('CUW','531','Curaçao',       'Caribbean',     -68.99,  12.16),
+  'El Salvador':                C('SLV','222','El Salvador',   'Central America',-88.92,  13.79),
+  'Guadeloupe':                 C('GLP','312','Guadeloupe',    'Caribbean',     -61.55,  16.27),
+  'Guatemala':                  C('GTM','320','Guatemala',     'Central America',-90.43,  15.78),
+  'Haiti':                      C('HTI','332','Haiti',         'Caribbean',     -72.29,  18.97),
+  'Honduras':                   C('HND','340','Honduras',      'Central America',-86.24,  14.65),
+  'Jamaica':                    C('JAM','388','Jamaica',       'Caribbean',     -77.31,  18.10),
+  'Martinique':                 C('MTQ','474','Martinique',    'Caribbean',     -61.02,  14.64),
+  'Nicaragua':                  C('NIC','558','Nicaragua',     'Central America',-85.20,  12.87),
+  'Panama':                     C('PAN','591','Panama',        'Central America',-80.12,   8.54),
+  'Puerto Rico':                C('PRI','630','Puerto Rico',   'Caribbean',     -66.59,  18.22),
+  'Saint Martin':               C('MAF','663','Saint Martin',  'Caribbean',     -63.07,  18.07),
+  'Trinidad and Tobago':        C('TTO','780','Trinidad & Tobago','Caribbean',  -61.22,  10.69),
+  'U.S. Virgin Islands':        C('VIR','850','U.S. Virgin Is.','Caribbean',    -64.90,  18.34),
   // South America
-  'Argentina':                   C('ARG','032','Argentina',     'South America', -64.18, -38.42),
-  'Bolivia':                     C('BOL','068','Bolivia',       'South America', -64.00, -16.29),
-  'Brasil':                      C('BRA','076','Brazil',        'South America', -51.92, -14.24),
-  'Colombia':                    C('COL','170','Colombia',      'South America', -74.30,   4.57),
-  'Chile':                       C('CHL','152','Chile',         'South America', -71.54, -35.68),
-  'Ecuador':                     C('ECU','218','Ecuador',       'South America', -78.18,  -1.83),
-  'Perú':                        C('PER','604','Peru',          'South America', -75.02,  -9.19),
-  'Uruguay':                     C('URY','858','Uruguay',       'South America', -55.77, -32.52),
-  'Venezuela':                   C('VEN','862','Venezuela',     'South America', -66.59,   6.42),
+  'Argentina':                  C('ARG','032','Argentina',     'South America', -64.18, -38.42),
+  'Bolivia':                    C('BOL','068','Bolivia',       'South America', -64.00, -16.29),
+  'Brazil':                     C('BRA','076','Brazil',        'South America', -51.92, -14.24),
+  'Colombia':                   C('COL','170','Colombia',      'South America', -74.30,   4.57),
+  'Chile':                      C('CHL','152','Chile',         'South America', -71.54, -35.68),
+  'Ecuador':                    C('ECU','218','Ecuador',       'South America', -78.18,  -1.83),
+  'Peru':                       C('PER','604','Peru',          'South America', -75.02,  -9.19),
+  'Uruguay':                    C('URY','858','Uruguay',       'South America', -55.77, -32.52),
+  'Venezuela':                  C('VEN','862','Venezuela',     'South America', -66.59,   6.42),
   // Europe
-  'Alemania':                    C('DEU','276','Germany',       'Europe',         10.45,  51.17),
-  'Austria':                     C('AUT','040','Austria',       'Europe',         14.55,  47.52),
-  'Bélgica':                     C('BEL','056','Belgium',       'Europe',          4.47,  50.50),
-  'Bulgaria':                    C('BGR','100','Bulgaria',      'Europe',         25.49,  42.73),
-  'Checoslovaquia':              C('CSK','200','Czechoslovakia','Europe',         16.00,  49.50),
-  'Dinamarca':                   C('DNK','208','Denmark',       'Europe',          9.50,  56.26),
-  'Escocia':                     C('SCT','998','Scotland',      'Europe',         -4.20,  56.49),
-  'España':                      C('ESP','724','Spain',         'Europe',         -3.75,  40.46),
-  'Finlandia':                   C('FIN','246','Finland',       'Europe',         25.75,  61.92),
-  'Francia':                     C('FRA','250','France',        'Europe',          2.21,  46.23),
-  'Grecia':                      C('GRC','300','Greece',        'Europe',         21.82,  39.07),
-  'Hungría':                     C('HUN','348','Hungary',       'Europe',         19.50,  47.16),
-  'Holanda':                     C('NLD','528','Netherlands',   'Europe',          5.29,  52.13),
-  'Reino Unido':                 C('GBR','826','United Kingdom','Europe',         -1.17,  52.36),
-  'Irlanda':                     C('IRL','372','Ireland',       'Europe',         -7.69,  53.41),
-  'Italia':                      C('ITA','380','Italy',         'Europe',         12.57,  41.87),
-  'Luxemburgo':                  C('LUX','442','Luxembourg',    'Europe',          6.13,  49.81),
-  'Noruega':                     C('NOR','578','Norway',        'Europe',          8.47,  60.47),
-  'Polonia':                     C('POL','616','Poland',        'Europe',         19.13,  51.92),
-  'Portugal':                    C('PRT','620','Portugal',      'Europe',         -8.22,  39.40),
-  'República Checa':             C('CZE','203','Czech Republic','Europe',         15.47,  49.82),
-  'Rumania':                     C('ROU','642','Romania',       'Europe',         24.97,  45.94),
-  'Rusia':                       C('RUS','643','Russia',        'Europe',        105.32,  61.52),
-  'Suecia':                      C('SWE','752','Sweden',        'Europe',         18.64,  60.13),
-  'Suiza':                       C('CHE','756','Switzerland',   'Europe',          8.23,  46.82),
-  'Ucrania':                     C('UKR','804','Ukraine',       'Europe',         31.17,  48.38),
+  'Germany':                    C('DEU','276','Germany',       'Europe',         10.45,  51.17),
+  'Austria':                    C('AUT','040','Austria',       'Europe',         14.55,  47.52),
+  'Belgium':                    C('BEL','056','Belgium',       'Europe',          4.47,  50.50),
+  'Bulgaria':                   C('BGR','100','Bulgaria',      'Europe',         25.49,  42.73),
+  'Czechoslovakia':             C('CSK','200','Czechoslovakia','Europe',         16.00,  49.50),
+  'Denmark':                    C('DNK','208','Denmark',       'Europe',          9.50,  56.26),
+  'Scotland':                   C('SCT','998','Scotland',      'Europe',         -4.20,  56.49),
+  'Spain':                      C('ESP','724','Spain',         'Europe',         -3.75,  40.46),
+  'Finland':                    C('FIN','246','Finland',       'Europe',         25.75,  61.92),
+  'France':                     C('FRA','250','France',        'Europe',          2.21,  46.23),
+  'Greece':                     C('GRC','300','Greece',        'Europe',         21.82,  39.07),
+  'Hungary':                    C('HUN','348','Hungary',       'Europe',         19.50,  47.16),
+  'Netherlands':                C('NLD','528','Netherlands',   'Europe',          5.29,  52.13),
+  'United Kingdom':             C('GBR','826','United Kingdom','Europe',         -1.17,  52.36),
+  'Ireland':                    C('IRL','372','Ireland',       'Europe',         -7.69,  53.41),
+  'Italy':                      C('ITA','380','Italy',         'Europe',         12.57,  41.87),
+  'Luxembourg':                 C('LUX','442','Luxembourg',    'Europe',          6.13,  49.81),
+  'Norway':                     C('NOR','578','Norway',        'Europe',          8.47,  60.47),
+  'Poland':                     C('POL','616','Poland',        'Europe',         19.13,  51.92),
+  'Portugal':                   C('PRT','620','Portugal',      'Europe',         -8.22,  39.40),
+  'Czech Republic':             C('CZE','203','Czech Republic','Europe',         15.47,  49.82),
+  'Romania':                    C('ROU','642','Romania',       'Europe',         24.97,  45.94),
+  'Russia':                     C('RUS','643','Russia',        'Europe',        105.32,  61.52),
+  'Sweden':                     C('SWE','752','Sweden',        'Europe',         18.64,  60.13),
+  'Switzerland':                C('CHE','756','Switzerland',   'Europe',          8.23,  46.82),
+  'Ukraine':                    C('UKR','804','Ukraine',       'Europe',         31.17,  48.38),
   // Asia
-  'Corea del Sur':               C('KOR','410','South Korea',   'Asia',          127.77,  35.91),
-  'China':                       C('CHN','156','China',         'Asia',          104.20,  35.86),
-  'India':                       C('IND','356','India',         'Asia',           78.96,  20.59),
-  'Israel':                      C('ISR','376','Israel',        'Asia',           34.85,  31.05),
-  'Japón':                       C('JPN','392','Japan',         'Asia',          138.25,  36.20),
-  'Tailandia':                   C('THA','764','Thailand',      'Asia',          100.99,  15.87),
-  'Taiwán':                      C('TWN','158','Taiwan',        'Asia',          120.96,  23.70),
+  'South Korea':                C('KOR','410','South Korea',   'Asia',          127.77,  35.91),
+  'China':                      C('CHN','156','China',         'Asia',          104.20,  35.86),
+  'India':                      C('IND','356','India',         'Asia',           78.96,  20.59),
+  'Israel':                     C('ISR','376','Israel',        'Asia',           34.85,  31.05),
+  'Japan':                      C('JPN','392','Japan',         'Asia',          138.25,  36.20),
+  'Thailand':                   C('THA','764','Thailand',      'Asia',          100.99,  15.87),
+  'Taiwan':                     C('TWN','158','Taiwan',        'Asia',          120.96,  23.70),
   // Oceania
-  'Australia':                   C('AUS','036','Australia',     'Oceania',       133.78, -25.27),
+  'Australia':                  C('AUS','036','Australia',     'Oceania',       133.78, -25.27),
 };
 
 // --- Parse CSV ---
+// Header: Passenger Arrivals by Nationality, Gender, Total Passenger Arrivals by Nationality, Year
 const text = fs.readFileSync(SRC, 'utf8');
 const lines = text.split(/\r?\n/);
-const ROW_RE = /^("(?:[^"]|"")*"|[^,]*),(Femenino|Masculino),(-?\d+),(\d{4})$/;
+const ROW_RE = /^("(?:[^"]|"")*"|[^,]*),(Female|Male),(-?\d+),(\d{4})$/;
 
-// state
 const years = new Set();
-const countries = {};       // iso3 -> { name, continent, isoNum, data: { year: { female, male, total } } }
-const ungeo = {};           // name -> { data: ... }
-const unknownNames = new Map(); // names found in CSV but not classified
+const countries = {};
+const ungeo = {};
+const unknownNames = new Map();
 
 function ensureCountry(iso3, info) {
   if (!countries[iso3]) {
@@ -153,8 +152,8 @@ for (let i = 1; i < lines.length; i++) {
     continue;
   }
   const slot = ensureYear(bucket, year);
-  if (sex === 'Femenino') slot.female += value;
-  else                    slot.male   += value;
+  if (sex === 'Female') slot.female += value;
+  else                  slot.male   += value;
   slot.total = slot.female + slot.male;
   parsed++;
 }
@@ -164,13 +163,11 @@ if (unknownNames.size) {
   [...unknownNames.entries()].forEach(([n, c]) => console.warn('  ', n, '×', c));
 }
 
-// Inject lon/lat into every country entry too (for the showcase view)
-Object.entries(COUNTRY_DIR).forEach(([esName, info]) => {
+Object.entries(COUNTRY_DIR).forEach(([enName, info]) => {
   const c = countries[info.iso3];
-  if (c) { c.lon = info.lon; c.lat = info.lat; c.spanishName = esName; }
+  if (c) { c.lon = info.lon; c.lat = info.lat; c.englishName = enName; }
 });
 
-// Make sure every country has every year filled (zero rows are OK)
 const YEARS = [...years].sort((a, b) => a - b);
 function fillYears(bucket) {
   for (const y of YEARS) ensureYear(bucket, y);
@@ -178,7 +175,6 @@ function fillYears(bucket) {
 Object.values(countries).forEach(fillYears);
 Object.values(ungeo).forEach(fillYears);
 
-// Global totals
 const globalTotals = {};
 for (const y of YEARS) {
   let f = 0, m = 0;
