@@ -102,7 +102,15 @@ body {
 
 .legend { display: flex; align-items: center; gap: 8px; margin-left: auto; font-size: 11px; color: #4a5568; }
 .legend svg { display: block; }
-.ov-legend { margin-left: 0; margin-top: 10px; color: #cbd5e0; font-size: 11px; }
+.ov-legend {
+  margin-left: 0;
+  margin-top: 10px;
+  color: #cbd5e0;
+  font-size: 11px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
 
 /* ===== Slider ===== */
 .slider-wrap {
@@ -181,6 +189,7 @@ body {
 .side-panel .hint { font-size: 12px; color: #718096; margin: 0 0 12px; }
 .panel-empty { text-align: center; padding: 40px 8px; color: #718096; }
 .panel-empty h2 { color: #4a5568; }
+.panel-sep { border: none; border-top: 1px solid #e2e8f0; margin: 16px 0; }
 
 .stats-box {
   display: grid;
@@ -197,8 +206,8 @@ body {
 .stat-value { font-size: 18px; font-weight: 700; color: #2c5282; }
 .stat-value.up   { color: #2f855a; }
 .stat-value.down { color: #c53030; }
-.stat-value.female { color: #d53f8c; }
-.stat-value.male   { color: #2b6cb0; }
+.stat-value.female { color: #5e3c99; }
+.stat-value.male   { color: #e66101; }
 
 /* ===== Map paths ===== */
 .country {
@@ -228,8 +237,8 @@ body {
 }
 .tooltip strong { font-size: 13px; }
 .tooltip .tt-row { display: flex; justify-content: space-between; gap: 12px; }
-.tooltip .tt-female { color: #f6a8c8; }
-.tooltip .tt-male   { color: #90cdf4; }
+.tooltip .tt-female { color: #b39ddb; }
+.tooltip .tt-male   { color: #ffb74d; }
 
 .tooltip-info {
   background: #f7fafc;
