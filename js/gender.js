@@ -65,12 +65,13 @@ const Gender = (() => {
     const sv = legend.append('svg').attr('width', W + 50).attr('height', H + 18);
     const grad = sv.append('defs').append('linearGradient').attr('id', 'gender-grad').attr('x1',0).attr('x2',1);
     d3.range(0, 1.001, 0.05).forEach(t => {
-      grad.append('stop').attr('offset', `${t*100}%`).attr('stop-color', d3.interpolateRdBu(t));
+      // 0 = orange (more male), 1 = purple (more female) — see genderColor()
+      grad.append('stop').attr('offset', `${t*100}%`).attr('stop-color', DIV_INTERP(t));
     });
     sv.append('rect').attr('width', W).attr('height', H).attr('fill', 'url(#gender-grad)').attr('stroke', '#cbd5e0');
-    sv.append('text').attr('x', 0).attr('y', H+14).attr('font-size', 10).text('More female');
+    sv.append('text').attr('x', 0).attr('y', H+14).attr('font-size', 10).text('More male');
     sv.append('text').attr('x', W/2).attr('y', H+14).attr('text-anchor', 'middle').attr('font-size', 10).text('50/50');
-    sv.append('text').attr('x', W).attr('y', H+14).attr('text-anchor', 'end').attr('font-size', 10).text('More male');
+    sv.append('text').attr('x', W).attr('y', H+14).attr('text-anchor', 'end').attr('font-size', 10).text('More female');
   }
 
   function drawSlider() {
@@ -79,12 +80,7 @@ const Gender = (() => {
     slider.value = App.currentYear;
     display.textContent = App.currentYear;
     slider.addEventListener('input', e => {
-      App.currentYear = +e.target.value;
-      display.textContent = App.currentYear;
-      document.getElementById('year-slider').value = App.currentYear;
-      document.getElementById('year-display').textContent = App.currentYear;
-      colorize();
-      drawStack();
+      setYear(+e.target.value); // central sync — updates all sliders + charts
     });
     const markers = document.getElementById('slider-markers-2');
     markers.innerHTML = '';
@@ -98,26 +94,9 @@ const Gender = (() => {
     });
   }
 
-  let playTimer = null;
   function setupPlay() {
     const btn = document.getElementById('play-btn-2');
-    btn.addEventListener('click', () => {
-      if (playTimer) {
-        clearInterval(playTimer); playTimer = null;
-        btn.textContent = '▶';
-      } else {
-        btn.textContent = '⏸';
-        playTimer = setInterval(() => {
-          let y = App.currentYear + 1;
-          if (y > 2025) y = 1999;
-          App.currentYear = y;
-          document.getElementById('year-slider-2').value = y;
-          document.getElementById('year-display-2').textContent = y;
-          colorize();
-          drawStack();
-        }, 700);
-      }
-    });
+    btn.addEventListener('click', togglePlay); // shared timer across all tabs
   }
 
   function drawStack() {

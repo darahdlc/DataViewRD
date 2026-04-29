@@ -47,7 +47,7 @@ const Compare = (() => {
     const c = App.data.countries[iso];
     const a = c.data[App.yearA], b = c.data[App.yearB];
     if (!a || !b) return null;
-    return safePctChange(b.total, a.total, true);
+    return safePctChange(b.total, a.total); // accurate, uncapped
   }
 
   function onHover(ev, feat) {
@@ -57,7 +57,7 @@ const Compare = (() => {
       return;
     }
     const a = c.data[App.yearA], b = c.data[App.yearB];
-    const pc = safePctChange(b.total, a.total, true);
+    const pc = safePctChange(b.total, a.total); // accurate, uncapped
     showTip(`
       <strong>${c.name}</strong><br>
       <div class="tt-row"><span>${App.yearA}</span><span>${fmtCompact(a.total)}</span></div>
@@ -84,12 +84,12 @@ const Compare = (() => {
     const sv = legend.append('svg').attr('width', W + 20).attr('height', H + 18);
     const grad = sv.append('defs').append('linearGradient').attr('id', 'cmp-grad').attr('x1',0).attr('x2',1);
     d3.range(0, 1.001, 0.05).forEach(t => {
-      grad.append('stop').attr('offset', `${t*100}%`).attr('stop-color', d3.interpolatePiYG(t));
+      grad.append('stop').attr('offset', `${t*100}%`).attr('stop-color', DIV_INTERP(t));
     });
     sv.append('rect').attr('width', W).attr('height', H).attr('fill', 'url(#cmp-grad)').attr('stroke', '#cbd5e0');
-    sv.append('text').attr('x', 0).attr('y', H+14).attr('font-size', 10).text('−100%');
+    sv.append('text').attr('x', 0).attr('y', H+14).attr('font-size', 10).text('≤ −100%');
     sv.append('text').attr('x', W/2).attr('y', H+14).attr('text-anchor', 'middle').attr('font-size', 10).text('0%');
-    sv.append('text').attr('x', W).attr('y', H+14).attr('text-anchor', 'end').attr('font-size', 10).text('+100%');
+    sv.append('text').attr('x', W).attr('y', H+14).attr('text-anchor', 'end').attr('font-size', 10).text('≥ +100%');
   }
 
   function drawTopBars() {
@@ -104,9 +104,9 @@ const Compare = (() => {
           totalA: a.total, totalB: b.total,
           femA: a.female, femB: b.female,
           maleA: a.male, maleB: b.male,
-          pc:  safePctChange(b.total,  a.total,  true),
-          fpc: safePctChange(b.female, a.female, true),
-          mpc: safePctChange(b.male,   a.male,   true),
+          pc:  safePctChange(b.total,  a.total),  // accurate, uncapped
+          fpc: safePctChange(b.female, a.female), // accurate, uncapped
+          mpc: safePctChange(b.male,   a.male),   // accurate, uncapped
         };
       })
       .sort((x, y) => Math.abs(y.pc) - Math.abs(x.pc))
@@ -117,10 +117,13 @@ const Compare = (() => {
     const H = ranked.length * rowH + 30;
     svgB.attr('height', H);
 
-    const m = { t: 16, r: 12, b: 8, l: 110 };
+    // Reserve room on the right for the actual % label (e.g. "+582.0%")
+    const m = { t: 16, r: 64, b: 8, l: 110 };
     const innerW = W - m.l - m.r;
 
-    const maxAbs = d3.max(ranked, d => Math.max(Math.abs(d.fpc), Math.abs(d.mpc))) || 1;
+    // Domain spans the *true* maximum across all three series so even +582%
+    // bars are drawn to scale instead of clipping at +100%.
+    const maxAbs = d3.max(ranked, d => Math.max(Math.abs(d.pc), Math.abs(d.fpc), Math.abs(d.mpc))) || 1;
     const x = d3.scaleLinear().domain([-maxAbs, maxAbs]).range([0, innerW]);
 
     const g = svgB.append('g').attr('transform', `translate(${m.l},${m.t})`);
@@ -153,6 +156,13 @@ const Compare = (() => {
       .attr('x', d => x(Math.min(0, d.mpc))).attr('y', 14)
       .attr('width', d => Math.abs(x(d.mpc) - x(0))).attr('height', 9)
       .attr('fill', '#3182ce').attr('opacity', 0.85);
+
+    // Total-change numeric label so the exact value (e.g. "+582.0%") is always visible
+    rows.append('text')
+      .attr('x', innerW + 6).attr('y', rowH/2 + 3)
+      .attr('font-size', 11).attr('font-weight', 600)
+      .attr('fill', d => d.pc >= 0 ? '#276749' : '#9b2c2c')
+      .text(d => d.pc == null ? '—' : fmtPct(d.pc));
   }
 
   function drawContext() {

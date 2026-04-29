@@ -117,10 +117,13 @@ const Compare = (() => {
     const H = ranked.length * rowH + 30;
     svgB.attr('height', H);
 
-    const m = { t: 16, r: 12, b: 8, l: 110 };
+    // Reserve room on the right for the actual % label (e.g. "+582.0%")
+    const m = { t: 16, r: 64, b: 8, l: 110 };
     const innerW = W - m.l - m.r;
 
-    const maxAbs = d3.max(ranked, d => Math.max(Math.abs(d.fpc), Math.abs(d.mpc))) || 1;
+    // Domain spans the *true* maximum across all three series so even +582%
+    // bars are drawn to scale instead of clipping at +100%.
+    const maxAbs = d3.max(ranked, d => Math.max(Math.abs(d.pc), Math.abs(d.fpc), Math.abs(d.mpc))) || 1;
     const x = d3.scaleLinear().domain([-maxAbs, maxAbs]).range([0, innerW]);
 
     const g = svgB.append('g').attr('transform', `translate(${m.l},${m.t})`);
@@ -153,6 +156,13 @@ const Compare = (() => {
       .attr('x', d => x(Math.min(0, d.mpc))).attr('y', 14)
       .attr('width', d => Math.abs(x(d.mpc) - x(0))).attr('height', 9)
       .attr('fill', '#3182ce').attr('opacity', 0.85);
+
+    // Total-change numeric label so the exact value (e.g. "+582.0%") is always visible
+    rows.append('text')
+      .attr('x', innerW + 6).attr('y', rowH/2 + 3)
+      .attr('font-size', 11).attr('font-weight', 600)
+      .attr('fill', d => d.pc >= 0 ? '#276749' : '#9b2c2c')
+      .text(d => d.pc == null ? '—' : fmtPct(d.pc));
   }
 
   function drawContext() {

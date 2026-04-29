@@ -4,7 +4,7 @@ const App = {
   world: null,            // topojson features
   numToIso3: {},          // numeric ISO -> "USA"
   currentYear: 2024,
-  currentMode: 'explorer',
+  currentMode: 'overview',
   selectedCountry: null,
   scaleType: 'log',
   yearA: 2019,
@@ -16,11 +16,11 @@ const fmtPct = d3.format('+.1%');
 const fmtPctSimple = d3.format('.1%');
 
 // Safe percent change: never divides by 0 and never returns Infinity.
-// - prev > 0   -> (curr - prev) / prev
-// - prev == 0, curr  > 0 -> +1   (treated as +100% growth from nothing)
-// - prev == 0, curr  < 0 -> -1   (defensive; arrivals are non-negative)
+// - prev > 0   -> (curr - prev) / prev   (accurate, can exceed +/-100%)
+// - prev == 0, curr  > 0 -> +1           (treated as +100% growth from nothing)
+// - prev == 0, curr  < 0 -> -1           (defensive; arrivals are non-negative)
 // - prev == 0, curr == 0 -> 0
-// `clamp` (default false) limits the result to [-1, +1].
+// `clamp` (default false) hard-limits the result to [-1, +1] for visualization domains.
 function safePctChange(curr, prev, clamp = false) {
   if (curr == null || prev == null || isNaN(curr) || isNaN(prev)) return null;
   let v;
@@ -39,6 +39,64 @@ function fmtCompact(n) {
   if (Math.abs(n) >= 1e3) return (n/1e3).toFixed(1) + 'K';
   return d3.format(',.0f')(n);
 }
+
+// ============ Centralized year + play sync ============
+// Every slider / play button updates state through here so all charts stay in sync.
+function setYear(y) {
+  if (App.data && App.data.years) {
+    const yMin = App.data.years[0];
+    const yMax = App.data.years[App.data.years.length - 1];
+    if (y < yMin) y = yMin;
+    if (y > yMax) y = yMax;
+  }
+  App.currentYear = y;
+
+  // Sync every slider DOM element
+  ['year-slider', 'year-slider-2', 'ov-slider'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el && +el.value !== y) el.value = y;
+  });
+  // Sync every year display
+  ['year-display', 'year-display-2', 'ov-year'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = y;
+  });
+
+  // Refresh modules that have been initialized
+  if (typeof Overview !== 'undefined' && Overview.refresh) Overview.refresh();
+  if (typeof Explorer !== 'undefined' && Explorer.refresh) Explorer.refresh();
+  if (typeof Gender   !== 'undefined' && Gender.refresh)   Gender.refresh();
+}
+
+// Single shared play timer so play buttons in any tab toggle the same animation,
+// and every year is visited (1999..2025) regardless of selected-country data.
+let _playTimer = null;
+function isPlaying() { return _playTimer !== null; }
+function syncPlayButtons() {
+  const sym = isPlaying() ? '⏸' : '▶';
+  ['play-btn', 'play-btn-2', 'ov-play'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = sym;
+  });
+}
+function startPlay() {
+  if (_playTimer) return;
+  const yMin = App.data.years[0];
+  const yMax = App.data.years[App.data.years.length - 1];
+  _playTimer = setInterval(() => {
+    let y = App.currentYear + 1;
+    if (y > yMax) y = yMin;
+    setYear(y); // visits every year unconditionally — no country-specific skipping
+  }, 700);
+  syncPlayButtons();
+}
+function stopPlay() {
+  if (!_playTimer) return;
+  clearInterval(_playTimer);
+  _playTimer = null;
+  syncPlayButtons();
+}
+function togglePlay() { isPlaying() ? stopPlay() : startPlay(); }
 
 // Tooltip helpers
 const tipEl = () => document.getElementById('tooltip');
@@ -72,14 +130,20 @@ function valueFor(iso, year) {
   return c.data[year];
 }
 
-// Color scales
+// ============ Color scales (colorblind-safe / daltonic friendly) ============
+// Sequential scale: Viridis — perceptually uniform, safe for all common color
+// vision deficiencies (deuteranopia/protanopia/tritanopia).
+const SEQ_INTERP = d3.interpolateViridis;
+// Diverging scale: Purple-Orange — the standard recommendation for diverging
+// data when red-green deficiency is a concern.
+const DIV_INTERP = d3.interpolatePuOr;
+
 const explorerColor = {
   log: null,
   linear: null,
 };
 
 function buildExplorerScales() {
-  // Domain across all years/countries totals
   let minV = Infinity, maxV = 0;
   Object.values(App.data.countries).forEach(c => {
     Object.values(c.data).forEach(d => {
@@ -87,8 +151,8 @@ function buildExplorerScales() {
       if (d.total > maxV) maxV = d.total;
     });
   });
-  explorerColor.log = d3.scaleSequentialLog(d3.interpolateBlues).domain([Math.max(1, minV*0.8), maxV]);
-  explorerColor.linear = d3.scaleSequential(d3.interpolateBlues).domain([0, maxV]);
+  explorerColor.log    = d3.scaleSequentialLog(SEQ_INTERP).domain([Math.max(1, minV*0.8), maxV]);
+  explorerColor.linear = d3.scaleSequential(SEQ_INTERP).domain([0, maxV]);
 }
 
 function explorerColorFor(total) {
@@ -96,21 +160,18 @@ function explorerColorFor(total) {
   return explorerColor[App.scaleType](total);
 }
 
-// Diverging gender scale: rose (female-heavy) -> white -> blue (male-heavy)
+// Diverging gender scale: female-heavy -> purple, 50/50 -> neutral, male-heavy -> orange
 function genderColor(femalePct) {
-  // femalePct in 0-1; 0.5 is white. Range roughly 0.40 to 0.60 in our data.
-  // Map femalePct: >0.5 -> rose, <0.5 -> blue.
   const t = (femalePct - 0.5) / 0.10; // -1..+1 over 0.40..0.60
-  const c = d3.interpolateRdBu(0.5 - t*0.5);
-  // d3.interpolateRdBu: 0 = red, 1 = blue. Female heavy -> red side.
-  return c;
+  // d3.interpolatePuOr: 0 = orange (deficit of female), 1 = purple (excess of female)
+  return DIV_INTERP(0.5 + t * 0.5);
 }
 
-// Diverging change scale for compare
+// Diverging change scale for compare. Color domain pinned to [-100%, +100%]
+// (so very large changes saturate to the extreme color), but the *displayed*
+// percentage value is always the true accurate number.
 function compareColor(pctChange) {
-  // pctChange is a fraction; clamp to [-1, +1] for color domain
   const t = Math.max(-1, Math.min(1, pctChange));
-  // Want green for positive, red/pink for negative -> use PiYG inverted
-  // d3.interpolatePiYG: 0 pink, 1 green. Map: t=-1 -> 0, t=+1 -> 1
-  return d3.interpolatePiYG((t + 1) / 2);
+  // 0 -> orange (decline), 0.5 -> neutral, 1 -> purple (growth)
+  return DIV_INTERP((t + 1) / 2);
 }

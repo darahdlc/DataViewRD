@@ -83,6 +83,7 @@ const Overview = (() => {
     setupPlay();
     setupScaleToggle();
     setupZoomReset();
+    drawLegend();
 
     inited = true;
     refresh();
@@ -108,35 +109,13 @@ const Overview = (() => {
     slider.value = App.currentYear;
     document.getElementById('ov-year').textContent = App.currentYear;
     slider.addEventListener('input', e => {
-      App.currentYear = +e.target.value;
-      document.getElementById('ov-year').textContent = App.currentYear;
-      const s1 = document.getElementById('year-slider');
-      const s2 = document.getElementById('year-slider-2');
-      if (s1) { s1.value = App.currentYear; document.getElementById('year-display').textContent = App.currentYear; }
-      if (s2) { s2.value = App.currentYear; document.getElementById('year-display-2').textContent = App.currentYear; }
-      refresh();
+      setYear(+e.target.value); // central sync — updates all sliders + charts
     });
   }
 
-  let playTimer = null;
   function setupPlay() {
     const btn = document.getElementById('ov-play');
-    btn.addEventListener('click', () => {
-      if (playTimer) {
-        clearInterval(playTimer); playTimer = null;
-        btn.textContent = '▶';
-      } else {
-        btn.textContent = '⏸';
-        playTimer = setInterval(() => {
-          let y = App.currentYear + 1;
-          if (y > 2025) y = 1999;
-          App.currentYear = y;
-          document.getElementById('ov-slider').value = y;
-          document.getElementById('ov-year').textContent = y;
-          refresh();
-        }, 800);
-      }
-    });
+    btn.addEventListener('click', togglePlay); // shared timer across all tabs
   }
 
   function setupScaleToggle() {
@@ -146,8 +125,43 @@ const Overview = (() => {
         btn.classList.add('active');
         ovScale = btn.dataset.ovscale;
         colorCountries();
+        drawLegend();
       });
     });
+  }
+
+  function drawLegend() {
+    const legend = d3.select('#ov-legend');
+    if (legend.empty()) return;
+    legend.selectAll('*').remove();
+
+    const sc = ovScale === 'log' ? explorerColor.log : explorerColor.linear;
+    const [minD, maxD] = sc.domain();
+
+    const W = 200, H = 10;
+    const sv = legend.append('svg').attr('width', W + 8).attr('height', H + 28);
+    const grad = sv.append('defs').append('linearGradient')
+      .attr('id', 'ov-grad').attr('x1', 0).attr('x2', 1);
+    d3.range(0, 1.001, 0.05).forEach(t => {
+      grad.append('stop').attr('offset', `${t*100}%`).attr('stop-color', SEQ_INTERP(t));
+    });
+    sv.append('rect').attr('x', 0).attr('y', 0).attr('width', W).attr('height', H)
+      .attr('fill', 'url(#ov-grad)').attr('stroke', 'rgba(255,255,255,0.35)');
+
+    // Concrete min / mid / max values so the color encoding is unambiguous
+    const midD = ovScale === 'log'
+      ? Math.sqrt(minD * maxD)              // geometric mean for log
+      : (minD + maxD) / 2;                  // arithmetic mean for linear
+    sv.append('text').attr('x', 0).attr('y', H + 12)
+      .attr('font-size', 10).attr('fill', '#e2e8f0').text(fmtCompact(minD));
+    sv.append('text').attr('x', W/2).attr('y', H + 12).attr('text-anchor', 'middle')
+      .attr('font-size', 10).attr('fill', '#e2e8f0').text(fmtCompact(midD));
+    sv.append('text').attr('x', W).attr('y', H + 12).attr('text-anchor', 'end')
+      .attr('font-size', 10).attr('fill', '#e2e8f0').text(fmtCompact(maxD));
+
+    sv.append('text').attr('x', 0).attr('y', H + 26)
+      .attr('font-size', 10).attr('fill', '#a0aec0')
+      .text(`arrivals per country · ${ovScale === 'log' ? 'log' : 'linear'} scale`);
   }
 
   function setupZoomReset() {

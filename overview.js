@@ -134,20 +134,34 @@ const Overview = (() => {
     const legend = d3.select('#ov-legend');
     if (legend.empty()) return;
     legend.selectAll('*').remove();
-    const W = 180, H = 10;
-    const sv = legend.append('svg').attr('width', W + 50).attr('height', H + 18);
+
+    const sc = ovScale === 'log' ? explorerColor.log : explorerColor.linear;
+    const [minD, maxD] = sc.domain();
+
+    const W = 200, H = 10;
+    const sv = legend.append('svg').attr('width', W + 8).attr('height', H + 28);
     const grad = sv.append('defs').append('linearGradient')
       .attr('id', 'ov-grad').attr('x1', 0).attr('x2', 1);
     d3.range(0, 1.001, 0.05).forEach(t => {
       grad.append('stop').attr('offset', `${t*100}%`).attr('stop-color', SEQ_INTERP(t));
     });
     sv.append('rect').attr('x', 0).attr('y', 0).attr('width', W).attr('height', H)
-      .attr('fill', 'url(#ov-grad)').attr('stroke', 'rgba(255,255,255,0.25)');
+      .attr('fill', 'url(#ov-grad)').attr('stroke', 'rgba(255,255,255,0.35)');
+
+    // Concrete min / mid / max values so the color encoding is unambiguous
+    const midD = ovScale === 'log'
+      ? Math.sqrt(minD * maxD)              // geometric mean for log
+      : (minD + maxD) / 2;                  // arithmetic mean for linear
     sv.append('text').attr('x', 0).attr('y', H + 12)
-      .attr('font-size', 10).attr('fill', '#cbd5e0').text('Few');
+      .attr('font-size', 10).attr('fill', '#e2e8f0').text(fmtCompact(minD));
+    sv.append('text').attr('x', W/2).attr('y', H + 12).attr('text-anchor', 'middle')
+      .attr('font-size', 10).attr('fill', '#e2e8f0').text(fmtCompact(midD));
     sv.append('text').attr('x', W).attr('y', H + 12).attr('text-anchor', 'end')
-      .attr('font-size', 10).attr('fill', '#cbd5e0').text('Many');
-    legend.append('span').text('arrivals · ' + (ovScale === 'log' ? 'log' : 'linear') + ' scale');
+      .attr('font-size', 10).attr('fill', '#e2e8f0').text(fmtCompact(maxD));
+
+    sv.append('text').attr('x', 0).attr('y', H + 26)
+      .attr('font-size', 10).attr('fill', '#a0aec0')
+      .text(`arrivals per country · ${ovScale === 'log' ? 'log' : 'linear'} scale`);
   }
 
   function setupZoomReset() {
