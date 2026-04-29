@@ -152,7 +152,7 @@ const Overview = (() => {
     const colorBlock = legend.append('div').attr('class', 'ov-legend-block');
     colorBlock.append('div')
       .attr('class', 'ov-legend-title')
-      .text('Country color · arrivals');
+      .text('Arrivals (Density)');
 
     const sc = ovScale === 'log' ? explorerColor.log : explorerColor.linear;
     const [minD, maxD] = sc.domain();
@@ -182,11 +182,10 @@ const Overview = (() => {
       .attr('class', 'ov-legend-caption')
       .text(`arrivals per country · ${ovScale === 'log' ? 'log' : 'linear'} scale`);
 
-    // ===== Block 2 — arc thickness legend =====
     const arcBlock = legend.append('div').attr('class', 'ov-legend-block');
     arcBlock.append('div')
       .attr('class', 'ov-legend-title')
-      .text('Arc thickness · flow volume');
+      .text('Arc thickness (Density)');
 
     const yearTotals = Object.values(App.data.countries).map(c => c.data[App.currentYear]?.total || 0);
     const maxV = Math.max(1, d3.max(yearTotals) || 1);
@@ -199,7 +198,6 @@ const Overview = (() => {
     const xStep = tw / sample.length;
     sample.forEach((v, i) => {
       const cx = i * xStep + xStep/2;
-      // Sample arc — short curved stroke with thickness from wScale
       tv.append('path')
         .attr('d', `M ${cx-22} 14 Q ${cx} 4, ${cx+22} 14`)
         .attr('fill', 'none')
@@ -217,9 +215,7 @@ const Overview = (() => {
       .text('arrivals from that origin');
   }
 
-  // Resolve label overlaps by iteratively pushing rectangles apart while
-  // pulling them back toward their anchor (the country dot). Mutates `items`
-  // in place so the caller can transition from previous (x,y) to new (x,y).
+
   function resolveLabelCollisions(items, opts = {}) {
     const padX = opts.padX ?? 2;
     const padY = opts.padY ?? 2;
@@ -228,7 +224,6 @@ const Overview = (() => {
     items.forEach(d => {
       d.w = Math.max(28, d.name.length * 5.6) + padX * 2;
       d.h = 12 + padY * 2;
-      // Initialize from previous position if known, else just above the anchor
       if (d.x == null || d.y == null) {
         d.x = d.ax;
         d.y = d.ay - 10;
@@ -237,13 +232,11 @@ const Overview = (() => {
     const N = items.length;
     for (let it = 0; it < iters; it++) {
       let moved = false;
-      // Pull each label toward its desired anchored slot (above the dot)
       for (let i = 0; i < N; i++) {
         const a = items[i];
         a.x += (a.ax - a.x) * anchorPull;
         a.y += ((a.ay - 12) - a.y) * anchorPull;
       }
-      // Push apart any pair that overlaps
       for (let i = 0; i < N; i++) {
         const a = items[i];
         for (let j = i + 1; j < N; j++) {
