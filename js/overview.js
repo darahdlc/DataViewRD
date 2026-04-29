@@ -1,9 +1,12 @@
 // ============== MODE 0: OVERVIEW (showcase) ==============
 const Overview = (() => {
   let svg, gRoot, gMap, gArcs, gOrigins, gPulse, drLabel, projection, path;
+  let gLabels;                       // sits OUTSIDE the zoom transform
   let zoomBehavior;
   let inited = false;
   let allTimeTotal = 0;
+  let currentTransform = null;       // last d3.zoomTransform from the zoom handler
+  let currentLabels = [];            // labels for the active year, kept across zoom events
 
   const DR_LL = [-70.16, 18.74];
 
@@ -21,6 +24,9 @@ const Overview = (() => {
     gMap     = gRoot.append('g').attr('class', 'g-map');
     gArcs    = gRoot.append('g').attr('class', 'g-arcs');
     gOrigins = gRoot.append('g').attr('class', 'g-origins');
+    // Labels live OUTSIDE the zoomed group so text stays a constant pixel
+    // size — like Google Maps — while their anchor positions move with zoom.
+    gLabels  = svg.append('g').attr('class', 'g-labels');
 
     const defs = svg.append('defs');
     const marker = defs.append('marker')
@@ -71,7 +77,14 @@ const Overview = (() => {
     zoomBehavior = d3.zoom()
       .scaleExtent([1, 8])
       .translateExtent([[-50, -50], [width + 50, height + 50]])
-      .on('zoom', (e) => gRoot.attr('transform', e.transform));
+      .on('zoom', (e) => {
+        gRoot.attr('transform', e.transform);
+        currentTransform = e.transform;
+        // Re-resolve label collisions in screen space using the new
+        // transform — anchors move apart when zooming in, so labels can
+        // settle into freshly-available space.
+        layoutLabels(true);
+      });
     svg.call(zoomBehavior);
 
     svg.on('wheel', (e) => e.preventDefault(), { passive: false });
@@ -263,6 +276,10 @@ const Overview = (() => {
     const btn = document.getElementById('ov-zoom-reset');
     if (!btn) return;
     btn.addEventListener('click', () => {
+      // Clear cached label positions so they re-seed at the unzoomed anchor
+      // instead of animating from a wide-zoom layout that no longer fits.
+      _labelPos.clear();
+      currentLabels.forEach(l => { l.x = null; l.y = null; });
       svg.transition().duration(450).call(zoomBehavior.transform, d3.zoomIdentity);
     });
   }
@@ -399,59 +416,104 @@ const Overview = (() => {
       exit => exit.remove()
     );
 
-    // ----- Label all countries from the cleaned DB, animate to a
-    //       collision-resolved layout so names don't superpose. -----
-    const labels = arcsData.map(d => {
+    // ----- Label every country from the cleaned DB. Store the unzoomed
+    //       projected anchor (ox, oy) on each label; layoutLabels() will
+    //       project it through the current zoom transform and resolve
+    //       collisions in screen space, so labels separate naturally as
+    //       you zoom in (Google Maps style). -----
+    currentLabels = arcsData.map(d => {
       const prev = _labelPos.get(d.iso);
       return {
         iso: d.iso,
         name: d.name,
-        ax: d.o[0], ay: d.o[1],
+        ox: d.o[0], oy: d.o[1],            // unzoomed anchor (projection space)
+        ax: d.o[0], ay: d.o[1],            // screen-space anchor (set in layoutLabels)
         x: prev ? prev.x : d.o[0],
         y: prev ? prev.y : d.o[1] - 10,
       };
     });
-    resolveLabelCollisions(labels);
-    // Persist resolved positions for the next refresh's animation start
-    _labelPos.clear();
-    labels.forEach(l => _labelPos.set(l.iso, { x: l.x, y: l.y }));
 
-    // Connector line from each dot to its (possibly displaced) label
-    gOrigins.selectAll('line.origin-link').data(labels, d => d.iso).join(
-      enter => enter.append('line')
-        .attr('class', 'origin-link')
-        .attr('x1', d => d.ax).attr('y1', d => d.ay)
-        .attr('x2', d => d.x).attr('y2', d => d.y + 4)
-        .attr('opacity', 0)
-        .call(s => s.transition().duration(700).attr('opacity', 0.45)),
-      update => update.transition().duration(600)
-        .attr('x1', d => d.ax).attr('y1', d => d.ay)
-        .attr('x2', d => d.x).attr('y2', d => d.y + 4)
-        .attr('opacity', 0.45),
-      exit => exit.transition().duration(300).attr('opacity', 0).remove()
-    );
-
-    gOrigins.selectAll('text.origin-label').data(labels, d => d.iso).join(
-      enter => enter.append('text')
-        .attr('class', 'origin-label')
-        .attr('x', d => d.ax).attr('y', d => d.ay - 10)
-        .attr('text-anchor', 'middle')
-        .attr('opacity', 0)
-        .text(d => d.name)
-        .call(s => s.transition().duration(700)
-          .attr('x', d => d.x).attr('y', d => d.y)
-          .attr('opacity', 1)),
-      update => update.transition().duration(600)
-        .attr('x', d => d.x).attr('y', d => d.y)
-        .text(d => d.name),
-      exit => exit.transition().duration(300).attr('opacity', 0).remove()
-    );
+    // Run the label layout — it will resolve collisions and bind the labels
+    // and connector lines into gLabels (which lives outside the zoom group).
+    layoutLabels(false);
 
     // origin-value text removed — figure already in tooltip + leaderboard,
     // and removing it keeps the map readable when all countries are labeled.
     gOrigins.selectAll('text.origin-value').remove();
 
     drawLeaderboard(rows);
+  }
+
+  // Project each label's unzoomed anchor through the current zoom transform,
+  // resolve overlaps in screen space, and update gLabels' DOM. Called from
+  // both refresh() (data change) and the zoom handler (view change).
+  function layoutLabels(fromZoom) {
+    if (!gLabels || !currentLabels.length) return;
+    const t = currentTransform || d3.zoomIdentity;
+
+    // Place each label's anchor in current screen coordinates
+    currentLabels.forEach(l => {
+      l.ax = t.applyX(l.ox);
+      l.ay = t.applyY(l.oy);
+      // Seed (x,y) at anchor on first sight so resolveLabelCollisions has
+      // a sensible starting point near the (now-zoomed) dot.
+      if (l.x == null || l.y == null) {
+        l.x = l.ax;
+        l.y = l.ay - 10;
+      }
+    });
+
+    // Fewer iterations during interactive zoom so the layout stays snappy;
+    // a full pass once the zoom settles via refresh().
+    resolveLabelCollisions(currentLabels, fromZoom ? { iters: 50, anchorPull: 0.10 } : {});
+
+    // Persist resolved screen-space positions back as projection-space
+    // offsets so the next layout pass can pick up where this one left off.
+    _labelPos.clear();
+    currentLabels.forEach(l => _labelPos.set(l.iso, { x: l.x, y: l.y }));
+
+    // Zoom events fire fast — skip the transition then so labels track the
+    // zoom in real time. Year changes use a soft transition.
+    const dur = fromZoom ? 0 : 600;
+
+    // Connector line from each dot to its label
+    const linkSel = gLabels.selectAll('line.origin-link')
+      .data(currentLabels, d => d.iso);
+    linkSel.join(
+      enter => enter.append('line')
+        .attr('class', 'origin-link')
+        .attr('x1', d => d.ax).attr('y1', d => d.ay)
+        .attr('x2', d => d.x).attr('y2', d => d.y + 4)
+        .attr('opacity', 0.45),
+      update => dur
+        ? update.transition().duration(dur)
+            .attr('x1', d => d.ax).attr('y1', d => d.ay)
+            .attr('x2', d => d.x).attr('y2', d => d.y + 4)
+        : update
+            .attr('x1', d => d.ax).attr('y1', d => d.ay)
+            .attr('x2', d => d.x).attr('y2', d => d.y + 4),
+      exit => exit.remove()
+    );
+
+    const textSel = gLabels.selectAll('text.origin-label')
+      .data(currentLabels, d => d.iso);
+    textSel.join(
+      enter => enter.append('text')
+        .attr('class', 'origin-label')
+        .attr('x', d => d.x).attr('y', d => d.y)
+        .attr('text-anchor', 'middle')
+        .attr('opacity', 0)
+        .text(d => d.name)
+        .call(s => s.transition().duration(500).attr('opacity', 1)),
+      update => dur
+        ? update.transition().duration(dur)
+            .attr('x', d => d.x).attr('y', d => d.y)
+            .text(d => d.name)
+        : update
+            .attr('x', d => d.x).attr('y', d => d.y)
+            .text(d => d.name),
+      exit => exit.remove()
+    );
   }
 
   function drawLeaderboard(rows) {
