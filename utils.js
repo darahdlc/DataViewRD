@@ -170,8 +170,8 @@ function explorerColorFor(total) {
 // Diverging gender scale: female-heavy -> purple, 50/50 -> neutral, male-heavy -> orange
 function genderColor(femalePct) {
   const t = (femalePct - 0.5) / 0.10; // -1..+1 over 0.40..0.60
-  // d3.interpolatePuOr: 0 = orange (deficit of female), 1 = purple (excess of female)
-  return DIV_INTERP(0.5 + t * 0.5);
+  // d3.interpolatePuOr: 0 = purple (excess of female), 1 = orange (deficit of female)
+  return DIV_INTERP(0.5 - t * 0.5);
 }
 
 // Diverging change scale for compare. Color domain pinned to [-100%, +100%]
